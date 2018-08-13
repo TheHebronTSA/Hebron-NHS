@@ -1,3 +1,11 @@
 body {
   background-color: #0F3D5E;
 }
+
+.project__card {
+  transition: box-shadow 0.35s ease-in-out;
+}
+
+.project:hover .project__card {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
