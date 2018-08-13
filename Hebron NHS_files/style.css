@@ -2,6 +2,14 @@ body {
   background-color: #0F3D5E;
 }
 
+.style-jjq7ezmhrepeaterButtonlabel {
+  transition: color 0.25s ease-in-out;
+}
+
+.style-jjq7ezmhrepeaterButtonlabel:hover {
+  color: #D1E0EB;
+}
+
 .project__card {
   transition: box-shadow 0.35s ease-in-out;
 }
