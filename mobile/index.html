@@ -1252,7 +1252,7 @@
 											</div>
 										</div>
 									</div>
-									<a href="#" class="tm1_menuInitial tm1_dir-center tm1menuButton" style="cursor: pointer; margin-top: 0px;" id="A_160">
+									<a onclick="openNav()" class="tm1_menuInitial tm1_dir-center tm1menuButton" style="cursor: pointer; margin-top: 0px;" id="A_160">
 										<svg preserveAspectRatio="none" viewBox="0 0 17 17" id="svg_161" class="tm1_icon tm1iconSVG">
 											<line x2="100%" class="tm1_line1 tm1_animating-line" id="line_162"></line>
 											<line x2="100%" class="tm1_line2 tm1_animating-line" id="line_163"></line>
@@ -5346,6 +5346,34 @@
 
 	<div id="DIV_417"></div>
 	<a id="A_418"></a>
+
+	<!-- The overlay -->
+	<div id="myNav" class="overlay">
+
+		<!-- Button to close the overlay navigation -->
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+		<!-- Overlay content -->
+		<div class="overlay-content">
+			<a href="sponsors-officers.html">Sponsors/Officers</a>
+			<a href="https://hebronnhs.wixsite.com/official/calendar">Calendar</a>
+			<a href="resources.html">FAQs</a>
+			<a href="../photo-gallery">Photo Gallery</a>
+		</div>
+
+	</div>
+
+	<script>
+		/* Open */
+		function openNav() {
+			document.getElementById("myNav").style.height = "100%";
+		}
+
+		/* Close */
+		function closeNav() {
+			document.getElementById("myNav").style.height = "0%";
+		}
+	</script>
 </body>
 
 </html>
