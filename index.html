@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="">
+<html lang="en">
 
 <head>
 	<script>
@@ -10,6 +10,8 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 
+	<meta id="wixMobileViewport" name="viewport" content="width=980, user-scalable=yes">
+
 	<style id="viewerMainStyle">
 		* {
 			margin: 0;
@@ -17,7 +19,7 @@
 			border: 0;
 			outline: 0;
 			vertical-align: baseline;
-			background: 0 0;
+			background: 0 0
 		}
 
 		body {
@@ -105,6 +107,31 @@
 			margin: 0 auto
 		}
 
+		.POPUPS_ROOT {
+			left: 0;
+			top: 0;
+			width: 100vw;
+			height: 100%;
+			overflow-x: auto;
+			overflow-y: scroll;
+			position: fixed;
+			z-index: 99999
+		}
+
+		.POPUPS_ROOT.mobile {
+			z-index: 1005;
+			-webkit-overflow-scrolling: touch
+		}
+
+		.POPUPS_WRAPPER {
+			position: relative;
+			overflow: auto
+		}
+
+		.POPUPS_WRAPPER>div {
+			margin: 0 auto
+		}
+
 		.auto-generated-link {
 			color: inherit
 		}
@@ -115,6 +142,70 @@
 
 		body:not([data-js-loaded]) [data-hide-prejs] {
 			visibility: hidden
+		}
+
+		html.device-phone body {
+			overflow-y: auto
+		}
+
+		html.device-mobile-optimized.device-android {
+			margin-bottom: 1px
+		}
+
+		html.device-mobile-optimized.blockSiteScrolling>body {
+			position: fixed;
+			width: 100%
+		}
+
+		html.device-mobile-optimized.media-zoom-mode>body {
+			touch-action: manipulation
+		}
+
+		html.device-mobile-optimized.media-zoom-mode>body>#SITE_CONTAINER {
+			height: 100%;
+			overflow: hidden
+		}
+
+		html.device-mobile-optimized.media-zoom-mode>body>#SITE_CONTAINER>.noop {
+			height: 100%
+		}
+
+		html.device-mobile-optimized.media-zoom-mode>body>#SITE_CONTAINER>.noop>.siteAspectsContainer {
+			height: 100%;
+			z-index: 1005
+		}
+
+		.siteAspectsContainer {
+			position: absolute;
+			top: 0;
+			margin: 0 auto;
+			left: 0;
+			right: 0
+		}
+
+		body.device-mobile-optimized {
+			overflow-x: hidden;
+			overflow-y: scroll
+		}
+
+		body.device-mobile-optimized.qa-mode {
+			overflow-y: auto
+		}
+
+		body.device-mobile-optimized #SITE_CONTAINER {
+			width: 320px;
+			overflow-x: visible;
+			margin: 0 auto;
+			position: relative
+		}
+
+		body.device-mobile-optimized>* {
+			max-width: 100% !important
+		}
+
+		body.device-mobile-optimized .SITE_ROOT {
+			overflow-x: hidden;
+			overflow-y: hidden
 		}
 
 		body.device-mobile-non-optimized #SITE_CONTAINER>:not(.mobile-non-optimized-overflow) .SITE_ROOT {
@@ -656,7 +747,7 @@
 	<a id="SCROLL_TO_TOP"></a>
 
 	<div id="SITE_CONTAINER" data-santa-render-status="SUCCESS">
-		<div class="noop visual-focus-on" data-santa-version="1.4286.0" data-reactroot="">
+		<div class="noop visual-focus-on" data-santa-version="1.4355.0" data-reactroot="">
 			<div>
 				<style type="text/css" data-styleid="theme_fonts">
 					.font_0 {
@@ -1033,18 +1124,18 @@
 					}
 				</style>
 			</div>
-			<div id="SITE_BACKGROUND" class="siteBackground" style="position: absolute; height: 2011px; width: 1280px;">
+			<div id="SITE_BACKGROUND" class="siteBackground" style="position: absolute; height: 2702px; width: 1283px;">
 				<div id="SITE_BACKGROUND_previous_noPrev" class="siteBackgroundprevious" style="width: 100%; height: 100%;">
 					<div id="SITE_BACKGROUNDpreviousImage" class="siteBackgroundpreviousImage"></div>
 					<div id="SITE_BACKGROUNDpreviousVideo" class="siteBackgroundpreviousVideo"></div>
 					<div id="SITE_BACKGROUND_previousOverlay_noPrev" class="siteBackgroundpreviousOverlay"></div>
 				</div>
-				<div id="SITE_BACKGROUND_current_ijdas_jjq6y5zl_bg" data-position="absolute" class="siteBackgroundcurrent" style="top: 0px; background-color: rgb(255, 255, 255); position: absolute; opacity: 1; visibility: inherit; width: 100%; height: 100%;">
-					<div id="SITE_BACKGROUND_currentImage_ijdas_jjq6y5zl_bg" data-type="bgimage" data-height="100%" class="siteBackgroundcurrentImage"
-					  data-image-css="{&quot;backgroundSize&quot;:&quot;&quot;,&quot;backgroundPosition&quot;:&quot;&quot;,&quot;backgroundRepeat&quot;:&quot;&quot;}"
-					  style="position: absolute; top: 0px; height: 100%; width: 100%;"></div>
+				<div id="SITE_BACKGROUND_current_ijdas_jjq6y5zl_bg" style="top: 0px; background-color: rgb(255, 255, 255); position: absolute; width: 100%; height: 100%;"
+				  data-position="absolute" class="siteBackgroundcurrent">
+					<div id="SITE_BACKGROUND_currentImage_ijdas_jjq6y5zl_bg" style="position: absolute; top: 0px; height: 100%; width: 100%;"
+					  data-type="bgimage" data-height="100%" class="siteBackgroundcurrentImage" data-image-css="{&quot;backgroundSize&quot;:&quot;&quot;,&quot;backgroundPosition&quot;:&quot;&quot;,&quot;backgroundRepeat&quot;:&quot;&quot;}"></div>
 					<div id="SITE_BACKGROUNDcurrentVideo" class="siteBackgroundcurrentVideo"></div>
-					<div id="SITE_BACKGROUND_currentOverlay_ijdas_jjq6y5zl_bg" class="siteBackgroundcurrentOverlay" style="position: absolute; top: 0px; width: 100%; height: 100%;"></div>
+					<div id="SITE_BACKGROUND_currentOverlay_ijdas_jjq6y5zl_bg" style="position:absolute;top:0;width:100%;height:100%" class="siteBackgroundcurrentOverlay"></div>
 				</div>
 			</div>
 			<style type="text/css" data-styleid="siteBackground">
@@ -1064,7 +1155,7 @@
 				}
 			</style>
 			<div class="SITE_ROOT" id="SITE_ROOT" style="width: 100%; padding-bottom: 0px; min-height: 100%; position: relative; margin: 0px auto;">
-				<div id="masterPage" browser="[object Object]" style="width: 100%; position: static; top: 0px; height: 2011px;" data-ref="masterPage">
+				<div id="masterPage" browser="[object Object]" style="width: 100%; position: static; top: 0px; height: 2702px;" data-ref="masterPage">
 					<style id="masterPage-content-area-styles">
 						#SITE_FOOTER {
 							margin-left: calc((100% - 980px) * 0.5);
@@ -1099,7 +1190,7 @@
 								</style>
 								<div data-packed="true" style="left: 103px; width: 147px; position: absolute; top: 31px;" class="txtNew" id="SITE_STRUCTURE_WRichText_0">
 									<h1 class="font_0" style="font-size:22px;">
-										<a href="./" target="_self" class="">
+										<a href="./" target="_self">
 											<span style="font-size:22px;">
 												<span style="letter-spacing:0.06em;">
 													<span class="color_17">
@@ -1260,8 +1351,8 @@
 										</li>
 										<li data-direction="ltr" data-listposition="center" data-data-id="bmi1ds1" class="style-jjq7ezmhrepeaterButton" data-state="menu  idle link notMobile"
 										  id="DrpDwnMn11" data-original-gap-between-text-and-btn="11" aria-hidden="false" style="width: 177px; height: 24px; position: relative; box-sizing: border-box; overflow: visible;">
-											<a role="button" tabindex="0" aria-haspopup="false" data-listposition="center" href="sponsors-officers/" target="_self" id="DrpDwnMn11linkElement"
-											  class="style-jjq7ezmhrepeaterButtonlinkElement">
+											<a role="button" tabindex="0" aria-haspopup="false" data-listposition="center" href="./sponsors-officers/" target="_self"
+											  id="DrpDwnMn11linkElement" class="style-jjq7ezmhrepeaterButtonlinkElement">
 												<div class="style-jjq7ezmhrepeaterButton_gapper">
 													<div class="style-jjq7ezmhrepeaterButton_wrapper">
 														<div style="text-align:center" id="DrpDwnMn11bg" class="style-jjq7ezmhrepeaterButtonbg">
@@ -1288,8 +1379,8 @@
 										<li data-direction="ltr" data-listposition="center" data-data-id="dataItem-jjd7367f" class="style-jjq7ezmhrepeaterButton"
 										  data-state="menu  idle link notMobile" id="DrpDwnMn13" data-original-gap-between-text-and-btn="10" aria-hidden="false"
 										  style="width: 69px; height: 24px; position: relative; box-sizing: border-box; overflow: visible;">
-											<a role="button" tabindex="0" aria-haspopup="false" data-listposition="center" href="resources/"
-											  target="_self" id="DrpDwnMn13linkElement" class="style-jjq7ezmhrepeaterButtonlinkElement">
+											<a role="button" tabindex="0" aria-haspopup="false" data-listposition="center" href="./resources" target="_self" id="DrpDwnMn13linkElement"
+											  class="style-jjq7ezmhrepeaterButtonlinkElement">
 												<div class="style-jjq7ezmhrepeaterButton_gapper">
 													<div class="style-jjq7ezmhrepeaterButton_wrapper">
 														<div style="text-align:center" id="DrpDwnMn13bg" class="style-jjq7ezmhrepeaterButtonbg">
@@ -1302,8 +1393,8 @@
 										<li data-direction="ltr" data-listposition="right" data-data-id="dataItem-jjag7w9y" class="style-jjq7ezmhrepeaterButton"
 										  data-state="menu  idle link notMobile" id="DrpDwnMn14" data-original-gap-between-text-and-btn="11" aria-hidden="false"
 										  style="width: 139px; height: 24px; position: relative; box-sizing: border-box; overflow: visible;">
-											<a role="button" tabindex="0" aria-haspopup="false" data-listposition="right" href="photo-gallery/"
-											  target="_self" id="DrpDwnMn14linkElement" class="style-jjq7ezmhrepeaterButtonlinkElement">
+											<a role="button" tabindex="0" aria-haspopup="false" data-listposition="right" href="./photo-gallery" target="_self" id="DrpDwnMn14linkElement"
+											  class="style-jjq7ezmhrepeaterButtonlinkElement">
 												<div class="style-jjq7ezmhrepeaterButton_gapper">
 													<div class="style-jjq7ezmhrepeaterButton_wrapper">
 														<div style="text-align:center" id="DrpDwnMn14bg" class="style-jjq7ezmhrepeaterButtonbg">
@@ -1327,9 +1418,8 @@
 										</li>
 									</ul>
 									<div id="DrpDwnMn1moreButton" class="style-jjq7ezmhmoreButton"></div>
-									<nav style="visibility: hidden; left: auto; right: 0px; bottom: auto;" data-drophposition="" data-dropalign="right" id="DrpDwnMn1dropWrapper"
-									  class="style-jjq7ezmhdropWrapper">
-										<ul style="visibility: hidden; left: auto; right: 0px;" id="DrpDwnMn1moreContainer" class="style-jjq7ezmhmoreContainer"></ul>
+									<nav style="visibility:hidden" data-drophposition="" data-dropalign="right" id="DrpDwnMn1dropWrapper" class="style-jjq7ezmhdropWrapper">
+										<ul style="visibility:hidden" id="DrpDwnMn1moreContainer" class="style-jjq7ezmhmoreContainer"></ul>
 									</nav>
 								</nav>
 								<style type="text/css" data-styleid="style-jjq7ezmh">
@@ -1443,8 +1533,7 @@
 								  data-content-padding-vertical="0" title="" class="style-jjagq53d" id="comp-jjagnvzq">
 									<div style="width: 69px; height: 66px;" id="comp-jjagnvzqlink" class="style-jjagq53dlink">
 										<div data-style="" class="style-jjagq53dimg" id="comp-jjagnvzqimg" style="position: relative; width: 69px; height: 66px;">
-											<img id="comp-jjagnvzqimgimage" alt="" data-type="image" src="./Hebron NHS_files/logo.png"
-											  style="width: 69px; height: 66px; object-fit: cover;">
+											<img id="comp-jjagnvzqimgimage" alt="" data-type="image" src="./Hebron NHS_files/logo.png" style="width: 69px; height: 66px; object-fit: cover;">
 										</div>
 									</div>
 								</div>
@@ -1552,10 +1641,10 @@
 							left: 0;
 						}
 					</style>
-					<footer style="bottom: auto; left: 0px; margin-left: 0px; width: 100%; min-width: 980px; position: absolute; top: 1960px; height: 51px;"
+					<footer style="bottom: auto; left: 0px; margin-left: 0px; width: 100%; min-width: 980px; position: absolute; top: 2651px; height: 51px;"
 					  class="style-jkroipnq_footer style-jkroipnq" data-site-width="980" data-fixedposition="false" data-isrunninginmobile="false"
 					  data-state=" " id="SITE_FOOTER">
-						<div style="left: 0px; width: 1280px;" id="SITE_FOOTERscreenWidthBackground" class="style-jkroipnqscreenWidthBackground">
+						<div style="left: 0px; width: 1283px;" id="SITE_FOOTERscreenWidthBackground" class="style-jkroipnqscreenWidthBackground">
 							<div class="style-jkroipnq_bg"></div>
 						</div>
 						<div style="width:100%" id="SITE_FOOTERcenteredContent" class="style-jkroipnqcenteredContent">
@@ -1570,7 +1659,7 @@
 								</style>
 								<div data-packed="true" style="left: 336px; width: 310px; position: absolute; top: 17px;" class="txtNew" id="comp-jkroklfs">
 									<p class="font_9" style="text-align:center;">
-										<span style="font-family:'Roboto', sans-serif; font-weight: 700;">
+										<span style="font-family:'Roboto',roboto,sans-serif; font-weight: 700;">
 											<span style="color:#FAFAFA;">Maintained and hosted with &hearts; by
 												<span style="text-decoration:underline;">
 													<a href="http://github.hebrontsa.org/" target="_blank" data-content="http://github.hebrontsa.org" data-type="external" rel="nofollow">The Hebron TSA</a>
@@ -1783,14 +1872,14 @@
 							left: 0;
 						}
 					</style>
-					<div style="left: 0px; margin-left: 0px; width: 100%; min-width: 980px; position: absolute; top: 90px; height: 1870px;" class="pc1"
-					  data-state="" id="PAGES_CONTAINER">
+					<div data-is-mobile="false" data-is-mesh="false" data-site-width="980" style="left: 0px; margin-left: 0px; width: 100%; min-width: 980px; position: absolute; top: 90px; height: 2561px;"
+					  class="pc1" data-state="" id="PAGES_CONTAINER">
 						<div style="left:0" id="PAGES_CONTAINERscreenWidthBackground" class="pc1screenWidthBackground"></div>
 						<div id="PAGES_CONTAINERcenteredContent" class="pc1centeredContent">
 							<div style="display:none" id="PAGES_CONTAINERbg" class="pc1bg"></div>
 							<div id="PAGES_CONTAINERinlineContent" class="pc1inlineContent">
-								<div style="width: 100%; left: 0px; position: absolute; top: 0px; height: 1870px;" class="s_VOwPageGroupSkin" id="SITE_PAGES">
-									<div data-ismobile="false" data-is-mesh-layout="false" style="left: 0px; min-width: 980px; min-height: 1852px; width: 100%; position: absolute; top: 0px; height: 1870px;"
+								<div style="width: 100%; left: 0px; position: absolute; top: 0px; height: 2561px;" class="s_VOwPageGroupSkin" id="SITE_PAGES">
+									<div data-ismobile="false" data-is-mesh-layout="false" style="left: 0px; min-width: 980px; min-height: 1852px; width: 100%; position: absolute; top: 0px; height: 2561px;"
 									  class="style-igqaaw2w" id="ijdas">
 										<div style="margin-left:calc((100% - 980px) / 2);width:980px" id="ijdasbg" class="style-igqaaw2wbg"></div>
 										<div id="ijdasinlineContent" class="style-igqaaw2winlineContent">
@@ -1799,35 +1888,23 @@
 													margin-left: calc((100% - 980px) * 0.5);
 												}
 
-												#comp-jjq6camz {
+												#comp-jl44curs {
 													margin-left: calc((100% - 980px) * 0.5);
 												}
 
-												#comp-jjq6divc {
-													margin-left: calc((100% - 980px) * 0.5);
-												}
-
-												#comp-jjq6j4rb {
-													margin-left: calc((100% - 980px) * 0.5);
-												}
-
-												#comp-jjq6gno7 {
-													margin-left: calc((100% - 980px) * 0.5);
-												}
-
-												#comp-jjq6kw98 {
-													margin-left: calc((100% - 980px) * 0.5);
-												}
-
-												#comp-jjqk8o1i {
-													margin-left: calc((100% - 980px) * 0.5);
-												}
-
-												#comp-jjqk939b {
+												#comp-jl44560w {
 													margin-left: calc((100% - 980px) * 0.5);
 												}
 
 												#comp-igqaaw3i {
+													margin-left: calc((100% - 980px) * 0.5);
+												}
+
+												#comp-jl0lmeho {
+													margin-left: calc((100% - 980px) * 0.5);
+												}
+
+												#comp-jl0lu1m5 {
 													margin-left: calc((100% - 980px) * 0.5);
 												}
 
@@ -1957,844 +2034,1360 @@
 													stroke-width: 1px;
 												}
 											</style>
-											<div data-packed="true" class="txtNew" id="comp-jjq6camz" style="left: 49px; width: 425px; position: absolute; top: 709px;">
-												<h4 class="font_4" style="font-size:53px;">
-													<span class="color_15">
-														<span style="font-size:53px;">Checking Hours?</span>
-													</span>
-												</h4>
-											</div>
-											<style type="text/css" data-styleid="txtNew">
-												.txtNew {
-													word-wrap: break-word;
-													text-align: start;
-													pointer-events: none;
-												}
-
-												.txtNew_override-left * {
-													text-align: left !important;
-												}
-
-												.txtNew_override-right * {
-													text-align: right !important;
-												}
-
-												.txtNew_override-center * {
-													text-align: center !important;
-												}
-
-												.txtNew_override-justify * {
-													text-align: justify !important;
-												}
-
-												.txtNew>* {
-													pointer-events: auto;
-												}
-
-												.txtNew li {
-													font-style: inherit;
-													font-weight: inherit;
-													line-height: inherit;
-													letter-spacing: normal;
-												}
-
-												.txtNew ol,
-												.txtNew ul {
-													padding-left: 1.3em;
-													padding-right: 0;
-													margin-left: 0.5em;
-													margin-right: 0;
-													line-height: normal;
-													letter-spacing: normal;
-												}
-
-												.txtNew ul {
-													list-style-type: disc;
-												}
-
-												.txtNew ol {
-													list-style-type: decimal;
-												}
-
-												.txtNew ul ul,
-												.txtNew ol ul {
-													list-style-type: circle;
-												}
-
-												.txtNew ul ul ul,
-												.txtNew ol ul ul {
-													list-style-type: square;
-												}
-
-												.txtNew ul ol ul,
-												.txtNew ol ol ul {
-													list-style-type: square;
-												}
-
-												.txtNew ul[dir="rtl"],
-												.txtNew ol[dir="rtl"] {
-													padding-left: 0;
-													padding-right: 1.3em;
-													margin-left: 0;
-													margin-right: 0.5em;
-												}
-
-												.txtNew ul[dir="rtl"] ul,
-												.txtNew ul[dir="rtl"] ol,
-												.txtNew ol[dir="rtl"] ul,
-												.txtNew ol[dir="rtl"] ol {
-													padding-left: 0;
-													padding-right: 1.3em;
-													margin-left: 0;
-													margin-right: 0.5em;
-												}
-
-												.txtNew p {
-													margin: 0;
-													line-height: normal;
-													letter-spacing: normal;
-												}
-
-												.txtNew h1 {
-													margin: 0;
-													line-height: normal;
-													letter-spacing: normal;
-												}
-
-												.txtNew h2 {
-													margin: 0;
-													line-height: normal;
-													letter-spacing: normal;
-												}
-
-												.txtNew h3 {
-													margin: 0;
-													line-height: normal;
-													letter-spacing: normal;
-												}
-
-												.txtNew h4 {
-													margin: 0;
-													line-height: normal;
-													letter-spacing: normal;
-												}
-
-												.txtNew h5 {
-													margin: 0;
-													line-height: normal;
-													letter-spacing: normal;
-												}
-
-												.txtNew h6 {
-													margin: 0;
-													line-height: normal;
-													letter-spacing: normal;
-												}
-
-												.txtNew a {
-													color: inherit;
-												}
-											</style>
-											<div data-packed="true" class="txtNew" id="comp-jjq6divc" style="left: 49px; width: 584px; position: absolute; top: 807px;">
-												<p class="font_7" style="font-size:24px;">
-													<span class="color_15">
-														<span style="font-size:24px;">
-															<span style="font-family:raleway,sans-serif;">You can easily check your hours by clicking on the following button.</span>
-														</span>
-													</span>
-												</p>
-											</div>
-											<style type="text/css" data-styleid="txtNew">
-												.txtNew {
-													word-wrap: break-word;
-													text-align: start;
-													pointer-events: none;
-												}
-
-												.txtNew_override-left * {
-													text-align: left !important;
-												}
-
-												.txtNew_override-right * {
-													text-align: right !important;
-												}
-
-												.txtNew_override-center * {
-													text-align: center !important;
-												}
-
-												.txtNew_override-justify * {
-													text-align: justify !important;
-												}
-
-												.txtNew>* {
-													pointer-events: auto;
-												}
-
-												.txtNew li {
-													font-style: inherit;
-													font-weight: inherit;
-													line-height: inherit;
-													letter-spacing: normal;
-												}
-
-												.txtNew ol,
-												.txtNew ul {
-													padding-left: 1.3em;
-													padding-right: 0;
-													margin-left: 0.5em;
-													margin-right: 0;
-													line-height: normal;
-													letter-spacing: normal;
-												}
-
-												.txtNew ul {
-													list-style-type: disc;
-												}
-
-												.txtNew ol {
-													list-style-type: decimal;
-												}
-
-												.txtNew ul ul,
-												.txtNew ol ul {
-													list-style-type: circle;
-												}
-
-												.txtNew ul ul ul,
-												.txtNew ol ul ul {
-													list-style-type: square;
-												}
-
-												.txtNew ul ol ul,
-												.txtNew ol ol ul {
-													list-style-type: square;
-												}
-
-												.txtNew ul[dir="rtl"],
-												.txtNew ol[dir="rtl"] {
-													padding-left: 0;
-													padding-right: 1.3em;
-													margin-left: 0;
-													margin-right: 0.5em;
-												}
-
-												.txtNew ul[dir="rtl"] ul,
-												.txtNew ul[dir="rtl"] ol,
-												.txtNew ol[dir="rtl"] ul,
-												.txtNew ol[dir="rtl"] ol {
-													padding-left: 0;
-													padding-right: 1.3em;
-													margin-left: 0;
-													margin-right: 0.5em;
-												}
-
-												.txtNew p {
-													margin: 0;
-													line-height: normal;
-													letter-spacing: normal;
-												}
-
-												.txtNew h1 {
-													margin: 0;
-													line-height: normal;
-													letter-spacing: normal;
-												}
-
-												.txtNew h2 {
-													margin: 0;
-													line-height: normal;
-													letter-spacing: normal;
-												}
-
-												.txtNew h3 {
-													margin: 0;
-													line-height: normal;
-													letter-spacing: normal;
-												}
-
-												.txtNew h4 {
-													margin: 0;
-													line-height: normal;
-													letter-spacing: normal;
-												}
-
-												.txtNew h5 {
-													margin: 0;
-													line-height: normal;
-													letter-spacing: normal;
-												}
-
-												.txtNew h6 {
-													margin: 0;
-													line-height: normal;
-													letter-spacing: normal;
-												}
-
-												.txtNew a {
-													color: inherit;
-												}
-											</style>
-											<div id="comp-jjq6j4rb" data-align="center" data-disabled="false" data-margin="0" data-should-use-flex="true" data-width="193"
-											  data-height="40" class="style-jkrovhy4" data-state="desktop shouldUseFlex center" style="left: 697px; position: absolute; top: 819px; height: 40px; min-height: 19px; width: 193px;">
-												<a href="https://docs.google.com/spreadsheets/d/1nEIKEnzDoaZleRKt_sfXSyilwjEaa9kxUOCsXfxtX3g/edit#gid=0" target="_blank"
-												  data-content="https://docs.google.com/spreadsheets/d/1nEIKEnzDoaZleRKt_sfXSyilwjEaa9kxUOCsXfxtX3g/edit#gid=0"
-												  data-type="external" rel="nofollow" role="button" id="comp-jjq6j4rblink" class="g-transparent-a style-jkrovhy4link">
-													<span id="comp-jjq6j4rblabel" class="style-jkrovhy4label">Check your hours here!</span>
-												</a>
-											</div>
-											<style type="text/css" data-styleid="style-jkrovhy4">
-												.style-jkrovhy4 button.style-jkrovhy4link {
-													width: 100%;
-												}
-
-												.style-jkrovhy4[data-state~="shouldUseFlex"] .style-jkrovhy4link,
-												.style-jkrovhy4[data-state~="shouldUseFlex"] .style-jkrovhy4labelwrapper {
-													text-align: initial;
-													display: flex;
-													align-items: center;
-												}
-
-												.style-jkrovhy4[data-state~="shouldUseFlex"][data-state~="center"] .style-jkrovhy4link,
-												.style-jkrovhy4[data-state~="shouldUseFlex"][data-state~="center"] .style-jkrovhy4labelwrapper {
-													justify-content: center;
-												}
-
-												.style-jkrovhy4[data-state~="shouldUseFlex"][data-state~="left"] .style-jkrovhy4link,
-												.style-jkrovhy4[data-state~="shouldUseFlex"][data-state~="left"] .style-jkrovhy4labelwrapper {
-													justify-content: flex-start;
-												}
-
-												.style-jkrovhy4[data-state~="shouldUseFlex"][data-state~="right"] .style-jkrovhy4link,
-												.style-jkrovhy4[data-state~="shouldUseFlex"][data-state~="right"] .style-jkrovhy4labelwrapper {
-													justify-content: flex-end;
-												}
-
-												.style-jkrovhy4link {
-													border-radius: 5px;
-													position: absolute;
-													top: 0;
-													right: 0;
-													bottom: 0;
-													left: 0;
-													transition: border-color 0.4s ease 0s, background-color 0.4s ease 0s;
-												}
-
-												.style-jkrovhy4label {
-													font: normal normal 700 14px/1.4em raleway, sans-serif;
-													transition: color 0.4s ease 0s;
-													color: #FFFFFF;
-													display: inline-block;
-													margin: calc(-1 * 0px) 0px 0;
-													position: relative;
-													white-space: nowrap;
-												}
-
-												.style-jkrovhy4[data-state~="shouldUseFlex"] .style-jkrovhy4label {
-													margin: 0;
-												}
-
-												.style-jkrovhy4[data-disabled="false"] .style-jkrovhy4link {
-													background-color: rgba(12, 60, 96, 1);
-													border: solid rgba(12, 60, 96, 1) 0px;
-													cursor: pointer !important;
-												}
-
-												.style-jkrovhy4[data-disabled="false"]:active[data-state~="mobile"] .style-jkrovhy4link,
-												.style-jkrovhy4[data-disabled="false"]:hover[data-state~="desktop"] .style-jkrovhy4link,
-												.style-jkrovhy4[data-disabled="false"][data-preview~="hover"] .style-jkrovhy4link {
-													background-color: rgba(57, 114, 155, 1);
-													border-color: transparent;
-												}
-
-												.style-jkrovhy4[data-disabled="false"]:active[data-state~="mobile"] .style-jkrovhy4label,
-												.style-jkrovhy4[data-disabled="false"]:hover[data-state~="desktop"] .style-jkrovhy4label,
-												.style-jkrovhy4[data-disabled="false"][data-preview~="hover"] .style-jkrovhy4label {
-													color: #000000;
-												}
-
-												.style-jkrovhy4[data-disabled="true"] .style-jkrovhy4link,
-												.style-jkrovhy4[data-preview~="disabled"] .style-jkrovhy4link {
-													background-color: rgba(204, 204, 204, 1);
-													border-color: rgba(204, 204, 204, 1);
-												}
-
-												.style-jkrovhy4[data-disabled="true"] .style-jkrovhy4label,
-												.style-jkrovhy4[data-preview~="disabled"] .style-jkrovhy4label {
-													color: #FFFFFF;
-												}
-											</style>
-											<div data-packed="true" class="txtNew" id="comp-jjq6gno7" style="left: 49px; width: 584px; position: absolute; top: 904px;">
-												<p class="font_7" style="font-size:24px;">
-													<span class="color_15">
-														<span style="font-size:24px;">
-															<span style="font-family:raleway,sans-serif;">For more information on NHS hour requirements, visit our FAQs page or click on the following button.</span>
-														</span>
-													</span>
-												</p>
-											</div>
-											<style type="text/css" data-styleid="txtNew">
-												.txtNew {
-													word-wrap: break-word;
-													text-align: start;
-													pointer-events: none;
-												}
-
-												.txtNew_override-left * {
-													text-align: left !important;
-												}
-
-												.txtNew_override-right * {
-													text-align: right !important;
-												}
-
-												.txtNew_override-center * {
-													text-align: center !important;
-												}
-
-												.txtNew_override-justify * {
-													text-align: justify !important;
-												}
-
-												.txtNew>* {
-													pointer-events: auto;
-												}
-
-												.txtNew li {
-													font-style: inherit;
-													font-weight: inherit;
-													line-height: inherit;
-													letter-spacing: normal;
-												}
-
-												.txtNew ol,
-												.txtNew ul {
-													padding-left: 1.3em;
-													padding-right: 0;
-													margin-left: 0.5em;
-													margin-right: 0;
-													line-height: normal;
-													letter-spacing: normal;
-												}
-
-												.txtNew ul {
-													list-style-type: disc;
-												}
-
-												.txtNew ol {
-													list-style-type: decimal;
-												}
-
-												.txtNew ul ul,
-												.txtNew ol ul {
-													list-style-type: circle;
-												}
-
-												.txtNew ul ul ul,
-												.txtNew ol ul ul {
-													list-style-type: square;
-												}
-
-												.txtNew ul ol ul,
-												.txtNew ol ol ul {
-													list-style-type: square;
-												}
-
-												.txtNew ul[dir="rtl"],
-												.txtNew ol[dir="rtl"] {
-													padding-left: 0;
-													padding-right: 1.3em;
-													margin-left: 0;
-													margin-right: 0.5em;
-												}
-
-												.txtNew ul[dir="rtl"] ul,
-												.txtNew ul[dir="rtl"] ol,
-												.txtNew ol[dir="rtl"] ul,
-												.txtNew ol[dir="rtl"] ol {
-													padding-left: 0;
-													padding-right: 1.3em;
-													margin-left: 0;
-													margin-right: 0.5em;
-												}
-
-												.txtNew p {
-													margin: 0;
-													line-height: normal;
-													letter-spacing: normal;
-												}
-
-												.txtNew h1 {
-													margin: 0;
-													line-height: normal;
-													letter-spacing: normal;
-												}
-
-												.txtNew h2 {
-													margin: 0;
-													line-height: normal;
-													letter-spacing: normal;
-												}
-
-												.txtNew h3 {
-													margin: 0;
-													line-height: normal;
-													letter-spacing: normal;
-												}
-
-												.txtNew h4 {
-													margin: 0;
-													line-height: normal;
-													letter-spacing: normal;
-												}
-
-												.txtNew h5 {
-													margin: 0;
-													line-height: normal;
-													letter-spacing: normal;
-												}
-
-												.txtNew h6 {
-													margin: 0;
-													line-height: normal;
-													letter-spacing: normal;
-												}
-
-												.txtNew a {
-													color: inherit;
-												}
-											</style>
-											<div id="comp-jjq6kw98" data-align="center" data-disabled="false" data-margin="0" data-should-use-flex="true" data-width="193"
-											  data-height="40" class="style-jjqkeyzz" data-state="desktop shouldUseFlex center" style="left: 697px; position: absolute; top: 916px; height: 40px; min-height: 19px; width: 193px;">
-												<a href="resources/" target="_self" role="button" id="comp-jjq6kw98link" class="g-transparent-a style-jjqkeyzzlink">
-													<span id="comp-jjq6kw98label" class="style-jjqkeyzzlabel">Hour Requirements</span>
-												</a>
-											</div>
-											<style type="text/css" data-styleid="style-jjqkeyzz">
-												.style-jjqkeyzz button.style-jjqkeyzzlink {
-													width: 100%;
-												}
-
-												.style-jjqkeyzz[data-state~="shouldUseFlex"] .style-jjqkeyzzlink,
-												.style-jjqkeyzz[data-state~="shouldUseFlex"] .style-jjqkeyzzlabelwrapper {
-													text-align: initial;
-													display: flex;
-													align-items: center;
-												}
-
-												.style-jjqkeyzz[data-state~="shouldUseFlex"][data-state~="center"] .style-jjqkeyzzlink,
-												.style-jjqkeyzz[data-state~="shouldUseFlex"][data-state~="center"] .style-jjqkeyzzlabelwrapper {
-													justify-content: center;
-												}
-
-												.style-jjqkeyzz[data-state~="shouldUseFlex"][data-state~="left"] .style-jjqkeyzzlink,
-												.style-jjqkeyzz[data-state~="shouldUseFlex"][data-state~="left"] .style-jjqkeyzzlabelwrapper {
-													justify-content: flex-start;
-												}
-
-												.style-jjqkeyzz[data-state~="shouldUseFlex"][data-state~="right"] .style-jjqkeyzzlink,
-												.style-jjqkeyzz[data-state~="shouldUseFlex"][data-state~="right"] .style-jjqkeyzzlabelwrapper {
-													justify-content: flex-end;
-												}
-
-												.style-jjqkeyzzlink {
-													border-radius: 5px;
-													position: absolute;
-													top: 0;
-													right: 0;
-													bottom: 0;
-													left: 0;
-													transition: border-color 0.4s ease 0s, background-color 0.4s ease 0s;
-												}
-
-												.style-jjqkeyzzlabel {
-													font: normal normal 700 14px/1.4em raleway, sans-serif;
-													transition: color 0.4s ease 0s;
-													color: #FFFFFF;
-													display: inline-block;
-													margin: calc(-1 * 0px) 0px 0;
-													position: relative;
-													white-space: nowrap;
-												}
-
-												.style-jjqkeyzz[data-state~="shouldUseFlex"] .style-jjqkeyzzlabel {
-													margin: 0;
-												}
-
-												.style-jjqkeyzz[data-disabled="false"] .style-jjqkeyzzlink {
-													background-color: rgba(12, 60, 96, 1);
-													border: solid rgba(12, 60, 96, 1) 0px;
-													cursor: pointer !important;
-												}
-
-												.style-jjqkeyzz[data-disabled="false"]:active[data-state~="mobile"] .style-jjqkeyzzlink,
-												.style-jjqkeyzz[data-disabled="false"]:hover[data-state~="desktop"] .style-jjqkeyzzlink,
-												.style-jjqkeyzz[data-disabled="false"][data-preview~="hover"] .style-jjqkeyzzlink {
-													background-color: rgba(57, 114, 155, 1);
-													border-color: transparent;
-												}
-
-												.style-jjqkeyzz[data-disabled="false"]:active[data-state~="mobile"] .style-jjqkeyzzlabel,
-												.style-jjqkeyzz[data-disabled="false"]:hover[data-state~="desktop"] .style-jjqkeyzzlabel,
-												.style-jjqkeyzz[data-disabled="false"][data-preview~="hover"] .style-jjqkeyzzlabel {
-													color: #000000;
-												}
-
-												.style-jjqkeyzz[data-disabled="true"] .style-jjqkeyzzlink,
-												.style-jjqkeyzz[data-preview~="disabled"] .style-jjqkeyzzlink {
-													background-color: rgba(204, 204, 204, 1);
-													border-color: rgba(204, 204, 204, 1);
-												}
-
-												.style-jjqkeyzz[data-disabled="true"] .style-jjqkeyzzlabel,
-												.style-jjqkeyzz[data-preview~="disabled"] .style-jjqkeyzzlabel {
-													color: #FFFFFF;
-												}
-											</style>
-											<div data-packed="true" class="txtNew" id="comp-jjqk8o1i" style="left: 49px; width: 584px; position: absolute; top: 1003px;">
-												<p class="font_7" style="font-size:24px;">
-													<span class="color_15">
-														<span style="font-size:24px;">
-															<span style="font-family:raleway,sans-serif;">To print out an hour sheet, click on the following button.</span>
-														</span>
-													</span>
-												</p>
-											</div>
-											<style type="text/css" data-styleid="txtNew">
-												.txtNew {
-													word-wrap: break-word;
-													text-align: start;
-													pointer-events: none;
-												}
-
-												.txtNew_override-left * {
-													text-align: left !important;
-												}
-
-												.txtNew_override-right * {
-													text-align: right !important;
-												}
-
-												.txtNew_override-center * {
-													text-align: center !important;
-												}
-
-												.txtNew_override-justify * {
-													text-align: justify !important;
-												}
-
-												.txtNew>* {
-													pointer-events: auto;
-												}
-
-												.txtNew li {
-													font-style: inherit;
-													font-weight: inherit;
-													line-height: inherit;
-													letter-spacing: normal;
-												}
-
-												.txtNew ol,
-												.txtNew ul {
-													padding-left: 1.3em;
-													padding-right: 0;
-													margin-left: 0.5em;
-													margin-right: 0;
-													line-height: normal;
-													letter-spacing: normal;
-												}
-
-												.txtNew ul {
-													list-style-type: disc;
-												}
-
-												.txtNew ol {
-													list-style-type: decimal;
-												}
-
-												.txtNew ul ul,
-												.txtNew ol ul {
-													list-style-type: circle;
-												}
-
-												.txtNew ul ul ul,
-												.txtNew ol ul ul {
-													list-style-type: square;
-												}
-
-												.txtNew ul ol ul,
-												.txtNew ol ol ul {
-													list-style-type: square;
-												}
-
-												.txtNew ul[dir="rtl"],
-												.txtNew ol[dir="rtl"] {
-													padding-left: 0;
-													padding-right: 1.3em;
-													margin-left: 0;
-													margin-right: 0.5em;
-												}
-
-												.txtNew ul[dir="rtl"] ul,
-												.txtNew ul[dir="rtl"] ol,
-												.txtNew ol[dir="rtl"] ul,
-												.txtNew ol[dir="rtl"] ol {
-													padding-left: 0;
-													padding-right: 1.3em;
-													margin-left: 0;
-													margin-right: 0.5em;
-												}
-
-												.txtNew p {
-													margin: 0;
-													line-height: normal;
-													letter-spacing: normal;
-												}
-
-												.txtNew h1 {
-													margin: 0;
-													line-height: normal;
-													letter-spacing: normal;
-												}
-
-												.txtNew h2 {
-													margin: 0;
-													line-height: normal;
-													letter-spacing: normal;
-												}
-
-												.txtNew h3 {
-													margin: 0;
-													line-height: normal;
-													letter-spacing: normal;
-												}
-
-												.txtNew h4 {
-													margin: 0;
-													line-height: normal;
-													letter-spacing: normal;
-												}
-
-												.txtNew h5 {
-													margin: 0;
-													line-height: normal;
-													letter-spacing: normal;
-												}
-
-												.txtNew h6 {
-													margin: 0;
-													line-height: normal;
-													letter-spacing: normal;
-												}
-
-												.txtNew a {
-													color: inherit;
-												}
-											</style>
-											<div id="comp-jjqk939b" data-align="center" data-disabled="false" data-margin="0" data-should-use-flex="true" data-width="193"
-											  data-height="40" class="style-jjqkf7pj" data-state="desktop shouldUseFlex center" style="left: 697px; position: absolute; top: 1015px; height: 40px; min-height: 19px; width: 193px;">
-												<a href="./hour-sheet.pdf" target="_blank" data-type="document"
-												  role="button" id="comp-jjqk939blink" class="g-transparent-a style-jjqkf7pjlink">
-													<span id="comp-jjqk939blabel" class="style-jjqkf7pjlabel">Hour Sheet</span>
-												</a>
-											</div>
-											<style type="text/css" data-styleid="style-jjqkf7pj">
-												.style-jjqkf7pj button.style-jjqkf7pjlink {
-													width: 100%;
-												}
-
-												.style-jjqkf7pj[data-state~="shouldUseFlex"] .style-jjqkf7pjlink,
-												.style-jjqkf7pj[data-state~="shouldUseFlex"] .style-jjqkf7pjlabelwrapper {
-													text-align: initial;
-													display: flex;
-													align-items: center;
-												}
-
-												.style-jjqkf7pj[data-state~="shouldUseFlex"][data-state~="center"] .style-jjqkf7pjlink,
-												.style-jjqkf7pj[data-state~="shouldUseFlex"][data-state~="center"] .style-jjqkf7pjlabelwrapper {
-													justify-content: center;
-												}
-
-												.style-jjqkf7pj[data-state~="shouldUseFlex"][data-state~="left"] .style-jjqkf7pjlink,
-												.style-jjqkf7pj[data-state~="shouldUseFlex"][data-state~="left"] .style-jjqkf7pjlabelwrapper {
-													justify-content: flex-start;
-												}
-
-												.style-jjqkf7pj[data-state~="shouldUseFlex"][data-state~="right"] .style-jjqkf7pjlink,
-												.style-jjqkf7pj[data-state~="shouldUseFlex"][data-state~="right"] .style-jjqkf7pjlabelwrapper {
-													justify-content: flex-end;
-												}
-
-												.style-jjqkf7pjlink {
-													border-radius: 5px;
-													position: absolute;
-													top: 0;
-													right: 0;
-													bottom: 0;
-													left: 0;
-													transition: border-color 0.4s ease 0s, background-color 0.4s ease 0s;
-												}
-
-												.style-jjqkf7pjlabel {
-													font: normal normal 700 14px/1.4em raleway, sans-serif;
-													transition: color 0.4s ease 0s;
-													color: #FFFFFF;
-													display: inline-block;
-													margin: calc(-1 * 0px) 0px 0;
-													position: relative;
-													white-space: nowrap;
-												}
-
-												.style-jjqkf7pj[data-state~="shouldUseFlex"] .style-jjqkf7pjlabel {
-													margin: 0;
-												}
-
-												.style-jjqkf7pj[data-disabled="false"] .style-jjqkf7pjlink {
-													background-color: rgba(12, 60, 96, 1);
-													border: solid rgba(12, 60, 96, 1) 0px;
-													cursor: pointer !important;
-												}
-
-												.style-jjqkf7pj[data-disabled="false"]:active[data-state~="mobile"] .style-jjqkf7pjlink,
-												.style-jjqkf7pj[data-disabled="false"]:hover[data-state~="desktop"] .style-jjqkf7pjlink,
-												.style-jjqkf7pj[data-disabled="false"][data-preview~="hover"] .style-jjqkf7pjlink {
-													background-color: rgba(57, 114, 155, 1);
-													border-color: transparent;
-												}
-
-												.style-jjqkf7pj[data-disabled="false"]:active[data-state~="mobile"] .style-jjqkf7pjlabel,
-												.style-jjqkf7pj[data-disabled="false"]:hover[data-state~="desktop"] .style-jjqkf7pjlabel,
-												.style-jjqkf7pj[data-disabled="false"][data-preview~="hover"] .style-jjqkf7pjlabel {
-													color: #000000;
-												}
-
-												.style-jjqkf7pj[data-disabled="true"] .style-jjqkf7pjlink,
-												.style-jjqkf7pj[data-preview~="disabled"] .style-jjqkf7pjlink {
-													background-color: rgba(204, 204, 204, 1);
-													border-color: rgba(204, 204, 204, 1);
-												}
-
-												.style-jjqkf7pj[data-disabled="true"] .style-jjqkf7pjlabel,
-												.style-jjqkf7pj[data-preview~="disabled"] .style-jjqkf7pjlabel {
-													color: #FFFFFF;
-												}
-											</style>
-											<section data-responsive="true" class="strc1" id="comp-igqaaw3i" style="min-width: 980px; position: absolute; margin-left: 0px; top: 1107px; height: 424px; left: 0px; width: 100%;">
-												<div data-page-id="ijdas" data-enable-video="true" data-bg-effect-name="" data-media-type="" data-render-fixed-position="true"
-												  data-use-clip-path="" data-needs-clipping="false" class="strc1balata" id="comp-igqaaw3ibalata" style="position: absolute; top: 0px; width: calc(100% - 0px); height: 100%; overflow: hidden; pointer-events: auto; left: 0px; right: 0px; min-width: 980px;">
-													<div class="bgColor" id="comp-igqaaw3ibalatabgcolor" style="width: 100%; height: 100%; background-color: transparent; position: absolute;">
-														<div data-background-image="" id="comp-igqaaw3ibalatabgcoloroverlay" class="bgColoroverlay" style="width: 100%; height: 100%; position: absolute;"></div>
+											<section style="min-width: 980px; position: absolute; margin-left: 0px; top: 674px; height: 280px; left: 0px; width: 100%;"
+											  data-responsive="true" class="strc1" id="comp-jl44curs">
+												<div style="position: absolute; top: 0px; width: calc(100% - 0px); height: 100%; overflow: hidden; pointer-events: auto; left: 0px; right: 0px; min-width: 980px; clip: rect(0px, 1283px, 280px, 0px);"
+												  data-page-id="ijdas" data-enable-video="true" data-bg-effect-name="" data-media-type="" data-render-fixed-position="true"
+												  data-use-clip-path="" data-needs-clipping="false" class="strc1balata" id="comp-jl44cursbalata">
+													<div style="width:100%;height:100%;background-color:transparent;position:absolute" class="bgColor" id="comp-jl44cursbalatabgcolor">
+														<div data-background-image="" style="width:100%;height:100%;position:absolute" id="comp-jl44cursbalatabgcoloroverlay" class="bgColoroverlay"></div>
 													</div>
 												</div>
-												<div id="comp-igqaaw3iinlineContent" class="strc1inlineContent" style="position: relative; width: calc(100% - 0px); min-width: 980px;">
-													<div data-content-width="980" class="strc1" id="mediaiskg80sr13" style="flex: 980 1 0%; margin-left: 0px; min-width: 980px; margin-top: 0px; margin-bottom: 0px; top: 0px; height: 424px; position: relative;">
-														<div data-page-id="ijdas" data-enable-video="true" data-bg-effect-name="" data-media-type="" data-render-fixed-position="true"
-														  data-use-clip-path="" data-needs-clipping="false" class="strc1balata" id="mediaiskg80sr13balata" style="position: absolute; top: 0px; width: 100%; height: 100%; overflow: hidden; pointer-events: auto;">
-															<div class="bgColor" id="mediaiskg80sr13balatabgcolor" style="width: 100%; height: 100%; background-color: rgb(12, 60, 96); position: absolute;">
-																<div data-background-image="" id="mediaiskg80sr13balatabgcoloroverlay" class="bgColoroverlay" style="width: 100%; height: 100%; position: absolute;"></div>
+												<div style="position:relative;width:calc(100% - 0px);min-width:980px" id="comp-jl44cursinlineContent" class="strc1inlineContent">
+													<div style="flex: 980 1 0%; margin-left: 0px; min-width: 980px; margin-top: 0px; margin-bottom: 0px; top: 0px; height: 280px; position: relative;"
+													  data-content-width="980" class="strc1" id="comp-jl44cuur">
+														<div style="position: absolute; top: 0px; width: 100%; height: 100%; overflow: hidden; pointer-events: auto; clip: rect(0px, 1283px, 280px, 0px);"
+														  data-page-id="ijdas" data-enable-video="true" data-bg-effect-name="" data-media-type="" data-render-fixed-position="true"
+														  data-use-clip-path="" data-needs-clipping="false" class="strc1balata" id="comp-jl44cuurbalata">
+															<div style="width:100%;height:100%;background-color:rgba(12, 60, 96, 1);position:absolute" class="bgColor" id="comp-jl44cuurbalatabgcolor">
+																<div data-background-image="" style="width:100%;height:100%;position:absolute" id="comp-jl44cuurbalatabgcoloroverlay" class="bgColoroverlay"></div>
 															</div>
 														</div>
-														<div id="mediaiskg80sr13inlineContent" class="strc1inlineContent" style="width: 100%; position: absolute; top: 0px; bottom: 0px;">
+														<div style="width:100%;position:absolute;top:0;bottom:0" id="comp-jl44cuurinlineContent" class="strc1inlineContent">
+															<style id="comp-jl44cuur-content-area-styles">
+																#comp-jl44cuv3 {
+																	margin-left: calc((100% - 980px) * 0.5);
+																}
+
+																#comp-jl44cuw6 {
+																	margin-left: calc((100% - 980px) * 0.5);
+																}
+
+																#comp-jl47z9vo {
+																	margin-left: calc((100% - 980px) * 0.5);
+																}
+															</style>
+															<div data-packed="true" style="left: 50px; width: 436px; position: absolute; top: 39px;" class="txtNew" id="comp-jl44cuv3">
+																<h4 class="font_4" style="font-size:53px;">
+																	<span style="font-size:53px;">
+																		<span style="color:#FFFFFF;">We're on
+																			<a href="https://lisdtx.instructure.com/" target="_blank" data-content="https://lisdtx.instructure.com" data-type="external"
+																			  rel="nofollow">Canvas</a>!</span>
+																	</span>
+																</h4>
+															</div>
+															<style type="text/css" data-styleid="txtNew">
+																.txtNew {
+																	word-wrap: break-word;
+																	text-align: start;
+																	pointer-events: none;
+																}
+
+																.txtNew_override-left * {
+																	text-align: left !important;
+																}
+
+																.txtNew_override-right * {
+																	text-align: right !important;
+																}
+
+																.txtNew_override-center * {
+																	text-align: center !important;
+																}
+
+																.txtNew_override-justify * {
+																	text-align: justify !important;
+																}
+
+																.txtNew>* {
+																	pointer-events: auto;
+																}
+
+																.txtNew li {
+																	font-style: inherit;
+																	font-weight: inherit;
+																	line-height: inherit;
+																	letter-spacing: normal;
+																}
+
+																.txtNew ol,
+																.txtNew ul {
+																	padding-left: 1.3em;
+																	padding-right: 0;
+																	margin-left: 0.5em;
+																	margin-right: 0;
+																	line-height: normal;
+																	letter-spacing: normal;
+																}
+
+																.txtNew ul {
+																	list-style-type: disc;
+																}
+
+																.txtNew ol {
+																	list-style-type: decimal;
+																}
+
+																.txtNew ul ul,
+																.txtNew ol ul {
+																	list-style-type: circle;
+																}
+
+																.txtNew ul ul ul,
+																.txtNew ol ul ul {
+																	list-style-type: square;
+																}
+
+																.txtNew ul ol ul,
+																.txtNew ol ol ul {
+																	list-style-type: square;
+																}
+
+																.txtNew ul[dir="rtl"],
+																.txtNew ol[dir="rtl"] {
+																	padding-left: 0;
+																	padding-right: 1.3em;
+																	margin-left: 0;
+																	margin-right: 0.5em;
+																}
+
+																.txtNew ul[dir="rtl"] ul,
+																.txtNew ul[dir="rtl"] ol,
+																.txtNew ol[dir="rtl"] ul,
+																.txtNew ol[dir="rtl"] ol {
+																	padding-left: 0;
+																	padding-right: 1.3em;
+																	margin-left: 0;
+																	margin-right: 0.5em;
+																}
+
+																.txtNew p {
+																	margin: 0;
+																	line-height: normal;
+																	letter-spacing: normal;
+																}
+
+																.txtNew h1 {
+																	margin: 0;
+																	line-height: normal;
+																	letter-spacing: normal;
+																}
+
+																.txtNew h2 {
+																	margin: 0;
+																	line-height: normal;
+																	letter-spacing: normal;
+																}
+
+																.txtNew h3 {
+																	margin: 0;
+																	line-height: normal;
+																	letter-spacing: normal;
+																}
+
+																.txtNew h4 {
+																	margin: 0;
+																	line-height: normal;
+																	letter-spacing: normal;
+																}
+
+																.txtNew h5 {
+																	margin: 0;
+																	line-height: normal;
+																	letter-spacing: normal;
+																}
+
+																.txtNew h6 {
+																	margin: 0;
+																	line-height: normal;
+																	letter-spacing: normal;
+																}
+
+																.txtNew a {
+																	color: inherit;
+																}
+															</style>
+															<div data-packed="true" style="left: 50px; width: 565px; position: absolute; top: 114px;" class="txtNew" id="comp-jl44cuw6">
+																<p class="font_7" style="font-size:24px;">
+																	<span style="font-family:raleway,sans-serif;">
+																		<span class="color_11">Our course on
+																			<a href="https://lisdtx.instructure.com/" target="_blank" data-content="https://lisdtx.instructure.com" data-type="external"
+																			  rel="nofollow">Canvas</a>&nbsp;is used to send out private messages and inform members of service opportunities. Log
+																			in with your LISD network account.</span>
+																	</span>
+																</p>
+															</div>
+															<style type="text/css" data-styleid="txtNew">
+																.txtNew {
+																	word-wrap: break-word;
+																	text-align: start;
+																	pointer-events: none;
+																}
+
+																.txtNew_override-left * {
+																	text-align: left !important;
+																}
+
+																.txtNew_override-right * {
+																	text-align: right !important;
+																}
+
+																.txtNew_override-center * {
+																	text-align: center !important;
+																}
+
+																.txtNew_override-justify * {
+																	text-align: justify !important;
+																}
+
+																.txtNew>* {
+																	pointer-events: auto;
+																}
+
+																.txtNew li {
+																	font-style: inherit;
+																	font-weight: inherit;
+																	line-height: inherit;
+																	letter-spacing: normal;
+																}
+
+																.txtNew ol,
+																.txtNew ul {
+																	padding-left: 1.3em;
+																	padding-right: 0;
+																	margin-left: 0.5em;
+																	margin-right: 0;
+																	line-height: normal;
+																	letter-spacing: normal;
+																}
+
+																.txtNew ul {
+																	list-style-type: disc;
+																}
+
+																.txtNew ol {
+																	list-style-type: decimal;
+																}
+
+																.txtNew ul ul,
+																.txtNew ol ul {
+																	list-style-type: circle;
+																}
+
+																.txtNew ul ul ul,
+																.txtNew ol ul ul {
+																	list-style-type: square;
+																}
+
+																.txtNew ul ol ul,
+																.txtNew ol ol ul {
+																	list-style-type: square;
+																}
+
+																.txtNew ul[dir="rtl"],
+																.txtNew ol[dir="rtl"] {
+																	padding-left: 0;
+																	padding-right: 1.3em;
+																	margin-left: 0;
+																	margin-right: 0.5em;
+																}
+
+																.txtNew ul[dir="rtl"] ul,
+																.txtNew ul[dir="rtl"] ol,
+																.txtNew ol[dir="rtl"] ul,
+																.txtNew ol[dir="rtl"] ol {
+																	padding-left: 0;
+																	padding-right: 1.3em;
+																	margin-left: 0;
+																	margin-right: 0.5em;
+																}
+
+																.txtNew p {
+																	margin: 0;
+																	line-height: normal;
+																	letter-spacing: normal;
+																}
+
+																.txtNew h1 {
+																	margin: 0;
+																	line-height: normal;
+																	letter-spacing: normal;
+																}
+
+																.txtNew h2 {
+																	margin: 0;
+																	line-height: normal;
+																	letter-spacing: normal;
+																}
+
+																.txtNew h3 {
+																	margin: 0;
+																	line-height: normal;
+																	letter-spacing: normal;
+																}
+
+																.txtNew h4 {
+																	margin: 0;
+																	line-height: normal;
+																	letter-spacing: normal;
+																}
+
+																.txtNew h5 {
+																	margin: 0;
+																	line-height: normal;
+																	letter-spacing: normal;
+																}
+
+																.txtNew h6 {
+																	margin: 0;
+																	line-height: normal;
+																	letter-spacing: normal;
+																}
+
+																.txtNew a {
+																	color: inherit;
+																}
+															</style>
+															<div id="comp-jl47z9vo" data-align="center" data-disabled="false" data-margin="0" data-should-use-flex="true" data-width="242"
+															  data-height="57" style="left: 649px; position: absolute; top: 127px; height: 57px; min-height: 23px; width: 242px;"
+															  class="style-jl482o74" data-state="desktop shouldUseFlex center">
+																<a href="https://lisdtx.instructure.com/" target="_blank" data-content="https://lisdtx.instructure.com" data-type="external"
+																  rel="nofollow" role="button" id="comp-jl47z9volink" class="g-transparent-a style-jl482o74link">
+																	<span id="comp-jl47z9volabel" class="style-jl482o74label">Visit Canvas</span>
+																</a>
+															</div>
+															<style type="text/css" data-styleid="style-jl482o74">
+																.style-jl482o74 button.style-jl482o74link {
+																	width: 100%;
+																}
+
+																.style-jl482o74[data-state~="shouldUseFlex"] .style-jl482o74link,
+																.style-jl482o74[data-state~="shouldUseFlex"] .style-jl482o74labelwrapper {
+																	text-align: initial;
+																	display: flex;
+																	align-items: center;
+																}
+
+																.style-jl482o74[data-state~="shouldUseFlex"][data-state~="center"] .style-jl482o74link,
+																.style-jl482o74[data-state~="shouldUseFlex"][data-state~="center"] .style-jl482o74labelwrapper {
+																	justify-content: center;
+																}
+
+																.style-jl482o74[data-state~="shouldUseFlex"][data-state~="left"] .style-jl482o74link,
+																.style-jl482o74[data-state~="shouldUseFlex"][data-state~="left"] .style-jl482o74labelwrapper {
+																	justify-content: flex-start;
+																}
+
+																.style-jl482o74[data-state~="shouldUseFlex"][data-state~="right"] .style-jl482o74link,
+																.style-jl482o74[data-state~="shouldUseFlex"][data-state~="right"] .style-jl482o74labelwrapper {
+																	justify-content: flex-end;
+																}
+
+																.style-jl482o74link {
+																	border-radius: 5px;
+																	position: absolute;
+																	top: 0;
+																	right: 0;
+																	bottom: 0;
+																	left: 0;
+																	transition: border-color 0.4s ease 0s, background-color 0.4s ease 0s;
+																}
+
+																.style-jl482o74label {
+																	font: normal normal 700 17px/1.4em raleway, sans-serif;
+																	transition: color 0.4s ease 0s;
+																	color: #0C3C60;
+																	display: inline-block;
+																	margin: calc(-1 * 0px) 0px 0;
+																	position: relative;
+																	white-space: nowrap;
+																}
+
+																.style-jl482o74[data-state~="shouldUseFlex"] .style-jl482o74label {
+																	margin: 0;
+																}
+
+																.style-jl482o74[data-disabled="false"] .style-jl482o74link {
+																	background-color: rgba(255, 255, 255, 1);
+																	border: solid rgba(12, 60, 96, 1) 0px;
+																	cursor: pointer !important;
+																}
+
+																.style-jl482o74[data-disabled="false"]:active[data-state~="mobile"] .style-jl482o74link,
+																.style-jl482o74[data-disabled="false"]:hover[data-state~="desktop"] .style-jl482o74link,
+																.style-jl482o74[data-disabled="false"][data-preview~="hover"] .style-jl482o74link {
+																	background-color: rgba(57, 114, 155, 1);
+																	border-color: transparent;
+																}
+
+																.style-jl482o74[data-disabled="false"]:active[data-state~="mobile"] .style-jl482o74label,
+																.style-jl482o74[data-disabled="false"]:hover[data-state~="desktop"] .style-jl482o74label,
+																.style-jl482o74[data-disabled="false"][data-preview~="hover"] .style-jl482o74label {
+																	color: #000000;
+																}
+
+																.style-jl482o74[data-disabled="true"] .style-jl482o74link,
+																.style-jl482o74[data-preview~="disabled"] .style-jl482o74link {
+																	background-color: rgba(204, 204, 204, 1);
+																	border-color: rgba(204, 204, 204, 1);
+																}
+
+																.style-jl482o74[data-disabled="true"] .style-jl482o74label,
+																.style-jl482o74[data-preview~="disabled"] .style-jl482o74label {
+																	color: #FFFFFF;
+																}
+															</style>
+														</div>
+													</div>
+													<style type="text/css" data-styleid="strc1">
+														.strc1:not([data-mobile-responsive])>.strc1inlineContent {
+															position: absolute;
+															top: 0;
+															right: 0;
+															bottom: 0;
+															left: 0;
+														}
+
+														.strc1[data-mobile-responsive]>.strc1inlineContent {
+															position: relative;
+														}
+
+														.strc1[data-responsive] {
+															display: -ms-grid;
+															display: grid;
+															-webkit-box-pack: center;
+															-webkit-justify-content: center;
+															justify-content: center;
+															grid-template-columns: 100%;
+															grid-template-rows: 1fr;
+															-ms-grid-columns: 100%;
+															-ms-grid-rows: 1fr;
+														}
+
+														.strc1[data-responsive]>.strc1inlineContent {
+															display: -webkit-box;
+															display: -webkit-flex;
+															display: flex;
+														}
+
+														.strc1[data-responsive]>* {
+															position: relative;
+															grid-row-start: 1;
+															grid-column-start: 1;
+															grid-row-end: 2;
+															grid-column-end: 2;
+															-ms-grid-row-span: 1;
+															-ms-grid-column-span: 1;
+															margin: 0 auto;
+														}
+													</style>
+												</div>
+											</section>
+											<style type="text/css" data-styleid="strc1">
+												.strc1:not([data-mobile-responsive])>.strc1inlineContent {
+													position: absolute;
+													top: 0;
+													right: 0;
+													bottom: 0;
+													left: 0;
+												}
+
+												.strc1[data-mobile-responsive]>.strc1inlineContent {
+													position: relative;
+												}
+
+												.strc1[data-responsive] {
+													display: -ms-grid;
+													display: grid;
+													-webkit-box-pack: center;
+													-webkit-justify-content: center;
+													justify-content: center;
+													grid-template-columns: 100%;
+													grid-template-rows: 1fr;
+													-ms-grid-columns: 100%;
+													-ms-grid-rows: 1fr;
+												}
+
+												.strc1[data-responsive]>.strc1inlineContent {
+													display: -webkit-box;
+													display: -webkit-flex;
+													display: flex;
+												}
+
+												.strc1[data-responsive]>* {
+													position: relative;
+													grid-row-start: 1;
+													grid-column-start: 1;
+													grid-row-end: 2;
+													grid-column-end: 2;
+													-ms-grid-row-span: 1;
+													-ms-grid-column-span: 1;
+													margin: 0 auto;
+												}
+											</style>
+											<div style="left: 49px; width: 841px; position: absolute; top: 991px; height: 358px;" class="s_BIwzIGroupSkin" id="comp-jl44560w">
+												<div id="comp-jl44560winlineContent" class="s_BIwzIGroupSkininlineContent">
+													<div data-packed="true" style="left: 0px; width: 426px; position: absolute; top: 0px;" class="txtNew" id="comp-jjq6camz">
+														<h4 class="font_4" style="font-size:53px;">
+															<span class="color_15">
+																<span style="font-size:53px;">Checking Hours?</span>
+															</span>
+														</h4>
+													</div>
+													<style type="text/css" data-styleid="txtNew">
+														.txtNew {
+															word-wrap: break-word;
+															text-align: start;
+															pointer-events: none;
+														}
+
+														.txtNew_override-left * {
+															text-align: left !important;
+														}
+
+														.txtNew_override-right * {
+															text-align: right !important;
+														}
+
+														.txtNew_override-center * {
+															text-align: center !important;
+														}
+
+														.txtNew_override-justify * {
+															text-align: justify !important;
+														}
+
+														.txtNew>* {
+															pointer-events: auto;
+														}
+
+														.txtNew li {
+															font-style: inherit;
+															font-weight: inherit;
+															line-height: inherit;
+															letter-spacing: normal;
+														}
+
+														.txtNew ol,
+														.txtNew ul {
+															padding-left: 1.3em;
+															padding-right: 0;
+															margin-left: 0.5em;
+															margin-right: 0;
+															line-height: normal;
+															letter-spacing: normal;
+														}
+
+														.txtNew ul {
+															list-style-type: disc;
+														}
+
+														.txtNew ol {
+															list-style-type: decimal;
+														}
+
+														.txtNew ul ul,
+														.txtNew ol ul {
+															list-style-type: circle;
+														}
+
+														.txtNew ul ul ul,
+														.txtNew ol ul ul {
+															list-style-type: square;
+														}
+
+														.txtNew ul ol ul,
+														.txtNew ol ol ul {
+															list-style-type: square;
+														}
+
+														.txtNew ul[dir="rtl"],
+														.txtNew ol[dir="rtl"] {
+															padding-left: 0;
+															padding-right: 1.3em;
+															margin-left: 0;
+															margin-right: 0.5em;
+														}
+
+														.txtNew ul[dir="rtl"] ul,
+														.txtNew ul[dir="rtl"] ol,
+														.txtNew ol[dir="rtl"] ul,
+														.txtNew ol[dir="rtl"] ol {
+															padding-left: 0;
+															padding-right: 1.3em;
+															margin-left: 0;
+															margin-right: 0.5em;
+														}
+
+														.txtNew p {
+															margin: 0;
+															line-height: normal;
+															letter-spacing: normal;
+														}
+
+														.txtNew h1 {
+															margin: 0;
+															line-height: normal;
+															letter-spacing: normal;
+														}
+
+														.txtNew h2 {
+															margin: 0;
+															line-height: normal;
+															letter-spacing: normal;
+														}
+
+														.txtNew h3 {
+															margin: 0;
+															line-height: normal;
+															letter-spacing: normal;
+														}
+
+														.txtNew h4 {
+															margin: 0;
+															line-height: normal;
+															letter-spacing: normal;
+														}
+
+														.txtNew h5 {
+															margin: 0;
+															line-height: normal;
+															letter-spacing: normal;
+														}
+
+														.txtNew h6 {
+															margin: 0;
+															line-height: normal;
+															letter-spacing: normal;
+														}
+
+														.txtNew a {
+															color: inherit;
+														}
+													</style>
+													<div data-packed="true" style="left: 0px; width: 584px; position: absolute; top: 98px;" class="txtNew" id="comp-jjq6divc">
+														<p class="font_7" style="font-size:24px;">
+															<span class="color_15">
+																<span style="font-size:24px;">
+																	<span style="font-family:raleway,sans-serif;">You can easily check your hours by clicking on the following button.</span>
+																</span>
+															</span>
+														</p>
+													</div>
+													<style type="text/css" data-styleid="txtNew">
+														.txtNew {
+															word-wrap: break-word;
+															text-align: start;
+															pointer-events: none;
+														}
+
+														.txtNew_override-left * {
+															text-align: left !important;
+														}
+
+														.txtNew_override-right * {
+															text-align: right !important;
+														}
+
+														.txtNew_override-center * {
+															text-align: center !important;
+														}
+
+														.txtNew_override-justify * {
+															text-align: justify !important;
+														}
+
+														.txtNew>* {
+															pointer-events: auto;
+														}
+
+														.txtNew li {
+															font-style: inherit;
+															font-weight: inherit;
+															line-height: inherit;
+															letter-spacing: normal;
+														}
+
+														.txtNew ol,
+														.txtNew ul {
+															padding-left: 1.3em;
+															padding-right: 0;
+															margin-left: 0.5em;
+															margin-right: 0;
+															line-height: normal;
+															letter-spacing: normal;
+														}
+
+														.txtNew ul {
+															list-style-type: disc;
+														}
+
+														.txtNew ol {
+															list-style-type: decimal;
+														}
+
+														.txtNew ul ul,
+														.txtNew ol ul {
+															list-style-type: circle;
+														}
+
+														.txtNew ul ul ul,
+														.txtNew ol ul ul {
+															list-style-type: square;
+														}
+
+														.txtNew ul ol ul,
+														.txtNew ol ol ul {
+															list-style-type: square;
+														}
+
+														.txtNew ul[dir="rtl"],
+														.txtNew ol[dir="rtl"] {
+															padding-left: 0;
+															padding-right: 1.3em;
+															margin-left: 0;
+															margin-right: 0.5em;
+														}
+
+														.txtNew ul[dir="rtl"] ul,
+														.txtNew ul[dir="rtl"] ol,
+														.txtNew ol[dir="rtl"] ul,
+														.txtNew ol[dir="rtl"] ol {
+															padding-left: 0;
+															padding-right: 1.3em;
+															margin-left: 0;
+															margin-right: 0.5em;
+														}
+
+														.txtNew p {
+															margin: 0;
+															line-height: normal;
+															letter-spacing: normal;
+														}
+
+														.txtNew h1 {
+															margin: 0;
+															line-height: normal;
+															letter-spacing: normal;
+														}
+
+														.txtNew h2 {
+															margin: 0;
+															line-height: normal;
+															letter-spacing: normal;
+														}
+
+														.txtNew h3 {
+															margin: 0;
+															line-height: normal;
+															letter-spacing: normal;
+														}
+
+														.txtNew h4 {
+															margin: 0;
+															line-height: normal;
+															letter-spacing: normal;
+														}
+
+														.txtNew h5 {
+															margin: 0;
+															line-height: normal;
+															letter-spacing: normal;
+														}
+
+														.txtNew h6 {
+															margin: 0;
+															line-height: normal;
+															letter-spacing: normal;
+														}
+
+														.txtNew a {
+															color: inherit;
+														}
+													</style>
+													<div id="comp-jjq6j4rb" data-align="center" data-disabled="false" data-margin="0" data-should-use-flex="true" data-width="193"
+													  data-height="40" style="left: 648px; position: absolute; top: 110px; height: 40px; min-height: 19px; width: 193px;"
+													  class="style-jkrovhy4" data-state="desktop shouldUseFlex center">
+														<a href="https://docs.google.com/spreadsheets/d/1nEIKEnzDoaZleRKt_sfXSyilwjEaa9kxUOCsXfxtX3g/edit#gid=0" target="_blank"
+														  data-content="https://docs.google.com/spreadsheets/d/1nEIKEnzDoaZleRKt_sfXSyilwjEaa9kxUOCsXfxtX3g/edit#gid=0"
+														  data-type="external" rel="nofollow" role="button" id="comp-jjq6j4rblink" class="g-transparent-a style-jkrovhy4link">
+															<span id="comp-jjq6j4rblabel" class="style-jkrovhy4label">Check your hours here!</span>
+														</a>
+													</div>
+													<style type="text/css" data-styleid="style-jkrovhy4">
+														.style-jkrovhy4 button.style-jkrovhy4link {
+															width: 100%;
+														}
+
+														.style-jkrovhy4[data-state~="shouldUseFlex"] .style-jkrovhy4link,
+														.style-jkrovhy4[data-state~="shouldUseFlex"] .style-jkrovhy4labelwrapper {
+															text-align: initial;
+															display: flex;
+															align-items: center;
+														}
+
+														.style-jkrovhy4[data-state~="shouldUseFlex"][data-state~="center"] .style-jkrovhy4link,
+														.style-jkrovhy4[data-state~="shouldUseFlex"][data-state~="center"] .style-jkrovhy4labelwrapper {
+															justify-content: center;
+														}
+
+														.style-jkrovhy4[data-state~="shouldUseFlex"][data-state~="left"] .style-jkrovhy4link,
+														.style-jkrovhy4[data-state~="shouldUseFlex"][data-state~="left"] .style-jkrovhy4labelwrapper {
+															justify-content: flex-start;
+														}
+
+														.style-jkrovhy4[data-state~="shouldUseFlex"][data-state~="right"] .style-jkrovhy4link,
+														.style-jkrovhy4[data-state~="shouldUseFlex"][data-state~="right"] .style-jkrovhy4labelwrapper {
+															justify-content: flex-end;
+														}
+
+														.style-jkrovhy4link {
+															border-radius: 5px;
+															position: absolute;
+															top: 0;
+															right: 0;
+															bottom: 0;
+															left: 0;
+															transition: border-color 0.4s ease 0s, background-color 0.4s ease 0s;
+														}
+
+														.style-jkrovhy4label {
+															font: normal normal 700 14px/1.4em raleway, sans-serif;
+															transition: color 0.4s ease 0s;
+															color: #FFFFFF;
+															display: inline-block;
+															margin: calc(-1 * 0px) 0px 0;
+															position: relative;
+															white-space: nowrap;
+														}
+
+														.style-jkrovhy4[data-state~="shouldUseFlex"] .style-jkrovhy4label {
+															margin: 0;
+														}
+
+														.style-jkrovhy4[data-disabled="false"] .style-jkrovhy4link {
+															background-color: rgba(12, 60, 96, 1);
+															border: solid rgba(12, 60, 96, 1) 0px;
+															cursor: pointer !important;
+														}
+
+														.style-jkrovhy4[data-disabled="false"]:active[data-state~="mobile"] .style-jkrovhy4link,
+														.style-jkrovhy4[data-disabled="false"]:hover[data-state~="desktop"] .style-jkrovhy4link,
+														.style-jkrovhy4[data-disabled="false"][data-preview~="hover"] .style-jkrovhy4link {
+															background-color: rgba(57, 114, 155, 1);
+															border-color: transparent;
+														}
+
+														.style-jkrovhy4[data-disabled="false"]:active[data-state~="mobile"] .style-jkrovhy4label,
+														.style-jkrovhy4[data-disabled="false"]:hover[data-state~="desktop"] .style-jkrovhy4label,
+														.style-jkrovhy4[data-disabled="false"][data-preview~="hover"] .style-jkrovhy4label {
+															color: #000000;
+														}
+
+														.style-jkrovhy4[data-disabled="true"] .style-jkrovhy4link,
+														.style-jkrovhy4[data-preview~="disabled"] .style-jkrovhy4link {
+															background-color: rgba(204, 204, 204, 1);
+															border-color: rgba(204, 204, 204, 1);
+														}
+
+														.style-jkrovhy4[data-disabled="true"] .style-jkrovhy4label,
+														.style-jkrovhy4[data-preview~="disabled"] .style-jkrovhy4label {
+															color: #FFFFFF;
+														}
+													</style>
+													<div data-packed="true" style="left: 0px; width: 584px; position: absolute; top: 195px;" class="txtNew" id="comp-jjq6gno7">
+														<p class="font_7" style="font-size:24px;">
+															<span class="color_15">
+																<span style="font-size:24px;">
+																	<span style="font-family:raleway,sans-serif;">For more information on NHS hour requirements, visit our FAQs page or click on the following button.
+																	</span>
+																</span>
+															</span>
+														</p>
+													</div>
+													<style type="text/css" data-styleid="txtNew">
+														.txtNew {
+															word-wrap: break-word;
+															text-align: start;
+															pointer-events: none;
+														}
+
+														.txtNew_override-left * {
+															text-align: left !important;
+														}
+
+														.txtNew_override-right * {
+															text-align: right !important;
+														}
+
+														.txtNew_override-center * {
+															text-align: center !important;
+														}
+
+														.txtNew_override-justify * {
+															text-align: justify !important;
+														}
+
+														.txtNew>* {
+															pointer-events: auto;
+														}
+
+														.txtNew li {
+															font-style: inherit;
+															font-weight: inherit;
+															line-height: inherit;
+															letter-spacing: normal;
+														}
+
+														.txtNew ol,
+														.txtNew ul {
+															padding-left: 1.3em;
+															padding-right: 0;
+															margin-left: 0.5em;
+															margin-right: 0;
+															line-height: normal;
+															letter-spacing: normal;
+														}
+
+														.txtNew ul {
+															list-style-type: disc;
+														}
+
+														.txtNew ol {
+															list-style-type: decimal;
+														}
+
+														.txtNew ul ul,
+														.txtNew ol ul {
+															list-style-type: circle;
+														}
+
+														.txtNew ul ul ul,
+														.txtNew ol ul ul {
+															list-style-type: square;
+														}
+
+														.txtNew ul ol ul,
+														.txtNew ol ol ul {
+															list-style-type: square;
+														}
+
+														.txtNew ul[dir="rtl"],
+														.txtNew ol[dir="rtl"] {
+															padding-left: 0;
+															padding-right: 1.3em;
+															margin-left: 0;
+															margin-right: 0.5em;
+														}
+
+														.txtNew ul[dir="rtl"] ul,
+														.txtNew ul[dir="rtl"] ol,
+														.txtNew ol[dir="rtl"] ul,
+														.txtNew ol[dir="rtl"] ol {
+															padding-left: 0;
+															padding-right: 1.3em;
+															margin-left: 0;
+															margin-right: 0.5em;
+														}
+
+														.txtNew p {
+															margin: 0;
+															line-height: normal;
+															letter-spacing: normal;
+														}
+
+														.txtNew h1 {
+															margin: 0;
+															line-height: normal;
+															letter-spacing: normal;
+														}
+
+														.txtNew h2 {
+															margin: 0;
+															line-height: normal;
+															letter-spacing: normal;
+														}
+
+														.txtNew h3 {
+															margin: 0;
+															line-height: normal;
+															letter-spacing: normal;
+														}
+
+														.txtNew h4 {
+															margin: 0;
+															line-height: normal;
+															letter-spacing: normal;
+														}
+
+														.txtNew h5 {
+															margin: 0;
+															line-height: normal;
+															letter-spacing: normal;
+														}
+
+														.txtNew h6 {
+															margin: 0;
+															line-height: normal;
+															letter-spacing: normal;
+														}
+
+														.txtNew a {
+															color: inherit;
+														}
+													</style>
+													<div id="comp-jjq6kw98" data-align="center" data-disabled="false" data-margin="0" data-should-use-flex="true" data-width="193"
+													  data-height="40" style="left: 648px; position: absolute; top: 207px; height: 40px; min-height: 19px; width: 193px;"
+													  class="style-jjqkeyzz" data-state="desktop shouldUseFlex center">
+														<a href="./resources" target="_self" role="button" id="comp-jjq6kw98link" class="g-transparent-a style-jjqkeyzzlink">
+															<span id="comp-jjq6kw98label" class="style-jjqkeyzzlabel">Hour Requirements</span>
+														</a>
+													</div>
+													<style type="text/css" data-styleid="style-jjqkeyzz">
+														.style-jjqkeyzz button.style-jjqkeyzzlink {
+															width: 100%;
+														}
+
+														.style-jjqkeyzz[data-state~="shouldUseFlex"] .style-jjqkeyzzlink,
+														.style-jjqkeyzz[data-state~="shouldUseFlex"] .style-jjqkeyzzlabelwrapper {
+															text-align: initial;
+															display: flex;
+															align-items: center;
+														}
+
+														.style-jjqkeyzz[data-state~="shouldUseFlex"][data-state~="center"] .style-jjqkeyzzlink,
+														.style-jjqkeyzz[data-state~="shouldUseFlex"][data-state~="center"] .style-jjqkeyzzlabelwrapper {
+															justify-content: center;
+														}
+
+														.style-jjqkeyzz[data-state~="shouldUseFlex"][data-state~="left"] .style-jjqkeyzzlink,
+														.style-jjqkeyzz[data-state~="shouldUseFlex"][data-state~="left"] .style-jjqkeyzzlabelwrapper {
+															justify-content: flex-start;
+														}
+
+														.style-jjqkeyzz[data-state~="shouldUseFlex"][data-state~="right"] .style-jjqkeyzzlink,
+														.style-jjqkeyzz[data-state~="shouldUseFlex"][data-state~="right"] .style-jjqkeyzzlabelwrapper {
+															justify-content: flex-end;
+														}
+
+														.style-jjqkeyzzlink {
+															border-radius: 5px;
+															position: absolute;
+															top: 0;
+															right: 0;
+															bottom: 0;
+															left: 0;
+															transition: border-color 0.4s ease 0s, background-color 0.4s ease 0s;
+														}
+
+														.style-jjqkeyzzlabel {
+															font: normal normal 700 14px/1.4em raleway, sans-serif;
+															transition: color 0.4s ease 0s;
+															color: #FFFFFF;
+															display: inline-block;
+															margin: calc(-1 * 0px) 0px 0;
+															position: relative;
+															white-space: nowrap;
+														}
+
+														.style-jjqkeyzz[data-state~="shouldUseFlex"] .style-jjqkeyzzlabel {
+															margin: 0;
+														}
+
+														.style-jjqkeyzz[data-disabled="false"] .style-jjqkeyzzlink {
+															background-color: rgba(12, 60, 96, 1);
+															border: solid rgba(12, 60, 96, 1) 0px;
+															cursor: pointer !important;
+														}
+
+														.style-jjqkeyzz[data-disabled="false"]:active[data-state~="mobile"] .style-jjqkeyzzlink,
+														.style-jjqkeyzz[data-disabled="false"]:hover[data-state~="desktop"] .style-jjqkeyzzlink,
+														.style-jjqkeyzz[data-disabled="false"][data-preview~="hover"] .style-jjqkeyzzlink {
+															background-color: rgba(57, 114, 155, 1);
+															border-color: transparent;
+														}
+
+														.style-jjqkeyzz[data-disabled="false"]:active[data-state~="mobile"] .style-jjqkeyzzlabel,
+														.style-jjqkeyzz[data-disabled="false"]:hover[data-state~="desktop"] .style-jjqkeyzzlabel,
+														.style-jjqkeyzz[data-disabled="false"][data-preview~="hover"] .style-jjqkeyzzlabel {
+															color: #000000;
+														}
+
+														.style-jjqkeyzz[data-disabled="true"] .style-jjqkeyzzlink,
+														.style-jjqkeyzz[data-preview~="disabled"] .style-jjqkeyzzlink {
+															background-color: rgba(204, 204, 204, 1);
+															border-color: rgba(204, 204, 204, 1);
+														}
+
+														.style-jjqkeyzz[data-disabled="true"] .style-jjqkeyzzlabel,
+														.style-jjqkeyzz[data-preview~="disabled"] .style-jjqkeyzzlabel {
+															color: #FFFFFF;
+														}
+													</style>
+													<div data-packed="true" style="left: 0px; width: 584px; position: absolute; top: 294px;" class="txtNew" id="comp-jjqk8o1i">
+														<p class="font_7" style="font-size:24px;">
+															<span class="color_15">
+																<span style="font-size:24px;">
+																	<span style="font-family:raleway,sans-serif;">To print out an hour sheet, click on the following button.</span>
+																</span>
+															</span>
+														</p>
+													</div>
+													<style type="text/css" data-styleid="txtNew">
+														.txtNew {
+															word-wrap: break-word;
+															text-align: start;
+															pointer-events: none;
+														}
+
+														.txtNew_override-left * {
+															text-align: left !important;
+														}
+
+														.txtNew_override-right * {
+															text-align: right !important;
+														}
+
+														.txtNew_override-center * {
+															text-align: center !important;
+														}
+
+														.txtNew_override-justify * {
+															text-align: justify !important;
+														}
+
+														.txtNew>* {
+															pointer-events: auto;
+														}
+
+														.txtNew li {
+															font-style: inherit;
+															font-weight: inherit;
+															line-height: inherit;
+															letter-spacing: normal;
+														}
+
+														.txtNew ol,
+														.txtNew ul {
+															padding-left: 1.3em;
+															padding-right: 0;
+															margin-left: 0.5em;
+															margin-right: 0;
+															line-height: normal;
+															letter-spacing: normal;
+														}
+
+														.txtNew ul {
+															list-style-type: disc;
+														}
+
+														.txtNew ol {
+															list-style-type: decimal;
+														}
+
+														.txtNew ul ul,
+														.txtNew ol ul {
+															list-style-type: circle;
+														}
+
+														.txtNew ul ul ul,
+														.txtNew ol ul ul {
+															list-style-type: square;
+														}
+
+														.txtNew ul ol ul,
+														.txtNew ol ol ul {
+															list-style-type: square;
+														}
+
+														.txtNew ul[dir="rtl"],
+														.txtNew ol[dir="rtl"] {
+															padding-left: 0;
+															padding-right: 1.3em;
+															margin-left: 0;
+															margin-right: 0.5em;
+														}
+
+														.txtNew ul[dir="rtl"] ul,
+														.txtNew ul[dir="rtl"] ol,
+														.txtNew ol[dir="rtl"] ul,
+														.txtNew ol[dir="rtl"] ol {
+															padding-left: 0;
+															padding-right: 1.3em;
+															margin-left: 0;
+															margin-right: 0.5em;
+														}
+
+														.txtNew p {
+															margin: 0;
+															line-height: normal;
+															letter-spacing: normal;
+														}
+
+														.txtNew h1 {
+															margin: 0;
+															line-height: normal;
+															letter-spacing: normal;
+														}
+
+														.txtNew h2 {
+															margin: 0;
+															line-height: normal;
+															letter-spacing: normal;
+														}
+
+														.txtNew h3 {
+															margin: 0;
+															line-height: normal;
+															letter-spacing: normal;
+														}
+
+														.txtNew h4 {
+															margin: 0;
+															line-height: normal;
+															letter-spacing: normal;
+														}
+
+														.txtNew h5 {
+															margin: 0;
+															line-height: normal;
+															letter-spacing: normal;
+														}
+
+														.txtNew h6 {
+															margin: 0;
+															line-height: normal;
+															letter-spacing: normal;
+														}
+
+														.txtNew a {
+															color: inherit;
+														}
+													</style>
+													<div id="comp-jjqk939b" data-align="center" data-disabled="false" data-margin="0" data-should-use-flex="true" data-width="193"
+													  data-height="40" style="left: 648px; position: absolute; top: 306px; height: 40px; min-height: 19px; width: 193px;"
+													  class="style-jjqkf7pj" data-state="desktop shouldUseFlex center">
+														<a href="./hour-sheet.pdf" target="_blank" data-type="document" role="button" id="comp-jjqk939blink" class="g-transparent-a style-jjqkf7pjlink">
+															<span id="comp-jjqk939blabel" class="style-jjqkf7pjlabel">Hour Sheet</span>
+														</a>
+													</div>
+													<style type="text/css" data-styleid="style-jjqkf7pj">
+														.style-jjqkf7pj button.style-jjqkf7pjlink {
+															width: 100%;
+														}
+
+														.style-jjqkf7pj[data-state~="shouldUseFlex"] .style-jjqkf7pjlink,
+														.style-jjqkf7pj[data-state~="shouldUseFlex"] .style-jjqkf7pjlabelwrapper {
+															text-align: initial;
+															display: flex;
+															align-items: center;
+														}
+
+														.style-jjqkf7pj[data-state~="shouldUseFlex"][data-state~="center"] .style-jjqkf7pjlink,
+														.style-jjqkf7pj[data-state~="shouldUseFlex"][data-state~="center"] .style-jjqkf7pjlabelwrapper {
+															justify-content: center;
+														}
+
+														.style-jjqkf7pj[data-state~="shouldUseFlex"][data-state~="left"] .style-jjqkf7pjlink,
+														.style-jjqkf7pj[data-state~="shouldUseFlex"][data-state~="left"] .style-jjqkf7pjlabelwrapper {
+															justify-content: flex-start;
+														}
+
+														.style-jjqkf7pj[data-state~="shouldUseFlex"][data-state~="right"] .style-jjqkf7pjlink,
+														.style-jjqkf7pj[data-state~="shouldUseFlex"][data-state~="right"] .style-jjqkf7pjlabelwrapper {
+															justify-content: flex-end;
+														}
+
+														.style-jjqkf7pjlink {
+															border-radius: 5px;
+															position: absolute;
+															top: 0;
+															right: 0;
+															bottom: 0;
+															left: 0;
+															transition: border-color 0.4s ease 0s, background-color 0.4s ease 0s;
+														}
+
+														.style-jjqkf7pjlabel {
+															font: normal normal 700 14px/1.4em raleway, sans-serif;
+															transition: color 0.4s ease 0s;
+															color: #FFFFFF;
+															display: inline-block;
+															margin: calc(-1 * 0px) 0px 0;
+															position: relative;
+															white-space: nowrap;
+														}
+
+														.style-jjqkf7pj[data-state~="shouldUseFlex"] .style-jjqkf7pjlabel {
+															margin: 0;
+														}
+
+														.style-jjqkf7pj[data-disabled="false"] .style-jjqkf7pjlink {
+															background-color: rgba(12, 60, 96, 1);
+															border: solid rgba(12, 60, 96, 1) 0px;
+															cursor: pointer !important;
+														}
+
+														.style-jjqkf7pj[data-disabled="false"]:active[data-state~="mobile"] .style-jjqkf7pjlink,
+														.style-jjqkf7pj[data-disabled="false"]:hover[data-state~="desktop"] .style-jjqkf7pjlink,
+														.style-jjqkf7pj[data-disabled="false"][data-preview~="hover"] .style-jjqkf7pjlink {
+															background-color: rgba(57, 114, 155, 1);
+															border-color: transparent;
+														}
+
+														.style-jjqkf7pj[data-disabled="false"]:active[data-state~="mobile"] .style-jjqkf7pjlabel,
+														.style-jjqkf7pj[data-disabled="false"]:hover[data-state~="desktop"] .style-jjqkf7pjlabel,
+														.style-jjqkf7pj[data-disabled="false"][data-preview~="hover"] .style-jjqkf7pjlabel {
+															color: #000000;
+														}
+
+														.style-jjqkf7pj[data-disabled="true"] .style-jjqkf7pjlink,
+														.style-jjqkf7pj[data-preview~="disabled"] .style-jjqkf7pjlink {
+															background-color: rgba(204, 204, 204, 1);
+															border-color: rgba(204, 204, 204, 1);
+														}
+
+														.style-jjqkf7pj[data-disabled="true"] .style-jjqkf7pjlabel,
+														.style-jjqkf7pj[data-preview~="disabled"] .style-jjqkf7pjlabel {
+															color: #FFFFFF;
+														}
+													</style>
+												</div>
+											</div>
+											<style type="text/css" data-styleid="s_BIwzIGroupSkin">
+												.s_BIwzIGroupSkin {
+													pointer-events: none;
+												}
+
+												.s_BIwzIGroupSkin_ie10 {
+													max-width: 0;
+													max-height: 0;
+												}
+
+												.s_BIwzIGroupSkininlineContent {
+													pointer-events: all;
+												}
+											</style>
+											<section style="min-width: 980px; position: absolute; margin-left: 0px; top: 1385px; height: 424px; left: 0px; width: 100%;"
+											  data-responsive="true" class="strc1" id="comp-igqaaw3i">
+												<div style="position: absolute; top: 0px; width: calc(100% - 0px); height: 100%; overflow: hidden; pointer-events: auto; left: 0px; right: 0px; min-width: 980px; clip: rect(0px, 1283px, 424px, 0px);"
+												  data-page-id="ijdas" data-enable-video="true" data-bg-effect-name="" data-media-type="" data-render-fixed-position="true"
+												  data-use-clip-path="" data-needs-clipping="false" class="strc1balata" id="comp-igqaaw3ibalata">
+													<div style="width:100%;height:100%;background-color:transparent;position:absolute" class="bgColor" id="comp-igqaaw3ibalatabgcolor">
+														<div data-background-image="" style="width:100%;height:100%;position:absolute" id="comp-igqaaw3ibalatabgcoloroverlay" class="bgColoroverlay"></div>
+													</div>
+												</div>
+												<div style="position:relative;width:calc(100% - 0px);min-width:980px" id="comp-igqaaw3iinlineContent" class="strc1inlineContent">
+													<div style="flex: 980 1 0%; margin-left: 0px; min-width: 980px; margin-top: 0px; margin-bottom: 0px; top: 0px; height: 424px; position: relative;"
+													  data-content-width="980" class="strc1" id="mediaiskg80sr13">
+														<div style="position: absolute; top: 0px; width: 100%; height: 100%; overflow: hidden; pointer-events: auto; clip: rect(0px, 1283px, 424px, 0px);"
+														  data-page-id="ijdas" data-enable-video="true" data-bg-effect-name="" data-media-type="" data-render-fixed-position="true"
+														  data-use-clip-path="" data-needs-clipping="false" class="strc1balata" id="mediaiskg80sr13balata">
+															<div style="width:100%;height:100%;background-color:rgba(12, 60, 96, 1);position:absolute" class="bgColor" id="mediaiskg80sr13balatabgcolor">
+																<div data-background-image="" style="width:100%;height:100%;position:absolute" id="mediaiskg80sr13balatabgcoloroverlay" class="bgColoroverlay"></div>
+															</div>
+														</div>
+														<div style="width:100%;position:absolute;top:0;bottom:0" id="mediaiskg80sr13inlineContent" class="strc1inlineContent">
 															<style id="mediaiskg80sr13-content-area-styles">
 																#comp-jjgnryhe {
 																	margin-left: calc((100% - 980px) * 0.5);
@@ -2808,7 +3401,7 @@
 																	margin-left: calc((100% - 980px) * 0.5);
 																}
 															</style>
-															<div data-packed="true" class="txtNew" id="comp-jjgnryhe" style="left: 50px; width: 413px; position: absolute; top: 39px;">
+															<div data-packed="true" style="left: 50px; width: 413px; position: absolute; top: 39px;" class="txtNew" id="comp-jjgnryhe">
 																<h4 class="font_4" style="font-size:53px;">
 																	<span style="font-size:53px;">
 																		<span style="color:#FFFFFF;">Stay Connected!</span>
@@ -2946,12 +3539,12 @@
 																	color: inherit;
 																}
 															</style>
-															<div data-packed="true" class="txtNew" id="comp-jjgnv715" style="left: 50px; width: 584px; position: absolute; top: 139px;">
+															<div data-packed="true" style="left: 50px; width: 584px; position: absolute; top: 139px;" class="txtNew" id="comp-jjgnv715">
 																<p class="font_7" style="font-size:24px;">
 																	<span style="font-size:24px;">
 																		<span style="font-family:raleway,sans-serif;">
 																			<span style="color:#FFFFFF;">
-																				<span style="font-weight:bold;">Join the NHS Remind:</span>
+																				<span style="font-weight:bold;">Join the NHS Canvas:</span>
 																			</span>
 																		</span>
 																	</span>
@@ -2962,7 +3555,12 @@
 																<p class="font_7" style="font-size:24px;">
 																	<span style="font-size:24px;">
 																		<span style="font-family:raleway,sans-serif;">
-																			<span style="color:#FFFFFF;">Text the message "@hebronnhs" to 81010 or join via the Remind app and enter the class code "@hebronnhs"</span>
+																			<span style="color:#FFFFFF;">Add your name and email to
+																				<span>
+																					<a style="text-decoration:underline;" href="https://docs.google.com/forms/d/e/1FAIpQLScdn8Fw8Ah_SoZDNGxx84UPj3QopnMX8BVwhIXaY_XMqGlTiQ/viewform"
+																					  target="_blank" data-content="https://docs.google.com/forms/d/e/1FAIpQLScdn8Fw8Ah_SoZDNGxx84UPj3QopnMX8BVwhIXaY_XMqGlTiQ/viewform"
+																					  data-type="external" rel="nofollow">this form</a>
+																				</span> or contact Mrs. Bowen to be added to our course.</span>
 																		</span>
 																	</span>
 																</p>
@@ -2981,7 +3579,10 @@
 																	<span style="font-size:24px;">
 																		<span style="font-family:raleway,sans-serif;">
 																			<span style="color:#FFFFFF;">
-																				<span style="font-weight:bold;">Follow us on Twitter:</span> @HebronNHS</span>
+																				<span style="font-weight:bold;">Follow us on Twitter:</span>
+																				<a href="https://twitter.com/HebronNHS" target="_blank" data-content="https://twitter.com/HebronNHS" data-type="external"
+																				  rel="nofollow">@HebronNHS</a>
+																			</span>
 																		</span>
 																	</span>
 																</p>
@@ -3117,25 +3718,25 @@
 																	color: inherit;
 																}
 															</style>
-															<div data-hide-prejs="true" class="lb1" id="comp-jjq7jyd5" style="width: 92px; left: 484px; position: absolute; top: 324px; height: 39px;">
+															<div data-hide-prejs="true" style="width: 92px; left: 544px; position: absolute; top: 331px; height: 39px;" class="lb1" id="comp-jjq7jyd5">
 																<ul aria-label="Social bar" id="comp-jjq7jyd5itemsContainer" class="lb1itemsContainer">
-																	<li class="lb1imageItem" id="comp-jjq7jyd50image" style="width: 39px; height: 39px; margin-bottom: 0px; margin-right: 14px; display: inline-block;">
-																		<a href="https://www.remind.com/join/hebronnhs" target="_blank" data-content="https://www.remind.com/join/hebronnhs" data-type="external"
+																	<li style="width:39px;height:39px;margin-bottom:0;margin-right:14px;display:inline-block" class="lb1imageItem" id="comp-jjq7jyd50image">
+																		<a href="https://lisdtx.instructure.com/" target="_blank" data-content="https://lisdtx.instructure.com" data-type="external"
 																		  rel="nofollow" id="comp-jjq7jyd50imagelink" class="lb1imageItemlink">
-																			<div data-image-info="{&quot;imageData&quot;:{&quot;link&quot;:{&quot;type&quot;:&quot;ExternalLink&quot;,&quot;id&quot;:&quot;dataItem-jjq7jydu2&quot;,&quot;metaData&quot;:{&quot;isPreset&quot;:false,&quot;schemaVersion&quot;:&quot;1.0&quot;,&quot;isHidden&quot;:false},&quot;url&quot;:&quot;https://www.remind.com/join/hebronnhs&quot;,&quot;target&quot;:&quot;_blank&quot;},&quot;type&quot;:&quot;Image&quot;,&quot;id&quot;:&quot;dataItem-jjq7jydu1&quot;,&quot;metaData&quot;:{&quot;isPreset&quot;:false,&quot;schemaVersion&quot;:&quot;2.0&quot;,&quot;isHidden&quot;:false},&quot;title&quot;:&quot;remind&quot;,&quot;uri&quot;:&quot;e94362_27bcf186bdf94a41850eb793a09285fa~mv2.png&quot;,&quot;description&quot;:&quot;&quot;,&quot;width&quot;:600,&quot;height&quot;:600,&quot;alt&quot;:&quot;remind&quot;},&quot;displayMode&quot;:&quot;fill&quot;}"
-																			  data-style="position:absolute;width:39;height:39" class="lb1imageItemimage" id="comp-jjq7jyd50imageimage"
-																			  style="width: 39px; height: 39px; position: absolute;">
-																				<img id="comp-jjq7jyd50imageimageimage" alt="remind" data-type="image" style="width: 39px; height: 39px; object-fit: cover;"
-																				  src="./Hebron NHS_files/e94362_27bcf186bdf94a41850eb793a09285fa_mv2.png">
+																			<div data-image-info="{&quot;imageData&quot;:{&quot;link&quot;:{&quot;type&quot;:&quot;ExternalLink&quot;,&quot;id&quot;:&quot;dataItem-jjq7jydu2&quot;,&quot;metaData&quot;:{&quot;isPreset&quot;:false,&quot;schemaVersion&quot;:&quot;1.0&quot;,&quot;isHidden&quot;:false},&quot;url&quot;:&quot;https://lisdtx.instructure.com&quot;,&quot;target&quot;:&quot;_blank&quot;},&quot;type&quot;:&quot;Image&quot;,&quot;id&quot;:&quot;dataItem-jjq7jydu1&quot;,&quot;metaData&quot;:{&quot;isPreset&quot;:false,&quot;schemaVersion&quot;:&quot;2.0&quot;,&quot;isHidden&quot;:false},&quot;title&quot;:&quot;Canvas-Logo&quot;,&quot;uri&quot;:&quot;6efda7_fd482cf5985d407a90b0bed6177ac4e7~mv2.png&quot;,&quot;description&quot;:&quot;&quot;,&quot;width&quot;:198,&quot;height&quot;:200,&quot;alt&quot;:&quot;Canvas-Logo&quot;},&quot;displayMode&quot;:&quot;fill&quot;}"
+																			  style="width: 39px; height: 39px; position: absolute;" data-style="position:absolute;width:39;height:39"
+																			  class="lb1imageItemimage" id="comp-jjq7jyd50imageimage">
+																				<img id="comp-jjq7jyd50imageimageimage" alt="Canvas-Logo" data-type="image" style="width: 39px; height: 39px; object-fit: cover;"
+																				  src="./Hebron NHS_files/Canvas-Logo.png">
 																			</div>
 																		</a>
 																	</li>
-																	<li class="lb1imageItem" id="comp-jjq7jyd51image" style="width: 39px; height: 39px; margin-bottom: 0px; margin-right: 14px; display: inline-block;">
+																	<li style="width:39px;height:39px;margin-bottom:0;margin-right:14px;display:inline-block" class="lb1imageItem" id="comp-jjq7jyd51image">
 																		<a href="https://twitter.com/hebronnhs" target="_blank" data-content="https://twitter.com/hebronnhs" data-type="external"
 																		  rel="nofollow" id="comp-jjq7jyd51imagelink" class="lb1imageItemlink">
 																			<div data-image-info="{&quot;imageData&quot;:{&quot;link&quot;:{&quot;type&quot;:&quot;ExternalLink&quot;,&quot;id&quot;:&quot;dataItem-jjq7jydu4&quot;,&quot;metaData&quot;:{&quot;isPreset&quot;:false,&quot;schemaVersion&quot;:&quot;1.0&quot;,&quot;isHidden&quot;:false},&quot;url&quot;:&quot;https://twitter.com/hebronnhs&quot;,&quot;target&quot;:&quot;_blank&quot;},&quot;type&quot;:&quot;Image&quot;,&quot;id&quot;:&quot;dataItem-jjq7jydu3&quot;,&quot;metaData&quot;:{&quot;isPreset&quot;:false,&quot;schemaVersion&quot;:&quot;2.0&quot;,&quot;isHidden&quot;:false},&quot;title&quot;:&quot;twitter_circle-512&quot;,&quot;uri&quot;:&quot;6efda7_6e83193eba324017a2d804c86352c8be~mv2.png&quot;,&quot;description&quot;:&quot;&quot;,&quot;width&quot;:512,&quot;height&quot;:512,&quot;alt&quot;:&quot;twitter_circle-512&quot;},&quot;displayMode&quot;:&quot;fill&quot;}"
-																			  data-style="position:absolute;width:39;height:39" class="lb1imageItemimage" id="comp-jjq7jyd51imageimage"
-																			  style="width: 39px; height: 39px; position: absolute;">
+																			  style="width: 39px; height: 39px; position: absolute;" data-style="position:absolute;width:39;height:39"
+																			  class="lb1imageItemimage" id="comp-jjq7jyd51imageimage">
 																				<img id="comp-jjq7jyd51imageimageimage" alt="twitter_circle-512" data-type="image" style="width: 39px; height: 39px; object-fit: cover;"
 																				  src="./Hebron NHS_files/6efda7_6e83193eba324017a2d804c86352c8be_mv2.png">
 																			</div>
@@ -3265,52 +3866,224 @@
 													margin: 0 auto;
 												}
 											</style>
-											<section data-responsive="true" class="strc1" id="comp-jjq6nfdo" style="min-width: 980px; position: absolute; margin-left: 0px; top: 1531px; height: 339px; left: 0px; width: 100%;">
-												<div data-page-id="ijdas" data-enable-video="true" data-bg-effect-name="" data-media-type="" data-render-fixed-position="true"
-												  data-use-clip-path="" data-needs-clipping="false" class="strc1balata" id="comp-jjq6nfdobalata" style="position: absolute; top: 0px; width: calc(100% - 0px); height: 100%; overflow: hidden; pointer-events: auto; left: 0px; right: 0px; min-width: 980px;">
-													<div class="bgColor" id="comp-jjq6nfdobalatabgcolor" style="width: 100%; height: 100%; background-color: transparent; position: absolute;">
-														<div data-background-image="" id="comp-jjq6nfdobalatabgcoloroverlay" class="bgColoroverlay" style="width: 100%; height: 100%; position: absolute;"></div>
+											<div style="left: 430px; width: 505px; position: absolute; top: 1840px; height: 381px;" class="htco1" data-state="hasContent"
+											  id="comp-jl0lmeho">
+												<div id="comp-jl0lmehoiFrameHolder" class="htco1iFrameHolder">
+													<iframe width="100%" height="100%" scrolling="auto" src="./Hebron NHS_files/6efda7_bc3d7d31d98cda731cdde4e194016eaf.html"></iframe>
+												</div>
+											</div>
+											<style type="text/css" data-styleid="htco1">
+												.htco1iFrameHolder {
+													width: 100%;
+													height: 100%;
+												}
+
+												.htco1iFrameHolder>iframe {
+													position: absolute;
+												}
+
+												.htco1[data-state="noContent"] {
+													background-color: #A5A5A5;
+												}
+											</style>
+											<div data-packed="true" style="left: 50px; width: 429px; position: absolute; top: 1840px;" class="txtNew" id="comp-jl0lu1m5">
+												<h4 class="font_4" style="font-size:53px;">
+													<span class="color_15">
+														<span style="font-style:italic;">
+															<span style="font-size:34px;">The latest from</span>
+														</span>
+														<span style="font-size:53px;">
+															<a href="https://twitter.com/HebronNHS" target="_blank" data-content="https://twitter.com/HebronNHS" data-type="external"
+															  rel="nofollow">@HebronNHS</a>
+														</span>
+													</span>
+												</h4>
+											</div>
+											<style type="text/css" data-styleid="txtNew">
+												.txtNew {
+													word-wrap: break-word;
+													text-align: start;
+													pointer-events: none;
+												}
+
+												.txtNew_override-left * {
+													text-align: left !important;
+												}
+
+												.txtNew_override-right * {
+													text-align: right !important;
+												}
+
+												.txtNew_override-center * {
+													text-align: center !important;
+												}
+
+												.txtNew_override-justify * {
+													text-align: justify !important;
+												}
+
+												.txtNew>* {
+													pointer-events: auto;
+												}
+
+												.txtNew li {
+													font-style: inherit;
+													font-weight: inherit;
+													line-height: inherit;
+													letter-spacing: normal;
+												}
+
+												.txtNew ol,
+												.txtNew ul {
+													padding-left: 1.3em;
+													padding-right: 0;
+													margin-left: 0.5em;
+													margin-right: 0;
+													line-height: normal;
+													letter-spacing: normal;
+												}
+
+												.txtNew ul {
+													list-style-type: disc;
+												}
+
+												.txtNew ol {
+													list-style-type: decimal;
+												}
+
+												.txtNew ul ul,
+												.txtNew ol ul {
+													list-style-type: circle;
+												}
+
+												.txtNew ul ul ul,
+												.txtNew ol ul ul {
+													list-style-type: square;
+												}
+
+												.txtNew ul ol ul,
+												.txtNew ol ol ul {
+													list-style-type: square;
+												}
+
+												.txtNew ul[dir="rtl"],
+												.txtNew ol[dir="rtl"] {
+													padding-left: 0;
+													padding-right: 1.3em;
+													margin-left: 0;
+													margin-right: 0.5em;
+												}
+
+												.txtNew ul[dir="rtl"] ul,
+												.txtNew ul[dir="rtl"] ol,
+												.txtNew ol[dir="rtl"] ul,
+												.txtNew ol[dir="rtl"] ol {
+													padding-left: 0;
+													padding-right: 1.3em;
+													margin-left: 0;
+													margin-right: 0.5em;
+												}
+
+												.txtNew p {
+													margin: 0;
+													line-height: normal;
+													letter-spacing: normal;
+												}
+
+												.txtNew h1 {
+													margin: 0;
+													line-height: normal;
+													letter-spacing: normal;
+												}
+
+												.txtNew h2 {
+													margin: 0;
+													line-height: normal;
+													letter-spacing: normal;
+												}
+
+												.txtNew h3 {
+													margin: 0;
+													line-height: normal;
+													letter-spacing: normal;
+												}
+
+												.txtNew h4 {
+													margin: 0;
+													line-height: normal;
+													letter-spacing: normal;
+												}
+
+												.txtNew h5 {
+													margin: 0;
+													line-height: normal;
+													letter-spacing: normal;
+												}
+
+												.txtNew h6 {
+													margin: 0;
+													line-height: normal;
+													letter-spacing: normal;
+												}
+
+												.txtNew a {
+													color: inherit;
+												}
+											</style>
+											<section style="min-width: 980px; position: absolute; margin-left: 0px; top: 2222px; height: 339px; left: 0px; width: 100%;"
+											  data-responsive="true" class="strc1" id="comp-jjq6nfdo">
+												<div style="position: absolute; top: 0px; width: calc(100% - 0px); height: 100%; overflow: hidden; pointer-events: auto; left: 0px; right: 0px; min-width: 980px; clip: rect(0px, 1283px, 339px, 0px);"
+												  data-page-id="ijdas" data-enable-video="true" data-bg-effect-name="" data-media-type="" data-render-fixed-position="true"
+												  data-use-clip-path="" data-needs-clipping="false" class="strc1balata" id="comp-jjq6nfdobalata">
+													<div style="width:100%;height:100%;background-color:transparent;position:absolute" class="bgColor" id="comp-jjq6nfdobalatabgcolor">
+														<div data-background-image="" style="width:100%;height:100%;position:absolute" id="comp-jjq6nfdobalatabgcoloroverlay" class="bgColoroverlay"></div>
 													</div>
 												</div>
-												<div id="comp-jjq6nfdoinlineContent" class="strc1inlineContent" style="position: relative; width: calc(100% - 0px); min-width: 980px;">
-													<div data-content-width="980" class="mc1" id="comp-jjq6nffj" style="flex: 980 1 0%; margin-left: 0px; min-width: 980px; margin-top: 0px; margin-bottom: 0px; top: 0px; height: 339px; position: relative;">
+												<div style="position:relative;width:calc(100% - 0px);min-width:980px" id="comp-jjq6nfdoinlineContent" class="strc1inlineContent">
+													<div style="flex: 980 1 0%; margin-left: 0px; min-width: 980px; margin-top: 0px; margin-bottom: 0px; top: 0px; height: 339px; position: relative;"
+													  data-content-width="980" class="mc1" id="comp-jjq6nffj">
 														<div id="comp-jjq6nffjcontainer" class="mc1container">
-															<div data-page-id="ijdas" data-enable-video="true" data-bg-effect-name="" data-media-type="" data-render-fixed-position="true"
-															  data-use-clip-path="" data-needs-clipping="false" class="mc1balata" id="comp-jjq6nffjbalata" style="position: absolute; top: 0px; width: 100%; height: 100%; overflow: hidden; pointer-events: auto;">
-																<div class="bgColor" id="comp-jjq6nffjbalatabgcolor" style="width: 100%; height: 100%; background-color: rgb(250, 250, 250); position: absolute;">
-																	<div data-background-image="" id="comp-jjq6nffjbalatabgcoloroverlay" class="bgColoroverlay" style="width: 100%; height: 100%; position: absolute;"></div>
+															<div style="position: absolute; top: 0px; width: 100%; height: 100%; overflow: hidden; pointer-events: auto; clip: rect(0px, 1283px, 339px, 0px);"
+															  data-page-id="ijdas" data-enable-video="true" data-bg-effect-name="" data-media-type="" data-render-fixed-position="true"
+															  data-use-clip-path="" data-needs-clipping="false" class="mc1balata" id="comp-jjq6nffjbalata">
+																<div style="width:100%;height:100%;background-color:rgba(250, 250, 250, 1);position:absolute" class="bgColor" id="comp-jjq6nffjbalatabgcolor">
+																	<div data-background-image="" style="width:100%;height:100%;position:absolute" id="comp-jjq6nffjbalatabgcoloroverlay" class="bgColoroverlay"></div>
 																</div>
 															</div>
-															<div id="comp-jjq6nffjinlineContentParent" class="mc1inlineContentParent" style="position: absolute; left: 0px; right: 0px; top: 0px; bottom: 0px;">
-																<div id="comp-jjq6nffjinlineContent" class="mc1inlineContent" style="width: 100%; position: absolute; top: 0px; bottom: 0px;">
+															<div style="position:absolute;left:0;right:0;top:0;bottom:0" id="comp-jjq6nffjinlineContentParent" class="mc1inlineContentParent">
+																<div style="width:100%;position:absolute;top:0;bottom:0" id="comp-jjq6nffjinlineContent" class="mc1inlineContent">
 																	<style id="comp-jjq6nffj-content-area-styles">
 																		#comp-itoceg9w {
 																			margin-left: calc((100% - 980px) * 0.5);
 																		}
 																	</style>
-																	<section data-responsive="true" class="strc1" id="comp-itoceg9w" style="width: 980px; min-width: 980px; position: absolute; top: 29px; height: 267px; left: 0px;">
-																		<div data-page-id="ijdas" data-enable-video="true" data-bg-effect-name="" data-media-type="" data-render-fixed-position="true"
-																		  data-use-clip-path="" data-needs-clipping="false" class="strc1balata" id="comp-itoceg9wbalata" style="position: absolute; top: 0px; width: calc(100% - 0px); height: 100%; overflow: hidden; pointer-events: auto; left: 0px; right: 0px; min-width: 980px; clip: rect(0px, 980px, 267px, 0px);">
-																			<div class="bgColor" id="comp-itoceg9wbalatabgcolor" style="width: 100%; height: 100%; background-color: transparent; position: absolute;">
-																				<div data-background-image="" id="comp-itoceg9wbalatabgcoloroverlay" class="bgColoroverlay" style="width: 100%; height: 100%; position: absolute;"></div>
+																	<section style="width: 980px; min-width: 980px; position: absolute; top: 29px; height: 267px; left: 0px;" data-responsive="true"
+																	  class="strc1" id="comp-itoceg9w">
+																		<div style="position: absolute; top: 0px; width: calc(100% - 0px); height: 100%; overflow: hidden; pointer-events: auto; left: 0px; right: 0px; min-width: 980px; clip: rect(0px, 980px, 267px, 0px);"
+																		  data-page-id="ijdas" data-enable-video="true" data-bg-effect-name="" data-media-type="" data-render-fixed-position="true"
+																		  data-use-clip-path="" data-needs-clipping="false" class="strc1balata" id="comp-itoceg9wbalata">
+																			<div style="width:100%;height:100%;background-color:transparent;position:absolute" class="bgColor" id="comp-itoceg9wbalatabgcolor">
+																				<div data-background-image="" style="width:100%;height:100%;position:absolute" id="comp-itoceg9wbalatabgcoloroverlay" class="bgColoroverlay"></div>
 																			</div>
 																		</div>
-																		<div id="comp-itoceg9winlineContent" class="strc1inlineContent" style="position: relative; width: calc(100% - 0px); min-width: 980px;">
+																		<div style="position:relative;width:calc(100% - 0px);min-width:980px" id="comp-itoceg9winlineContent" class="strc1inlineContent">
 																			<div class="project">
-																				<div data-content-width="221" class="strc1 project__card" id="comp-itocegca" style="flex: 221 1 0%; margin-left: 0px; min-width: 221px; margin-top: 0px; margin-bottom: 0px; top: 0px; height: 267px; position: relative;">
-																					<div data-page-id="ijdas" data-enable-video="true" data-bg-effect-name="" data-media-type="" data-render-fixed-position="true"
-																					  data-use-clip-path="" data-needs-clipping="false" class="strc1balata" id="comp-itocegcabalata" style="position: absolute; top: 0px; width: 100%; height: 100%; overflow: hidden; pointer-events: auto; clip: rect(0px, 221px, 267px, 0px);">
-																						<div class="bgColor" id="comp-itocegcabalatabgcolor" style="width: 100%; height: 100%; background-color: rgb(12, 60, 96); position: absolute;">
-																							<div data-background-image="" id="comp-itocegcabalatabgcoloroverlay" class="bgColoroverlay" style="width: 100%; height: 100%; position: absolute;"></div>
+																				<div style="flex: 221 1 0%; margin-left: 0px; min-width: 221px; margin-top: 0px; margin-bottom: 0px; top: 0px; height: 267px; position: relative;"
+																				  data-content-width="221" class="strc1 project__card" id="comp-itocegca">
+																					<div style="position: absolute; top: 0px; width: 100%; height: 100%; overflow: hidden; pointer-events: auto; clip: rect(0px, 221px, 267px, 0px);"
+																					  data-page-id="ijdas" data-enable-video="true" data-bg-effect-name="" data-media-type="" data-render-fixed-position="true"
+																					  data-use-clip-path="" data-needs-clipping="false" class="strc1balata" id="comp-itocegcabalata">
+																						<div style="width:100%;height:100%;background-color:rgba(12, 60, 96, 1);position:absolute" class="bgColor" id="comp-itocegcabalatabgcolor">
+																							<div data-background-image="" style="width:100%;height:100%;position:absolute" id="comp-itocegcabalatabgcoloroverlay" class="bgColoroverlay"></div>
 																						</div>
 																					</div>
-																					<div id="comp-itocegcainlineContent" class="strc1inlineContent" style="width: 100%; position: absolute; top: 0px; bottom: 0px;">
+																					<div style="width:100%;position:absolute;top:0;bottom:0" id="comp-itocegcainlineContent" class="strc1inlineContent">
 																						<style id="comp-itocegca-content-area-styles">
 																							#comp-igqaaw3g1 {
 																								margin-left: calc((100% - 221px) * 0.5);
 																							}
 																						</style>
-																						<div data-packed="true" class="txtNew" id="comp-igqaaw3g1" style="left: 18px; width: 189px; position: absolute; top: 119px;">
+																						<div data-packed="true" style="left: 18px; width: 189px; position: absolute; top: 119px;" class="txtNew" id="comp-igqaaw3g1">
 																							<h5 class="font_5" style="line-height:1.2em; text-align:center;">
 																								<span class="color_12">
 																									<span>
@@ -3318,6 +4091,10 @@
 																									</span>
 																								</span>
 																							</h5>
+
+																							<p class="font_8" style="line-height:1.5em;">
+																								<span style="display:none;">&nbsp;</span>
+																							</p>
 																						</div>
 																						<style type="text/css" data-styleid="txtNew">
 																							.txtNew {
@@ -3496,20 +4273,22 @@
 																				</style>
 																			</div>
 																			<div class="project">
-																				<div data-content-width="215" class="strc1 project__card" id="comp-itocevk6" style="flex: 215 1 0%; margin-left: 38px; min-width: 215px; margin-top: 0px; margin-bottom: 0px; top: 0px; height: 267px; position: relative;">
-																					<div data-page-id="ijdas" data-enable-video="true" data-bg-effect-name="" data-media-type="" data-render-fixed-position="true"
-																					  data-use-clip-path="" data-needs-clipping="false" class="strc1balata" id="comp-itocevk6balata" style="position: absolute; top: 0px; width: 100%; height: 100%; overflow: hidden; pointer-events: auto; clip: rect(0px, 215px, 267px, 0px);">
-																						<div class="bgColor" id="comp-itocevk6balatabgcolor" style="width: 100%; height: 100%; background-color: rgb(12, 60, 96); position: absolute;">
-																							<div data-background-image="" id="comp-itocevk6balatabgcoloroverlay" class="bgColoroverlay" style="width: 100%; height: 100%; position: absolute;"></div>
+																				<div style="flex: 215 1 0%; margin-left: 38px; min-width: 215px; margin-top: 0px; margin-bottom: 0px; top: 0px; height: 267px; position: relative;"
+																				  data-content-width="215" class="strc1 project__card" id="comp-itocevk6">
+																					<div style="position: absolute; top: 0px; width: 100%; height: 100%; overflow: hidden; pointer-events: auto; clip: rect(0px, 215px, 267px, 0px);"
+																					  data-page-id="ijdas" data-enable-video="true" data-bg-effect-name="" data-media-type="" data-render-fixed-position="true"
+																					  data-use-clip-path="" data-needs-clipping="false" class="strc1balata" id="comp-itocevk6balata">
+																						<div style="width:100%;height:100%;background-color:rgba(12, 60, 96, 1);position:absolute" class="bgColor" id="comp-itocevk6balatabgcolor">
+																							<div data-background-image="" style="width:100%;height:100%;position:absolute" id="comp-itocevk6balatabgcoloroverlay" class="bgColoroverlay"></div>
 																						</div>
 																					</div>
-																					<div id="comp-itocevk6inlineContent" class="strc1inlineContent" style="width: 100%; position: absolute; top: 0px; bottom: 0px;">
+																					<div style="width:100%;position:absolute;top:0;bottom:0" id="comp-itocevk6inlineContent" class="strc1inlineContent">
 																						<style id="comp-itocevk6-content-area-styles">
 																							#comp-igqaaw37 {
 																								margin-left: calc((100% - 215px) * 0.5);
 																							}
 																						</style>
-																						<div data-packed="true" class="txtNew" id="comp-igqaaw37" style="left: 15px; width: 189px; position: absolute; top: 119px;">
+																						<div data-packed="true" style="left: 16px; width: 189px; position: absolute; top: 119px;" class="txtNew" id="comp-igqaaw37">
 																							<h5 class="font_5" style="line-height:1.2em; text-align:center;">
 																								<span class="color_12">
 																									<span style="letter-spacing:0.05em;">
@@ -3699,20 +4478,22 @@
 																				</style>
 																			</div>
 																			<div class="project">
-																				<div data-content-width="215" class="strc1 project__card" id="comp-itocez3f" style="flex: 215 1 0%; margin-left: 38px; min-width: 215px; margin-top: 0px; margin-bottom: 0px; top: 0px; height: 267px; position: relative;">
-																					<div data-page-id="ijdas" data-enable-video="true" data-bg-effect-name="" data-media-type="" data-render-fixed-position="true"
-																					  data-use-clip-path="" data-needs-clipping="false" class="strc1balata" id="comp-itocez3fbalata" style="position: absolute; top: 0px; width: 100%; height: 100%; overflow: hidden; pointer-events: auto; clip: rect(0px, 215px, 267px, 0px);">
-																						<div class="bgColor" id="comp-itocez3fbalatabgcolor" style="width: 100%; height: 100%; background-color: rgb(12, 60, 96); position: absolute;">
-																							<div data-background-image="" id="comp-itocez3fbalatabgcoloroverlay" class="bgColoroverlay" style="width: 100%; height: 100%; position: absolute;"></div>
+																				<div style="flex: 215 1 0%; margin-left: 38px; min-width: 215px; margin-top: 0px; margin-bottom: 0px; top: 0px; height: 267px; position: relative;"
+																				  data-content-width="215" class="strc1 project__card" id="comp-itocez3f">
+																					<div style="position: absolute; top: 0px; width: 100%; height: 100%; overflow: hidden; pointer-events: auto; clip: rect(0px, 215px, 267px, 0px);"
+																					  data-page-id="ijdas" data-enable-video="true" data-bg-effect-name="" data-media-type="" data-render-fixed-position="true"
+																					  data-use-clip-path="" data-needs-clipping="false" class="strc1balata" id="comp-itocez3fbalata">
+																						<div style="width:100%;height:100%;background-color:rgba(12, 60, 96, 1);position:absolute" class="bgColor" id="comp-itocez3fbalatabgcolor">
+																							<div data-background-image="" style="width:100%;height:100%;position:absolute" id="comp-itocez3fbalatabgcoloroverlay" class="bgColoroverlay"></div>
 																						</div>
 																					</div>
-																					<div id="comp-itocez3finlineContent" class="strc1inlineContent" style="width: 100%; position: absolute; top: 0px; bottom: 0px;">
+																					<div style="width:100%;position:absolute;top:0;bottom:0" id="comp-itocez3finlineContent" class="strc1inlineContent">
 																						<style id="comp-itocez3f-content-area-styles">
 																							#comp-igqaaw3b {
 																								margin-left: calc((100% - 215px) * 0.5);
 																							}
 																						</style>
-																						<div data-packed="true" class="txtNew" id="comp-igqaaw3b" style="left: 14px; width: 190px; position: absolute; top: 119px;">
+																						<div data-packed="true" style="left: 14px; width: 190px; position: absolute; top: 119px;" class="txtNew" id="comp-igqaaw3b">
 																							<h5 class="font_5" style="line-height:1.2em; text-align:center;">
 																								<span class="color_12">
 																									<span style="letter-spacing:0.05em;">
@@ -3898,20 +4679,22 @@
 																				</style>
 																			</div>
 																			<div class="project">
-																				<div data-content-width="215" class="strc1 project__card" id="comp-jjdjbyy1" style="flex: 215 1 0%; margin-left: 38px; min-width: 215px; margin-top: 0px; margin-bottom: 0px; top: 0px; height: 267px; position: relative;">
-																					<div data-page-id="ijdas" data-enable-video="true" data-bg-effect-name="" data-media-type="" data-render-fixed-position="true"
-																					  data-use-clip-path="" data-needs-clipping="false" class="strc1balata" id="comp-jjdjbyy1balata" style="position: absolute; top: 0px; width: 100%; height: 100%; overflow: hidden; pointer-events: auto; clip: rect(0px, 215px, 267px, 0px);">
-																						<div class="bgColor" id="comp-jjdjbyy1balatabgcolor" style="width: 100%; height: 100%; background-color: rgb(12, 60, 96); position: absolute;">
-																							<div data-background-image="" id="comp-jjdjbyy1balatabgcoloroverlay" class="bgColoroverlay" style="width: 100%; height: 100%; position: absolute;"></div>
+																				<div style="flex: 215 1 0%; margin-left: 38px; min-width: 215px; margin-top: 0px; margin-bottom: 0px; top: 0px; height: 267px; position: relative;"
+																				  data-content-width="215" class="strc1 project__card" id="comp-jjdjbyy1">
+																					<div style="position: absolute; top: 0px; width: 100%; height: 100%; overflow: hidden; pointer-events: auto; clip: rect(0px, 215px, 267px, 0px);"
+																					  data-page-id="ijdas" data-enable-video="true" data-bg-effect-name="" data-media-type="" data-render-fixed-position="true"
+																					  data-use-clip-path="" data-needs-clipping="false" class="strc1balata" id="comp-jjdjbyy1balata">
+																						<div style="width:100%;height:100%;background-color:rgba(12, 60, 96, 1);position:absolute" class="bgColor" id="comp-jjdjbyy1balatabgcolor">
+																							<div data-background-image="" style="width:100%;height:100%;position:absolute" id="comp-jjdjbyy1balatabgcoloroverlay" class="bgColoroverlay"></div>
 																						</div>
 																					</div>
-																					<div id="comp-jjdjbyy1inlineContent" class="strc1inlineContent" style="width: 100%; position: absolute; top: 0px; bottom: 0px;">
+																					<div style="width:100%;position:absolute;top:0;bottom:0" id="comp-jjdjbyy1inlineContent" class="strc1inlineContent">
 																						<style id="comp-jjdjbyy1-content-area-styles">
 																							#comp-jjdjbyyy {
 																								margin-left: calc((100% - 215px) * 0.5);
 																							}
 																						</style>
-																						<div data-packed="true" class="txtNew" id="comp-jjdjbyyy" style="left: 14px; width: 190px; position: absolute; top: 119px;">
+																						<div data-packed="true" style="left: 14px; width: 190px; position: absolute; top: 119px;" class="txtNew" id="comp-jjdjbyyy">
 																							<h5 class="font_5" style="line-height:1.2em; text-align:center;">
 																								<span class="color_12">
 																									<span style="letter-spacing:0.05em;">
@@ -4143,17 +4926,18 @@
 																</div>
 															</div>
 														</div>
-														<style type="text/css" data-styleid="mc1">
-															.mc1:not([data-mobile-responsive]) .mc1inlineContent,
-															.mc1:not([data-mobile-responsive]) .mc1container {
-																position: absolute;
-																top: 0;
-																right: 0;
-																bottom: 0;
-																left: 0;
-															}
-														</style>
 													</div>
+													<style type="text/css" data-styleid="mc1">
+														.mc1:not([data-mobile-responsive]) .mc1inlineContent,
+														.mc1:not([data-mobile-responsive]) .mc1container {
+															position: absolute;
+															top: 0;
+															right: 0;
+															bottom: 0;
+															left: 0;
+														}
+													</style>
+												</div>
 											</section>
 											<style type="text/css" data-styleid="strc1">
 												.strc1:not([data-mobile-responsive])>.strc1inlineContent {
@@ -4197,7 +4981,6 @@
 													margin: 0 auto;
 												}
 											</style>
-											</div>
 										</div>
 									</div>
 									<style type="text/css" data-styleid="style-igqaaw2w">
@@ -4215,208 +4998,6 @@
 										}
 
 										.style-igqaaw2winlineContent {
-											position: absolute;
-											top: 0;
-											right: 0;
-											bottom: 0;
-											left: 0;
-										}
-									</style>
-									<div data-ismobile="false" data-is-mesh-layout="false" class="style-ig85n16m" id="c20r9" style="left: 0px; min-width: 980px; min-height: 989px; width: 100%; position: absolute; top: 0px; height: 989px; display: none; visibility: hidden;">
-										<div id="c20r9bg" class="style-ig85n16mbg" style="margin-left: calc((100% - 980px) / 2); width: 980px;"></div>
-										<div id="c20r9inlineContent" class="style-ig85n16minlineContent"></div>
-									</div>
-									<style type="text/css" data-styleid="style-ig85n16m">
-										.style-ig85n16mbg {
-											position: absolute;
-											top: 0;
-											right: 0;
-											bottom: 0;
-											left: 0;
-										}
-
-										.style-ig85n16m[data-state~="mobileView"] .style-ig85n16mbg {
-											left: 10px;
-											right: 10px;
-										}
-
-										.style-ig85n16minlineContent {
-											position: absolute;
-											top: 0;
-											right: 0;
-											bottom: 0;
-											left: 0;
-										}
-									</style>
-									<div data-ismobile="false" data-is-mesh-layout="false" class="style-jjag89zu" id="wt1mc" style="left: 0px; min-width: 980px; min-height: 754px; width: 100%; position: absolute; top: 0px; height: 754px; display: none; visibility: hidden;">
-										<div id="wt1mcbg" class="style-jjag89zubg" style="margin-left: calc((100% - 980px) / 2); width: 980px;"></div>
-										<div id="wt1mcinlineContent" class="style-jjag89zuinlineContent">
-											<style id="wt1mc-content-area-styles">
-												#comp-jjq0ii2x {
-													margin-left: calc((100% - 980px) * 0.5);
-												}
-											</style>
-											<div class="style-jjq0iolw" id="comp-jjq0ii2x" style="min-height: 486px; min-width: 737px; left: 121px; width: 737px; position: absolute; top: 31px; height: 486px;">
-												<iframe scrolling="no" frameborder="0" allow="autoplay; camera; microphone; geolocation; vr" allowtransparency="true" allowfullscreen=""
-												  name="comp-jjq0ii2x" title="Google Event Calendar" aria-label="Google Event Calendar" id="comp-jjq0ii2xiframe"
-												  class="style-jjq0iolwiframe" style="display: block; width: 100%; height: 100%; overflow: hidden; position: absolute;"
-												  src="./Hebron NHS_files/saved_resource.html"></iframe>
-												<div id="comp-jjq0ii2xoverlay" class="style-jjq0iolwoverlay"></div>
-											</div>
-											<style type="text/css" data-styleid="style-jjq0iolw">
-												.style-jjq0iolw {
-													overflow: hidden;
-												}
-
-												.style-jjq0iolw iframe {
-													position: absolute;
-													width: 100%;
-													height: 100%;
-													overflow: hidden;
-												}
-
-												.style-jjq0iolwpreloaderOverlay {
-													position: absolute;
-													top: 0;
-													left: 0;
-													color: #373737;
-													width: 100%;
-													height: 100%;
-												}
-
-												.style-jjq0iolwpreloaderOverlaycontent {
-													width: 100%;
-													height: 100%;
-												}
-
-												.style-jjq0iolwunavailableMessageOverlay {
-													position: absolute;
-													top: 0;
-													left: 0;
-													color: #373737;
-													width: 100%;
-													height: 100%;
-												}
-
-												.style-jjq0iolwunavailableMessageOverlaycontent {
-													width: 100%;
-													height: 100%;
-													background: rgba(255, 255, 255, 0.9);
-													font-size: 0;
-													margin-top: 5px;
-												}
-
-												.style-jjq0iolwunavailableMessageOverlaytextContainer {
-													color: #373737;
-													font-family: "Helvetica Neue", "HelveticaNeueW01-55Roma", "HelveticaNeueW02-55Roma", "HelveticaNeueW10-55Roma", Helvetica, Arial, sans-serif;
-													font-size: 14px;
-													display: inline-block;
-													vertical-align: middle;
-													width: 100%;
-													margin-top: 10px;
-													text-align: center;
-												}
-
-												.style-jjq0iolwunavailableMessageOverlayreloadButton {
-													display: inline-block;
-												}
-
-												.style-jjq0iolwunavailableMessageOverlay a {
-													color: #0099FF;
-													text-decoration: underline;
-													cursor: pointer;
-												}
-
-												.style-jjq0iolwunavailableMessageOverlayiconContainer {
-													display: none;
-												}
-
-												.style-jjq0iolwunavailableMessageOverlaydismissButton {
-													display: none;
-												}
-
-												.style-jjq0iolwunavailableMessageOverlaytextTitle {
-													font-family: "Helvetica Neue", "HelveticaNeueW01-55Roma", "HelveticaNeueW02-55Roma", "HelveticaNeueW10-55Roma", Helvetica, Arial, sans-serif;
-													display: none;
-												}
-
-												.style-jjq0iolwunavailableMessageOverlay[data-state~="hideIframe"] .style-jjq0iolwunavailableMessageOverlay_buttons {
-													opacity: 1;
-												}
-
-												.style-jjq0iolwunavailableMessageOverlay[data-state~="hideOverlay"] {
-													display: none;
-												}
-											</style>
-										</div>
-									</div>
-									<style type="text/css" data-styleid="style-jjag89zu">
-										.style-jjag89zubg {
-											position: absolute;
-											top: 0;
-											right: 0;
-											bottom: 0;
-											left: 0;
-										}
-
-										.style-jjag89zu[data-state~="mobileView"] .style-jjag89zubg {
-											left: 10px;
-											right: 10px;
-										}
-
-										.style-jjag89zuinlineContent {
-											position: absolute;
-											top: 0;
-											right: 0;
-											bottom: 0;
-											left: 0;
-										}
-									</style>
-									<div data-ismobile="false" data-is-mesh-layout="false" class="style-jjd7367s" id="xf2xp" style="left: 0px; min-width: 980px; min-height: 1771px; width: 100%; position: absolute; top: 0px; height: 1771px; display: none; visibility: hidden;">
-										<div id="xf2xpbg" class="style-jjd7367sbg" style="margin-left: calc((100% - 980px) / 2); width: 980px;"></div>
-										<div id="xf2xpinlineContent" class="style-jjd7367sinlineContent"></div>
-									</div>
-									<style type="text/css" data-styleid="style-jjd7367s">
-										.style-jjd7367sbg {
-											position: absolute;
-											top: 0;
-											right: 0;
-											bottom: 0;
-											left: 0;
-										}
-
-										.style-jjd7367s[data-state~="mobileView"] .style-jjd7367sbg {
-											left: 10px;
-											right: 10px;
-										}
-
-										.style-jjd7367sinlineContent {
-											position: absolute;
-											top: 0;
-											right: 0;
-											bottom: 0;
-											left: 0;
-										}
-									</style>
-									<div data-ismobile="false" data-is-mesh-layout="false" class="style-jjag7wa0" id="wnwxn" style="left: 0px; min-width: 980px; min-height: 500px; width: 100%; position: absolute; top: 0px; height: 500px; display: none; visibility: hidden;">
-										<div id="wnwxnbg" class="style-jjag7wa0bg" style="margin-left: calc((100% - 980px) / 2); width: 980px;"></div>
-										<div id="wnwxninlineContent" class="style-jjag7wa0inlineContent"></div>
-									</div>
-									<style type="text/css" data-styleid="style-jjag7wa0">
-										.style-jjag7wa0bg {
-											position: absolute;
-											top: 0;
-											right: 0;
-											bottom: 0;
-											left: 0;
-										}
-
-										.style-jjag7wa0[data-state~="mobileView"] .style-jjag7wa0bg {
-											left: 10px;
-											right: 10px;
-										}
-
-										.style-jjag7wa0inlineContent {
 											position: absolute;
 											top: 0;
 											right: 0;
@@ -4474,9 +5055,6 @@
 					</style>
 				</div>
 			</div>
-
-			<div id="extension-is-installed"></div>
-			<a id="SCROLL_TO_BOTTOM"></a>
 			<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
 			  crossorigin="anonymous"></script>
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"

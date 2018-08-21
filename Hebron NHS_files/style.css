@@ -5,6 +5,10 @@ body {
   background-color: #0F3D5E;
 }
 
+a:hover {
+  text-decoration: none;
+}
+
 .style-jjq7ezmhrepeaterButtonlabel {
   transition: color 0.25s ease-in-out;
 }
