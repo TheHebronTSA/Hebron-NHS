@@ -4,6 +4,8 @@
 <head>
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge" id="META_3">
 
+	<meta charset="utf-8">
+
 	<meta name="viewport" content="width=320, user-scalable=yes">
 
 	<style id="STYLE_22">
@@ -172,6 +174,21 @@
 			overflow-y: hidden
 		}
 
+		body.device-mobile-non-optimized #SITE_CONTAINER>:not(.mobile-non-optimized-overflow) .SITE_ROOT {
+			overflow-x: hidden;
+			overflow-y: auto
+		}
+
+		body.device-mobile-non-optimized.fullScreenMode {
+			background-color: #5f6360
+		}
+
+		body.device-mobile-non-optimized.fullScreenMode #MOBILE_ACTIONS_MENU,
+		body.device-mobile-non-optimized.fullScreenMode #SITE_BACKGROUND,
+		body.device-mobile-non-optimized.fullScreenMode .SITE_ROOT {
+			visibility: hidden
+		}
+
 		body.fullScreenMode {
 			overflow-x: hidden !important;
 			overflow-y: hidden !important
@@ -279,6 +296,7 @@
 		ol.font_100,
 		ul.font_100 {
 			color: #080808;
+			font-family: 'Arial, Helvetica, sans-serif', serif;
 			font-size: 10px;
 			font-style: normal;
 			font-variant: normal;
@@ -672,18 +690,17 @@
 		}
 	</style>
 
-	<title id="TITLE_32">Hebron NHS</title>
+	<title id="TITLE_49">Hebron NHS</title>
 
 	<link rel="stylesheet" href="../Hebron NHS_files/style.css">
+
 </head>
 
-<body class="device-mobile-optimized" data-js-loaded="true" style="" id="BODY_111">
-	<a id="A_112"></a>
-
-	<div id="DIV_114" data-santa-render-status="SUCCESS">
-		<div class="noop visual-focus-on" data-santa-version="1.4309.0" data-reactroot="" id="DIV_115">
-			<div id="DIV_116">
-				<style type="text/css" data-styleid="theme_fonts" id="STYLE_117">
+<body class="warmup device-mobile-optimized" data-js-loaded="true" id="BODY_107">
+	<div id="DIV_110">
+		<div class="noop visual-focus-on" data-santa-version="1.4355.0" data-reactroot="" id="DIV_111">
+			<div id="DIV_112">
+				<style type="text/css" data-styleid="theme_fonts" id="STYLE_113">
 					.font_0 {
 						font: normal normal normal 22px/1.4em raleway, sans-serif;
 						color: #FFFFFF;
@@ -739,7 +756,7 @@
 						color: #0A3942;
 					}
 				</style>
-				<style type="text/css" data-styleid="theme_colors" id="STYLE_118">
+				<style type="text/css" data-styleid="theme_colors" id="STYLE_114">
 					.color_0 {
 						color: #062134;
 					}
@@ -1028,51 +1045,101 @@
 						background-color: #4A410D;
 					}
 				</style>
-				<style type="text/css" data-styleid="googleFonts" id="STYLE_119">
+				<style type="text/css" data-styleid="googleFonts" id="STYLE_115">
 					@font-face {
 						font-family: 'Raleway';
 						font-style: italic;
 						font-weight: 400;
-						src: local('Raleway Italic'), local('Raleway-Italic'), url(https://fonts.gstatic.com/s/raleway/v12/1Ptsg8zYS_SKggPNyCg4Q4Fv.ttf) format('truetype');
+						src: local('Raleway Italic'), local('Raleway-Italic'), url(https://fonts.gstatic.com/s/raleway/v12/1Ptsg8zYS_SKggPNyCg4Q4FqPfE.woff2) format('woff2');
+						unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 					}
+
+					/* latin */
+
+					@font-face {
+						font-family: 'Raleway';
+						font-style: italic;
+						font-weight: 400;
+						src: local('Raleway Italic'), local('Raleway-Italic'), url(https://fonts.gstatic.com/s/raleway/v12/1Ptsg8zYS_SKggPNyCg4TYFq.woff2) format('woff2');
+						unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+					}
+
+					/* latin-ext */
 
 					@font-face {
 						font-family: 'Raleway';
 						font-style: italic;
 						font-weight: 700;
-						src: local('Raleway Bold Italic'), local('Raleway-BoldItalic'), url(https://fonts.gstatic.com/s/raleway/v12/1Ptpg8zYS_SKggPNyCgw9qR_DNCe.ttf) format('truetype');
+						src: local('Raleway Bold Italic'), local('Raleway-BoldItalic'), url(https://fonts.gstatic.com/s/raleway/v12/1Ptpg8zYS_SKggPNyCgw9qR_DNCb_Vo.woff2) format('woff2');
+						unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 					}
+
+					/* latin */
+
+					@font-face {
+						font-family: 'Raleway';
+						font-style: italic;
+						font-weight: 700;
+						src: local('Raleway Bold Italic'), local('Raleway-BoldItalic'), url(https://fonts.gstatic.com/s/raleway/v12/1Ptpg8zYS_SKggPNyCgw9qR_AtCb.woff2) format('woff2');
+						unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+					}
+
+					/* latin-ext */
 
 					@font-face {
 						font-family: 'Raleway';
 						font-style: normal;
 						font-weight: 400;
-						src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v12/1Ptug8zYS_SKggPNyCMISg.ttf) format('truetype');
+						src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v12/1Ptug8zYS_SKggPNyCMIT5lu.woff2) format('woff2');
+						unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 					}
+
+					/* latin */
+
+					@font-face {
+						font-family: 'Raleway';
+						font-style: normal;
+						font-weight: 400;
+						src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v12/1Ptug8zYS_SKggPNyC0ITw.woff2) format('woff2');
+						unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+					}
+
+					/* latin-ext */
 
 					@font-face {
 						font-family: 'Raleway';
 						font-style: normal;
 						font-weight: 700;
-						src: local('Raleway Bold'), local('Raleway-Bold'), url(https://fonts.gstatic.com/s/raleway/v12/1Ptrg8zYS_SKggPNwJYtWqhPBQ.ttf) format('truetype');
+						src: local('Raleway Bold'), local('Raleway-Bold'), url(https://fonts.gstatic.com/s/raleway/v12/1Ptrg8zYS_SKggPNwJYtWqhPAMif.woff2) format('woff2');
+						unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+					}
+
+					/* latin */
+
+					@font-face {
+						font-family: 'Raleway';
+						font-style: normal;
+						font-weight: 700;
+						src: local('Raleway Bold'), local('Raleway-Bold'), url(https://fonts.gstatic.com/s/raleway/v12/1Ptrg8zYS_SKggPNwJYtWqZPAA.woff2) format('woff2');
+						unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 					}
 				</style>
 			</div>
-			<div id="DIV_128" class="siteBackground" style="position: absolute; height: 2002px; width: 320px;">
-				<div id="DIV_129" class="siteBackgroundprevious" style="width: 320px; height: 100%;">
-					<div id="DIV_130" class="siteBackgroundpreviousImage"></div>
-					<div id="DIV_131" class="siteBackgroundpreviousVideo"></div>
-					<div id="DIV_132" class="siteBackgroundpreviousOverlay"></div>
+			<div id="DIV_124" class="siteBackground" style="position: absolute; height: 2249px; width: 320px;">
+				<div id="DIV_125" class="siteBackgroundprevious" style="width: 320px; height: 100%;">
+					<div id="DIV_126" class="siteBackgroundpreviousImage"></div>
+					<div id="DIV_127" class="siteBackgroundpreviousVideo"></div>
+					<div id="DIV_128" class="siteBackgroundpreviousOverlay"></div>
 				</div>
-				<div id="DIV_133" style="top: 0px; background-color: rgb(255, 255, 255); position: absolute; width: 320px; height: 100%;"
+				<div id="DIV_129" style="top: 0px; background-color: rgb(255, 255, 255); position: absolute; width: 320px; height: 100%;"
 				  data-position="absolute" class="siteBackgroundcurrent">
-					<div id="DIV_134" style="position: absolute; top: 0px; height: 100%; width: 100%;" data-type="bgimage" data-height="100%"
+					<div id="DIV_130" style="position: absolute; top: 0px; height: 100%; width: 100%;" data-type="bgimage" data-height="100%"
 					  class="siteBackgroundcurrentImage" data-image-css="{&quot;backgroundSize&quot;:&quot;&quot;,&quot;backgroundPosition&quot;:&quot;&quot;,&quot;backgroundRepeat&quot;:&quot;&quot;}"></div>
-					<div id="DIV_135" class="siteBackgroundcurrentVideo"></div>
-					<div id="DIV_136" style="position:absolute;top:0;width:100%;height:100%" class="siteBackgroundcurrentOverlay"></div>
+					<div id="DIV_131" class="siteBackgroundcurrentVideo"></div>
+					<div id="DIV_132" style="position:absolute;top:0;width:100%;height:100%" class="siteBackgroundcurrentOverlay"></div>
 				</div>
 			</div>
-			<style type="text/css" data-styleid="siteBackground" id="STYLE_137">
+			<style type="text/css" data-styleid="siteBackground" id="STYLE_133">
 				.siteBackground {
 					width: 100%;
 					position: absolute;
@@ -1088,31 +1155,31 @@
 					top: 0;
 				}
 			</style>
-			<div class="SITE_ROOT" id="DIV_138" style="width: 100%; padding-bottom: 0px; min-height: 100%; position: relative; margin: 0px auto;">
-				<div id="DIV_139" browser="[object Object]" style="width: 100%; position: static; top: 0px; height: 2002px;" data-ref="masterPage">
+			<div class="SITE_ROOT" id="DIV_134" style="width: 100%; padding-bottom: 0px; min-height: 100%; position: relative; margin: 0px auto;">
+				<div id="DIV_135" browser="[object Object]" style="width: 100%; position: static; top: 0px; height: 2249px;" data-ref="masterPage">
 					<header data-is-mobile="true" data-state="fixedPosition mobileView" data-site-width="320" style="position: fixed; left: 0px; margin-left: 0px; width: 320px; z-index: 50; top: 0px; height: 141px;"
-					  class="style-jkrohcy0" id="HEADER_140">
-						<div style="left:0;width:100%" id="DIV_141" class="style-jkrohcy0screenWidthBackground">
-							<div class="style-jkrohcy0_bg" id="DIV_142"></div>
+					  class="style-jkrohcy0" id="HEADER_136">
+						<div style="left:0;width:100%" id="DIV_137" class="style-jkrohcy0screenWidthBackground">
+							<div class="style-jkrohcy0_bg" id="DIV_138"></div>
 						</div>
-						<div id="DIV_143" class="style-jkrohcy0centeredContent">
-							<div id="DIV_144" class="style-jkrohcy0bg">
-								<div class="style-jkrohcy0_bg-center" id="DIV_145"></div>
+						<div id="DIV_139" class="style-jkrohcy0centeredContent">
+							<div id="DIV_140" class="style-jkrohcy0bg">
+								<div class="style-jkrohcy0_bg-center" id="DIV_141"></div>
 							</div>
-							<div id="DIV_146" class="style-jkrohcy0inlineContent">
-								<div data-packed="false" style="left: 98px; width: 123px; position: absolute; top: 100px;" class="txtNew" id="DIV_147">
-									<h1 class="font_0" style="font-size:18px" id="H1_148">
-										<a href="./" target="_self" id="A_149">
-											<span style="font-size:18px" id="SPAN_150">
-												<span style="letter-spacing:0.06em;" id="SPAN_151">
-													<span class="color_17" id="SPAN_152">
-														<span style="color:rgb(255, 255, 255);" id="SPAN_153">Hebron&nbsp;</span>NHS</span>
+							<div id="DIV_142" class="style-jkrohcy0inlineContent">
+								<div data-packed="false" style="left: 98px; width: 123px; position: absolute; top: 100px;" class="txtNew" id="DIV_143">
+									<h1 class="font_0" style="font-size:18px" id="H1_144">
+										<a href="./" target="_self" id="A_145">
+											<span style="font-size:18px" id="SPAN_146">
+												<span style="letter-spacing:0.06em;" id="SPAN_147">
+													<span class="color_17" id="SPAN_148">
+														<span style="color:rgb(255, 255, 255);" id="SPAN_149">Hebron&nbsp;</span>NHS</span>
 												</span>
 											</span>
 										</a>
 									</h1>
 								</div>
-								<style type="text/css" data-styleid="txtNew" id="STYLE_154">
+								<style type="text/css" data-styleid="txtNew" id="STYLE_150">
 									.txtNew {
 										word-wrap: break-word;
 										text-align: start;
@@ -1243,24 +1310,24 @@
 										color: inherit;
 									}
 								</style>
-								<nav id="NAV_155" class="hidden-on-warmup tm1" style="visibility: visible; left: 250px; width: 50px; position: absolute; top: 80px; height: 51px;">
+								<nav id="NAV_151" class="hidden-on-warmup tm1" style="visibility: visible; left: 250px; width: 50px; position: absolute; top: 80px; height: 51px;">
 									<div class="fullScreenOverlay tm1_menuInitial tm1_dir-center tm1fullScreenOverlay" style="top: 0px; cursor: pointer; height: 570px;"
-									  id="DIV_156">
-										<div class="fullScreenOverlayContent tm1fullScreenOverlayContent" style="width:320px;top:0" id="DIV_157">
-											<div class="tm1_menuInitial tm1_dir-center tm1menuBackground" id="DIV_158">
-												<div class="tm1_menuInitial tm1_dir-center tm1menuContainer" id="DIV_159" style="max-height: 1755px;"></div>
+									  id="DIV_152">
+										<div class="fullScreenOverlayContent tm1fullScreenOverlayContent" style="width:320px;top:0" id="DIV_153">
+											<div class="tm1_menuInitial tm1_dir-center tm1menuBackground" id="DIV_154">
+												<div class="tm1_menuInitial tm1_dir-center tm1menuContainer" id="DIV_155" style="max-height: 570px;"></div>
 											</div>
 										</div>
 									</div>
-									<a onclick="openNav()" class="tm1_menuInitial tm1_dir-center tm1menuButton" style="cursor: pointer; margin-top: 0px;" id="A_160">
-										<svg preserveAspectRatio="none" viewBox="0 0 17 17" id="svg_161" class="tm1_icon tm1iconSVG">
-											<line x2="100%" class="tm1_line1 tm1_animating-line" id="line_162"></line>
-											<line x2="100%" class="tm1_line2 tm1_animating-line" id="line_163"></line>
-											<line x2="100%" class="tm1_line3 tm1_animating-line" id="line_164"></line>
+									<a onclick="openNav()" class="tm1_menuInitial tm1_dir-center tm1menuButton" style="cursor: pointer; margin-top: 0px;" id="A_156">
+										<svg preserveAspectRatio="none" viewBox="0 0 17 17" id="svg_157" class="tm1_icon tm1iconSVG">
+											<line x2="100%" class="tm1_line1 tm1_animating-line" id="line_158"></line>
+											<line x2="100%" class="tm1_line2 tm1_animating-line" id="line_159"></line>
+											<line x2="100%" class="tm1_line3 tm1_animating-line" id="line_160"></line>
 										</svg>
 									</a>
 								</nav>
-								<style type="text/css" data-styleid="tm1" id="STYLE_165">
+								<style type="text/css" data-styleid="tm1" id="STYLE_161">
 									.tm1 {
 										-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 										z-index: 2;
@@ -2056,14 +2123,15 @@
 									}
 								</style>
 								<div style="left: 130px; position: absolute; top: 33px; width: 60px; height: 60px;" data-exact-height="60" data-content-padding-horizontal="0"
-								  data-content-padding-vertical="0" title="" class="style-jjagq53d" id="DIV_166">
-									<div style="width: 60px; height: 60px;" id="DIV_167" class="style-jjagq53dlink">
-										<div data-style="" class="style-jjagq53dimg" id="DIV_168" style="position: relative; width: 60px; height: 60px;">
-											<img id="IMG_169" alt="" data-type="image" src="../Hebron NHS_files/logo.png" style="width: 60px; height: 60px; object-fit: cover;">
+								  data-content-padding-vertical="0" title="" class="style-jjagq53d" id="DIV_162">
+									<div style="width: 60px; height: 60px;" id="DIV_163" class="style-jjagq53dlink">
+										<div data-style="" class="style-jjagq53dimg" id="DIV_164" style="position: relative; width: 60px; height: 60px;">
+											<img id="IMG_165" alt="" data-type="image" src="../Hebron NHS_files/logo.png"
+											  style="width: 60px; height: 60px; object-fit: cover;">
 										</div>
 									</div>
 								</div>
-								<style type="text/css" data-styleid="style-jjagq53d" id="STYLE_170">
+								<style type="text/css" data-styleid="style-jjagq53d" id="STYLE_166">
 									.style-jjagq53d_zoomedin {
 										cursor: url(https://static.parastorage.com/services/skins/2.1229.80/images/wysiwyg/core/themes/base/cursor_zoom_out.png), url(https://static.parastorage.com/services/skins/2.1229.80/images/wysiwyg/core/themes/base/cursor_zoom_out.cur), auto;
 										overflow: hidden;
@@ -2096,7 +2164,7 @@
 							</div>
 						</div>
 					</header>
-					<style type="text/css" data-styleid="style-jkrohcy0" id="STYLE_171">
+					<style type="text/css" data-styleid="style-jkrohcy0" id="STYLE_167">
 						.style-jkrohcy0screenWidthBackground {
 							position: absolute;
 							top: 0;
@@ -2167,52 +2235,53 @@
 							left: 0;
 						}
 					</style>
-					<div data-is-mobile="true" data-is-mesh="false" data-site-width="320" style="left: 0px; margin-left: 0px; width: 320px; position: absolute; top: 141px; height: 1508px;"
-					  class="pc1" data-state="mobileView" id="DIV_172">
-						<div style="left:0" id="DIV_173" class="pc1screenWidthBackground"></div>
-						<div id="DIV_174" class="pc1centeredContent">
-							<div style="display:none" id="DIV_175" class="pc1bg"></div>
-							<div id="DIV_176" class="pc1inlineContent">
-								<div style="width: 100%; left: 0px; position: absolute; top: 0px; height: 1508px;" class="s_VOwPageGroupSkin" id="DIV_177">
-									<div data-ismobile="true" data-is-mesh-layout="false" style="left: 0px; min-width: 320px; min-height: 200px; width: 100%; position: absolute; top: 0px; height: 1508px;"
-									  class="style-igqaaw2w" data-state="mobileView" id="DIV_178">
-										<div id="DIV_179" class="style-igqaaw2wbg"></div>
-										<div id="DIV_180" class="style-igqaaw2winlineContent">
-											<div role="region" aria-label="Slideshow" style="left: 0px; margin-left: 0px; width: 320px; position: absolute; top: 0px; height: 164px;"
-											  class="style-jjq7bk481" id="DIV_181">
-												<div id="DIV_182" class="style-jjq7bk481bg"></div>
-												<div class="style-jjq7bk481_hide-overflow style-jjq7bk481inlineContentParent" tabindex="-1" id="DIV_183">
-													<div aria-live="polite" id="DIV_184" class="style-jjq7bk481inlineContent">
-														<div data-flexibleboxheight="false" data-parent-id="comp-jjq0r7k8" data-min-height="164" style="min-height: 164px; left: 0px; margin-left: 0px; width: 320px; position: absolute; top: 0px; height: 164px;"
-														  class="style-jjq1sef32" data-state="mobileView" id="DIV_185">
+					<div data-is-mobile="true" data-is-mesh="false" data-site-width="320" style="left: 0px; margin-left: 0px; width: 320px; position: absolute; top: 141px; height: 2053px;"
+					  class="pc1" data-state="mobileView" id="DIV_168">
+						<div style="left:0" id="DIV_169" class="pc1screenWidthBackground"></div>
+						<div id="DIV_170" class="pc1centeredContent">
+							<div style="display:none" id="DIV_171" class="pc1bg"></div>
+							<div id="DIV_172" class="pc1inlineContent">
+								<div style="width: 100%; left: 0px; position: absolute; top: 0px; height: 2053px;" class="s_VOwPageGroupSkin" id="DIV_173">
+									<div data-ismobile="true" data-is-mesh-layout="false" style="left: 0px; min-width: 320px; min-height: 200px; width: 100%; position: absolute; top: 0px; height: 2053px;"
+									  class="style-igqaaw2w" data-state="mobileView" id="DIV_174">
+										<div id="DIV_175" class="style-igqaaw2wbg"></div>
+										<div id="DIV_176" class="style-igqaaw2winlineContent">
+											<div role="region" aria-label="Slideshow" style="left: 0px; margin-left: 0px; width: 320px; position: absolute; top: 0px; height: 166px;"
+											  class="style-jjq7bk481" id="DIV_177">
+												<div id="DIV_178" class="style-jjq7bk481bg"></div>
+												<div class="style-jjq7bk481_hide-overflow style-jjq7bk481inlineContentParent" tabindex="-1" id="DIV_179">
+													<div aria-live="polite" id="DIV_180" class="style-jjq7bk481inlineContent">
+														<div data-flexibleboxheight="false" data-parent-id="comp-jjq0r7k8" data-min-height="164" style="min-height: 164px; left: 0px; margin-left: 0px; width: 320px; position: absolute; top: 0px; height: 166px;"
+														  class="style-jjq1sef32" data-state="mobileView" id="DIV_181">
 															<div style="position: absolute; top: 0px; width: 100%; height: 100%; overflow: hidden; pointer-events: auto; clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%); cursor: pointer;"
 															  data-page-id="ijdas" data-enable-video="" data-bg-effect-name="" data-media-type="WixVideo" data-render-fixed-position="true"
-															  data-use-clip-path="true" data-needs-clipping="false" class="style-jjq1sef32balata" id="DIV_186">
-																<div style="width:100%;height:100%;background-color:transparent;position:absolute" class="bgColor" id="DIV_187">
-																	<div data-background-image="" style="width:100%;height:100%;position:absolute" id="DIV_188" class="bgColoroverlay"></div>
+															  data-use-clip-path="true" data-needs-clipping="false" class="style-jjq1sef32balata" id="DIV_182">
+																<div style="width:100%;height:100%;background-color:transparent;position:absolute" class="bgColor" id="DIV_183">
+																	<div data-background-image="" style="width:100%;height:100%;position:absolute" id="DIV_184" class="bgColoroverlay"></div>
 																</div>
-																<div style="position: absolute; pointer-events: auto; top: 0px; width: 320px; height: 164px; left: 0px;" data-effect="none"
-																  data-fitting="fill" data-align="center" class="bgMedia" id="DIV_189">
-																	<div data-type="image" data-style="" class="bgImage" id="DIV_190" style="position: relative; width: 320px; height: 166px;">
-																		<img id="IMG_191" alt="" data-type="image" src="../Hebron NHS_files/black.png" style="width: 320px; height: 166px; object-fit: cover;">
+																<div style="position: absolute; pointer-events: auto; top: 0px; width: 320px; height: 166px; left: 0px;" data-effect="none"
+																  data-fitting="fill" data-align="center" class="bgMedia" id="DIV_185">
+																	<div data-type="image" data-style="" class="bgImage" id="DIV_186" style="position: relative; width: 320px; height: 166px;">
+																		<img id="IMG_187" alt="" data-type="image" src="../Hebron NHS_files/black.png"
+																		  style="width: 320px; height: 166px; object-fit: cover;">
 																	</div>
 																</div>
 															</div>
-															<div id="DIV_192" class="style-jjq1sef32borderNode"></div>
-															<div style="overflow-x:hidden;overflow-y:hidden" id="DIV_193" class="style-jjq1sef32inlineContentParent">
-																<div id="DIV_194" class="style-jjq1sef32inlineContent">
-																	<div data-packed="true" style="left: 21px; width: 278px; position: absolute; top: 49px;" class="txtNew" id="DIV_195">
-																		<h2 class="font_2" style=" text-align:center;font-size:22px" id="H2_196">
-																			<span style="font-size:22px" id="SPAN_197">
-																				<span style="font-family:playfair display,serif;" id="SPAN_198">
-																					<span style="letter-spacing:0.1em;" id="SPAN_199">
-																						<span class="color_11" id="SPAN_200">HEBRON NATIONAL HONOR SOCIETY</span>
+															<div id="DIV_188" class="style-jjq1sef32borderNode"></div>
+															<div style="overflow-x:hidden;overflow-y:hidden" id="DIV_189" class="style-jjq1sef32inlineContentParent">
+																<div id="DIV_190" class="style-jjq1sef32inlineContent">
+																	<div data-packed="true" style="left: 21px; width: 278px; position: absolute; top: 49px;" class="txtNew" id="DIV_191">
+																		<h2 class="font_2" style=" text-align:center;font-size:22px" id="H2_192">
+																			<span style="font-size:22px" id="SPAN_193">
+																				<span style="font-family:playfair display,serif;" id="SPAN_194">
+																					<span style="letter-spacing:0.1em;" id="SPAN_195">
+																						<span class="color_11" id="SPAN_196">HEBRON NATIONAL HONOR SOCIETY</span>
 																					</span>
 																				</span>
 																			</span>
 																		</h2>
 																	</div>
-																	<style type="text/css" data-styleid="txtNew" id="STYLE_201">
+																	<style type="text/css" data-styleid="txtNew" id="STYLE_197">
 																		.txtNew {
 																			word-wrap: break-word;
 																			text-align: start;
@@ -2346,7 +2415,7 @@
 																</div>
 															</div>
 														</div>
-														<style type="text/css" data-styleid="style-jjq1sef32" id="STYLE_202">
+														<style type="text/css" data-styleid="style-jjq1sef32" id="STYLE_198">
 															.style-jjq1sef32borderNode {
 																border: 0px solid rgba(20, 114, 133, 1);
 																position: absolute;
@@ -2385,9 +2454,10 @@
 														</style>
 													</div>
 												</div>
-												<div id="DIV_203" class="style-jjq7bk481shownOnAllSlides"></div>
+												<div id="DIV_199" class="style-jjq7bk481shownOnAllSlides"></div>
+
 											</div>
-											<style type="text/css" data-styleid="style-jjq7bk481" id="STYLE_222">
+											<style type="text/css" data-styleid="style-jjq7bk481" id="STYLE_218">
 												.style-jjq7bk481 {
 													background-color: transparent;
 													box-sizing: border-box !important;
@@ -2485,857 +2555,32 @@
 													stroke-width: 1px;
 												}
 											</style>
-											<div data-packed="true" style="left: 51px; width: 218px; position: absolute; top: 182px;" class="txtNew" id="DIV_223">
-												<h4 class="font_4" style="font-size:27px" id="H4_224">
-													<span class="color_15" id="SPAN_225">
-														<span style="font-size:27px" id="SPAN_226">Checking Hours?</span>
-													</span>
-												</h4>
-											</div>
-											<style type="text/css" data-styleid="txtNew" id="STYLE_227">
-												.txtNew {
-													word-wrap: break-word;
-													text-align: start;
-													pointer-events: none;
-												}
-
-												.txtNew_override-left * {
-													text-align: left !important;
-												}
-
-												.txtNew_override-right * {
-													text-align: right !important;
-												}
-
-												.txtNew_override-center * {
-													text-align: center !important;
-												}
-
-												.txtNew_override-justify * {
-													text-align: justify !important;
-												}
-
-												.txtNew>* {
-													pointer-events: auto;
-												}
-
-												.txtNew li {
-													font-style: inherit;
-													font-weight: inherit;
-													line-height: inherit;
-													letter-spacing: normal;
-												}
-
-												.txtNew ol,
-												.txtNew ul {
-													padding-left: 1.3em;
-													padding-right: 0;
-													margin-left: 0.5em;
-													margin-right: 0;
-													line-height: normal;
-													letter-spacing: normal;
-												}
-
-												.txtNew ul {
-													list-style-type: disc;
-												}
-
-												.txtNew ol {
-													list-style-type: decimal;
-												}
-
-												.txtNew ul ul,
-												.txtNew ol ul {
-													list-style-type: circle;
-												}
-
-												.txtNew ul ul ul,
-												.txtNew ol ul ul {
-													list-style-type: square;
-												}
-
-												.txtNew ul ol ul,
-												.txtNew ol ol ul {
-													list-style-type: square;
-												}
-
-												.txtNew ul[dir="rtl"],
-												.txtNew ol[dir="rtl"] {
-													padding-left: 0;
-													padding-right: 1.3em;
-													margin-left: 0;
-													margin-right: 0.5em;
-												}
-
-												.txtNew ul[dir="rtl"] ul,
-												.txtNew ul[dir="rtl"] ol,
-												.txtNew ol[dir="rtl"] ul,
-												.txtNew ol[dir="rtl"] ol {
-													padding-left: 0;
-													padding-right: 1.3em;
-													margin-left: 0;
-													margin-right: 0.5em;
-												}
-
-												.txtNew p {
-													margin: 0;
-													line-height: normal;
-													letter-spacing: normal;
-												}
-
-												.txtNew h1 {
-													margin: 0;
-													line-height: normal;
-													letter-spacing: normal;
-												}
-
-												.txtNew h2 {
-													margin: 0;
-													line-height: normal;
-													letter-spacing: normal;
-												}
-
-												.txtNew h3 {
-													margin: 0;
-													line-height: normal;
-													letter-spacing: normal;
-												}
-
-												.txtNew h4 {
-													margin: 0;
-													line-height: normal;
-													letter-spacing: normal;
-												}
-
-												.txtNew h5 {
-													margin: 0;
-													line-height: normal;
-													letter-spacing: normal;
-												}
-
-												.txtNew h6 {
-													margin: 0;
-													line-height: normal;
-													letter-spacing: normal;
-												}
-
-												.txtNew a {
-													color: inherit;
-												}
-											</style>
-											<div data-packed="true" style="left: 43px; width: 233px; position: absolute; top: 228px;" class="txtNew" id="DIV_228">
-												<p class="font_7" style="font-size:19px" id="P_229">
-													<span class="color_15" id="SPAN_230">
-														<span style="font-size:19px" id="SPAN_231">
-															<span style="font-family:raleway,sans-serif;" id="SPAN_232">You can easily check your hours by clicking on the following button.</span>
-														</span>
-													</span>
-												</p>
-											</div>
-											<style type="text/css" data-styleid="txtNew" id="STYLE_233">
-												.txtNew {
-													word-wrap: break-word;
-													text-align: start;
-													pointer-events: none;
-												}
-
-												.txtNew_override-left * {
-													text-align: left !important;
-												}
-
-												.txtNew_override-right * {
-													text-align: right !important;
-												}
-
-												.txtNew_override-center * {
-													text-align: center !important;
-												}
-
-												.txtNew_override-justify * {
-													text-align: justify !important;
-												}
-
-												.txtNew>* {
-													pointer-events: auto;
-												}
-
-												.txtNew li {
-													font-style: inherit;
-													font-weight: inherit;
-													line-height: inherit;
-													letter-spacing: normal;
-												}
-
-												.txtNew ol,
-												.txtNew ul {
-													padding-left: 1.3em;
-													padding-right: 0;
-													margin-left: 0.5em;
-													margin-right: 0;
-													line-height: normal;
-													letter-spacing: normal;
-												}
-
-												.txtNew ul {
-													list-style-type: disc;
-												}
-
-												.txtNew ol {
-													list-style-type: decimal;
-												}
-
-												.txtNew ul ul,
-												.txtNew ol ul {
-													list-style-type: circle;
-												}
-
-												.txtNew ul ul ul,
-												.txtNew ol ul ul {
-													list-style-type: square;
-												}
-
-												.txtNew ul ol ul,
-												.txtNew ol ol ul {
-													list-style-type: square;
-												}
-
-												.txtNew ul[dir="rtl"],
-												.txtNew ol[dir="rtl"] {
-													padding-left: 0;
-													padding-right: 1.3em;
-													margin-left: 0;
-													margin-right: 0.5em;
-												}
-
-												.txtNew ul[dir="rtl"] ul,
-												.txtNew ul[dir="rtl"] ol,
-												.txtNew ol[dir="rtl"] ul,
-												.txtNew ol[dir="rtl"] ol {
-													padding-left: 0;
-													padding-right: 1.3em;
-													margin-left: 0;
-													margin-right: 0.5em;
-												}
-
-												.txtNew p {
-													margin: 0;
-													line-height: normal;
-													letter-spacing: normal;
-												}
-
-												.txtNew h1 {
-													margin: 0;
-													line-height: normal;
-													letter-spacing: normal;
-												}
-
-												.txtNew h2 {
-													margin: 0;
-													line-height: normal;
-													letter-spacing: normal;
-												}
-
-												.txtNew h3 {
-													margin: 0;
-													line-height: normal;
-													letter-spacing: normal;
-												}
-
-												.txtNew h4 {
-													margin: 0;
-													line-height: normal;
-													letter-spacing: normal;
-												}
-
-												.txtNew h5 {
-													margin: 0;
-													line-height: normal;
-													letter-spacing: normal;
-												}
-
-												.txtNew h6 {
-													margin: 0;
-													line-height: normal;
-													letter-spacing: normal;
-												}
-
-												.txtNew a {
-													color: inherit;
-												}
-											</style>
-											<div data-packed="true" style="left: 43px; width: 250px; position: absolute; top: 389px;" class="txtNew" id="DIV_234">
-												<p class="font_7" style="font-size:19px" id="P_235">
-													<span class="color_15" id="SPAN_236">
-														<span style="font-size:19px" id="SPAN_237">
-															<span style="font-family:raleway,sans-serif;" id="SPAN_238">For more information on NHS hour requirements, visit our FAQs page or click on the following button.</span>
-														</span>
-													</span>
-												</p>
-											</div>
-											<style type="text/css" data-styleid="txtNew" id="STYLE_239">
-												.txtNew {
-													word-wrap: break-word;
-													text-align: start;
-													pointer-events: none;
-												}
-
-												.txtNew_override-left * {
-													text-align: left !important;
-												}
-
-												.txtNew_override-right * {
-													text-align: right !important;
-												}
-
-												.txtNew_override-center * {
-													text-align: center !important;
-												}
-
-												.txtNew_override-justify * {
-													text-align: justify !important;
-												}
-
-												.txtNew>* {
-													pointer-events: auto;
-												}
-
-												.txtNew li {
-													font-style: inherit;
-													font-weight: inherit;
-													line-height: inherit;
-													letter-spacing: normal;
-												}
-
-												.txtNew ol,
-												.txtNew ul {
-													padding-left: 1.3em;
-													padding-right: 0;
-													margin-left: 0.5em;
-													margin-right: 0;
-													line-height: normal;
-													letter-spacing: normal;
-												}
-
-												.txtNew ul {
-													list-style-type: disc;
-												}
-
-												.txtNew ol {
-													list-style-type: decimal;
-												}
-
-												.txtNew ul ul,
-												.txtNew ol ul {
-													list-style-type: circle;
-												}
-
-												.txtNew ul ul ul,
-												.txtNew ol ul ul {
-													list-style-type: square;
-												}
-
-												.txtNew ul ol ul,
-												.txtNew ol ol ul {
-													list-style-type: square;
-												}
-
-												.txtNew ul[dir="rtl"],
-												.txtNew ol[dir="rtl"] {
-													padding-left: 0;
-													padding-right: 1.3em;
-													margin-left: 0;
-													margin-right: 0.5em;
-												}
-
-												.txtNew ul[dir="rtl"] ul,
-												.txtNew ul[dir="rtl"] ol,
-												.txtNew ol[dir="rtl"] ul,
-												.txtNew ol[dir="rtl"] ol {
-													padding-left: 0;
-													padding-right: 1.3em;
-													margin-left: 0;
-													margin-right: 0.5em;
-												}
-
-												.txtNew p {
-													margin: 0;
-													line-height: normal;
-													letter-spacing: normal;
-												}
-
-												.txtNew h1 {
-													margin: 0;
-													line-height: normal;
-													letter-spacing: normal;
-												}
-
-												.txtNew h2 {
-													margin: 0;
-													line-height: normal;
-													letter-spacing: normal;
-												}
-
-												.txtNew h3 {
-													margin: 0;
-													line-height: normal;
-													letter-spacing: normal;
-												}
-
-												.txtNew h4 {
-													margin: 0;
-													line-height: normal;
-													letter-spacing: normal;
-												}
-
-												.txtNew h5 {
-													margin: 0;
-													line-height: normal;
-													letter-spacing: normal;
-												}
-
-												.txtNew h6 {
-													margin: 0;
-													line-height: normal;
-													letter-spacing: normal;
-												}
-
-												.txtNew a {
-													color: inherit;
-												}
-											</style>
-											<div id="DIV_240" data-align="center" data-disabled="false" data-margin="0" data-should-use-flex="true" data-width="240"
-											  data-height="42" style="left: 40px; position: absolute; top: 319px; height: 42px; min-height: 21px; width: 240px;"
-											  class="style-jkrovhy4" data-state="mobile shouldUseFlex center">
-												<a href="https://docs.google.com/spreadsheets/d/1nEIKEnzDoaZleRKt_sfXSyilwjEaa9kxUOCsXfxtX3g/edit#gid=0" target="_blank"
-												  data-content="https://docs.google.com/spreadsheets/d/1nEIKEnzDoaZleRKt_sfXSyilwjEaa9kxUOCsXfxtX3g/edit#gid=0"
-												  data-type="external" rel="nofollow" role="button" id="A_241" class="g-transparent-a style-jkrovhy4link">
-													<span style="font-size:15px" id="SPAN_242" class="style-jkrovhy4label">Check your hours here!</span>
-												</a>
-											</div>
-											<style type="text/css" data-styleid="style-jkrovhy4" id="STYLE_243">
-												.style-jkrovhy4 button.style-jkrovhy4link {
-													width: 100%;
-												}
-
-												.style-jkrovhy4[data-state~="shouldUseFlex"] .style-jkrovhy4link,
-												.style-jkrovhy4[data-state~="shouldUseFlex"] .style-jkrovhy4labelwrapper {
-													text-align: initial;
-													display: flex;
-													align-items: center;
-												}
-
-												.style-jkrovhy4[data-state~="shouldUseFlex"][data-state~="center"] .style-jkrovhy4link,
-												.style-jkrovhy4[data-state~="shouldUseFlex"][data-state~="center"] .style-jkrovhy4labelwrapper {
-													justify-content: center;
-												}
-
-												.style-jkrovhy4[data-state~="shouldUseFlex"][data-state~="left"] .style-jkrovhy4link,
-												.style-jkrovhy4[data-state~="shouldUseFlex"][data-state~="left"] .style-jkrovhy4labelwrapper {
-													justify-content: flex-start;
-												}
-
-												.style-jkrovhy4[data-state~="shouldUseFlex"][data-state~="right"] .style-jkrovhy4link,
-												.style-jkrovhy4[data-state~="shouldUseFlex"][data-state~="right"] .style-jkrovhy4labelwrapper {
-													justify-content: flex-end;
-												}
-
-												.style-jkrovhy4link {
-													border-radius: 5px;
-													position: absolute;
-													top: 0;
-													right: 0;
-													bottom: 0;
-													left: 0;
-													transition: border-color 0.4s ease 0s, background-color 0.4s ease 0s;
-												}
-
-												.style-jkrovhy4label {
-													font: normal normal 700 14px/1.4em raleway, sans-serif;
-													transition: color 0.4s ease 0s;
-													color: #FFFFFF;
-													display: inline-block;
-													margin: calc(-1 * 0px) 0px 0;
-													position: relative;
-													white-space: nowrap;
-												}
-
-												.style-jkrovhy4[data-state~="shouldUseFlex"] .style-jkrovhy4label {
-													margin: 0;
-												}
-
-												.style-jkrovhy4[data-disabled="false"] .style-jkrovhy4link {
-													background-color: rgba(12, 60, 96, 1);
-													border: solid rgba(12, 60, 96, 1) 0px;
-													cursor: pointer !important;
-												}
-
-												.style-jkrovhy4[data-disabled="false"]:active[data-state~="mobile"] .style-jkrovhy4link,
-												.style-jkrovhy4[data-disabled="false"]:hover[data-state~="desktop"] .style-jkrovhy4link,
-												.style-jkrovhy4[data-disabled="false"][data-preview~="hover"] .style-jkrovhy4link {
-													background-color: rgba(57, 114, 155, 1);
-													border-color: transparent;
-												}
-
-												.style-jkrovhy4[data-disabled="false"]:active[data-state~="mobile"] .style-jkrovhy4label,
-												.style-jkrovhy4[data-disabled="false"]:hover[data-state~="desktop"] .style-jkrovhy4label,
-												.style-jkrovhy4[data-disabled="false"][data-preview~="hover"] .style-jkrovhy4label {
-													color: #000000;
-												}
-
-												.style-jkrovhy4[data-disabled="true"] .style-jkrovhy4link,
-												.style-jkrovhy4[data-preview~="disabled"] .style-jkrovhy4link {
-													background-color: rgba(204, 204, 204, 1);
-													border-color: rgba(204, 204, 204, 1);
-												}
-
-												.style-jkrovhy4[data-disabled="true"] .style-jkrovhy4label,
-												.style-jkrovhy4[data-preview~="disabled"] .style-jkrovhy4label {
-													color: #FFFFFF;
-												}
-											</style>
-											<div id="DIV_244" data-align="center" data-disabled="false" data-margin="0" data-should-use-flex="true" data-width="240"
-											  data-height="42" style="left: 40px; position: absolute; top: 511px; height: 42px; min-height: 21px; width: 240px;"
-											  class="style-jjqkeyzz" data-state="mobile shouldUseFlex center">
-												<a href="./resources.html" target="_self" role="button" id="A_245" class="g-transparent-a style-jjqkeyzzlink">
-													<span style="font-size:15px" id="SPAN_246" class="style-jjqkeyzzlabel">Hour Requirements</span>
-												</a>
-											</div>
-											<style type="text/css" data-styleid="style-jjqkeyzz" id="STYLE_247">
-												.style-jjqkeyzz button.style-jjqkeyzzlink {
-													width: 100%;
-												}
-
-												.style-jjqkeyzz[data-state~="shouldUseFlex"] .style-jjqkeyzzlink,
-												.style-jjqkeyzz[data-state~="shouldUseFlex"] .style-jjqkeyzzlabelwrapper {
-													text-align: initial;
-													display: flex;
-													align-items: center;
-												}
-
-												.style-jjqkeyzz[data-state~="shouldUseFlex"][data-state~="center"] .style-jjqkeyzzlink,
-												.style-jjqkeyzz[data-state~="shouldUseFlex"][data-state~="center"] .style-jjqkeyzzlabelwrapper {
-													justify-content: center;
-												}
-
-												.style-jjqkeyzz[data-state~="shouldUseFlex"][data-state~="left"] .style-jjqkeyzzlink,
-												.style-jjqkeyzz[data-state~="shouldUseFlex"][data-state~="left"] .style-jjqkeyzzlabelwrapper {
-													justify-content: flex-start;
-												}
-
-												.style-jjqkeyzz[data-state~="shouldUseFlex"][data-state~="right"] .style-jjqkeyzzlink,
-												.style-jjqkeyzz[data-state~="shouldUseFlex"][data-state~="right"] .style-jjqkeyzzlabelwrapper {
-													justify-content: flex-end;
-												}
-
-												.style-jjqkeyzzlink {
-													border-radius: 5px;
-													position: absolute;
-													top: 0;
-													right: 0;
-													bottom: 0;
-													left: 0;
-													transition: border-color 0.4s ease 0s, background-color 0.4s ease 0s;
-												}
-
-												.style-jjqkeyzzlabel {
-													font: normal normal 700 14px/1.4em raleway, sans-serif;
-													transition: color 0.4s ease 0s;
-													color: #FFFFFF;
-													display: inline-block;
-													margin: calc(-1 * 0px) 0px 0;
-													position: relative;
-													white-space: nowrap;
-												}
-
-												.style-jjqkeyzz[data-state~="shouldUseFlex"] .style-jjqkeyzzlabel {
-													margin: 0;
-												}
-
-												.style-jjqkeyzz[data-disabled="false"] .style-jjqkeyzzlink {
-													background-color: rgba(12, 60, 96, 1);
-													border: solid rgba(12, 60, 96, 1) 0px;
-													cursor: pointer !important;
-												}
-
-												.style-jjqkeyzz[data-disabled="false"]:active[data-state~="mobile"] .style-jjqkeyzzlink,
-												.style-jjqkeyzz[data-disabled="false"]:hover[data-state~="desktop"] .style-jjqkeyzzlink,
-												.style-jjqkeyzz[data-disabled="false"][data-preview~="hover"] .style-jjqkeyzzlink {
-													background-color: rgba(57, 114, 155, 1);
-													border-color: transparent;
-												}
-
-												.style-jjqkeyzz[data-disabled="false"]:active[data-state~="mobile"] .style-jjqkeyzzlabel,
-												.style-jjqkeyzz[data-disabled="false"]:hover[data-state~="desktop"] .style-jjqkeyzzlabel,
-												.style-jjqkeyzz[data-disabled="false"][data-preview~="hover"] .style-jjqkeyzzlabel {
-													color: #000000;
-												}
-
-												.style-jjqkeyzz[data-disabled="true"] .style-jjqkeyzzlink,
-												.style-jjqkeyzz[data-preview~="disabled"] .style-jjqkeyzzlink {
-													background-color: rgba(204, 204, 204, 1);
-													border-color: rgba(204, 204, 204, 1);
-												}
-
-												.style-jjqkeyzz[data-disabled="true"] .style-jjqkeyzzlabel,
-												.style-jjqkeyzz[data-preview~="disabled"] .style-jjqkeyzzlabel {
-													color: #FFFFFF;
-												}
-											</style>
-											<div data-packed="true" style="left: 40px; width: 237px; position: absolute; top: 566px;" class="txtNew" id="DIV_248">
-												<p class="font_7" style="font-size:19px" id="P_249">
-													<span class="color_15" id="SPAN_250">
-														<span style="font-size:19px" id="SPAN_251">
-															<span style="font-family:raleway,sans-serif;" id="SPAN_252">To print out an hour sheet, click on the following button.</span>
-														</span>
-													</span>
-												</p>
-											</div>
-											<style type="text/css" data-styleid="txtNew" id="STYLE_253">
-												.txtNew {
-													word-wrap: break-word;
-													text-align: start;
-													pointer-events: none;
-												}
-
-												.txtNew_override-left * {
-													text-align: left !important;
-												}
-
-												.txtNew_override-right * {
-													text-align: right !important;
-												}
-
-												.txtNew_override-center * {
-													text-align: center !important;
-												}
-
-												.txtNew_override-justify * {
-													text-align: justify !important;
-												}
-
-												.txtNew>* {
-													pointer-events: auto;
-												}
-
-												.txtNew li {
-													font-style: inherit;
-													font-weight: inherit;
-													line-height: inherit;
-													letter-spacing: normal;
-												}
-
-												.txtNew ol,
-												.txtNew ul {
-													padding-left: 1.3em;
-													padding-right: 0;
-													margin-left: 0.5em;
-													margin-right: 0;
-													line-height: normal;
-													letter-spacing: normal;
-												}
-
-												.txtNew ul {
-													list-style-type: disc;
-												}
-
-												.txtNew ol {
-													list-style-type: decimal;
-												}
-
-												.txtNew ul ul,
-												.txtNew ol ul {
-													list-style-type: circle;
-												}
-
-												.txtNew ul ul ul,
-												.txtNew ol ul ul {
-													list-style-type: square;
-												}
-
-												.txtNew ul ol ul,
-												.txtNew ol ol ul {
-													list-style-type: square;
-												}
-
-												.txtNew ul[dir="rtl"],
-												.txtNew ol[dir="rtl"] {
-													padding-left: 0;
-													padding-right: 1.3em;
-													margin-left: 0;
-													margin-right: 0.5em;
-												}
-
-												.txtNew ul[dir="rtl"] ul,
-												.txtNew ul[dir="rtl"] ol,
-												.txtNew ol[dir="rtl"] ul,
-												.txtNew ol[dir="rtl"] ol {
-													padding-left: 0;
-													padding-right: 1.3em;
-													margin-left: 0;
-													margin-right: 0.5em;
-												}
-
-												.txtNew p {
-													margin: 0;
-													line-height: normal;
-													letter-spacing: normal;
-												}
-
-												.txtNew h1 {
-													margin: 0;
-													line-height: normal;
-													letter-spacing: normal;
-												}
-
-												.txtNew h2 {
-													margin: 0;
-													line-height: normal;
-													letter-spacing: normal;
-												}
-
-												.txtNew h3 {
-													margin: 0;
-													line-height: normal;
-													letter-spacing: normal;
-												}
-
-												.txtNew h4 {
-													margin: 0;
-													line-height: normal;
-													letter-spacing: normal;
-												}
-
-												.txtNew h5 {
-													margin: 0;
-													line-height: normal;
-													letter-spacing: normal;
-												}
-
-												.txtNew h6 {
-													margin: 0;
-													line-height: normal;
-													letter-spacing: normal;
-												}
-
-												.txtNew a {
-													color: inherit;
-												}
-											</style>
-											<div id="DIV_254" data-align="center" data-disabled="false" data-margin="0" data-should-use-flex="true" data-width="240"
-											  data-height="42" style="left: 38px; position: absolute; top: 667px; height: 42px; min-height: 21px; width: 240px;"
-											  class="style-jjqkf7pj" data-state="mobile shouldUseFlex center">
-												<a href="../hour-sheet.pdf" target="_blank" data-type="document"
-												  role="button" id="A_255" class="g-transparent-a style-jjqkf7pjlink">
-													<span style="font-size:15px" id="SPAN_256" class="style-jjqkf7pjlabel">Hour Sheet</span>
-												</a>
-											</div>
-											<style type="text/css" data-styleid="style-jjqkf7pj" id="STYLE_257">
-												.style-jjqkf7pj button.style-jjqkf7pjlink {
-													width: 100%;
-												}
-
-												.style-jjqkf7pj[data-state~="shouldUseFlex"] .style-jjqkf7pjlink,
-												.style-jjqkf7pj[data-state~="shouldUseFlex"] .style-jjqkf7pjlabelwrapper {
-													text-align: initial;
-													display: flex;
-													align-items: center;
-												}
-
-												.style-jjqkf7pj[data-state~="shouldUseFlex"][data-state~="center"] .style-jjqkf7pjlink,
-												.style-jjqkf7pj[data-state~="shouldUseFlex"][data-state~="center"] .style-jjqkf7pjlabelwrapper {
-													justify-content: center;
-												}
-
-												.style-jjqkf7pj[data-state~="shouldUseFlex"][data-state~="left"] .style-jjqkf7pjlink,
-												.style-jjqkf7pj[data-state~="shouldUseFlex"][data-state~="left"] .style-jjqkf7pjlabelwrapper {
-													justify-content: flex-start;
-												}
-
-												.style-jjqkf7pj[data-state~="shouldUseFlex"][data-state~="right"] .style-jjqkf7pjlink,
-												.style-jjqkf7pj[data-state~="shouldUseFlex"][data-state~="right"] .style-jjqkf7pjlabelwrapper {
-													justify-content: flex-end;
-												}
-
-												.style-jjqkf7pjlink {
-													border-radius: 5px;
-													position: absolute;
-													top: 0;
-													right: 0;
-													bottom: 0;
-													left: 0;
-													transition: border-color 0.4s ease 0s, background-color 0.4s ease 0s;
-												}
-
-												.style-jjqkf7pjlabel {
-													font: normal normal 700 14px/1.4em raleway, sans-serif;
-													transition: color 0.4s ease 0s;
-													color: #FFFFFF;
-													display: inline-block;
-													margin: calc(-1 * 0px) 0px 0;
-													position: relative;
-													white-space: nowrap;
-												}
-
-												.style-jjqkf7pj[data-state~="shouldUseFlex"] .style-jjqkf7pjlabel {
-													margin: 0;
-												}
-
-												.style-jjqkf7pj[data-disabled="false"] .style-jjqkf7pjlink {
-													background-color: rgba(12, 60, 96, 1);
-													border: solid rgba(12, 60, 96, 1) 0px;
-													cursor: pointer !important;
-												}
-
-												.style-jjqkf7pj[data-disabled="false"]:active[data-state~="mobile"] .style-jjqkf7pjlink,
-												.style-jjqkf7pj[data-disabled="false"]:hover[data-state~="desktop"] .style-jjqkf7pjlink,
-												.style-jjqkf7pj[data-disabled="false"][data-preview~="hover"] .style-jjqkf7pjlink {
-													background-color: rgba(57, 114, 155, 1);
-													border-color: transparent;
-												}
-
-												.style-jjqkf7pj[data-disabled="false"]:active[data-state~="mobile"] .style-jjqkf7pjlabel,
-												.style-jjqkf7pj[data-disabled="false"]:hover[data-state~="desktop"] .style-jjqkf7pjlabel,
-												.style-jjqkf7pj[data-disabled="false"][data-preview~="hover"] .style-jjqkf7pjlabel {
-													color: #000000;
-												}
-
-												.style-jjqkf7pj[data-disabled="true"] .style-jjqkf7pjlink,
-												.style-jjqkf7pj[data-preview~="disabled"] .style-jjqkf7pjlink {
-													background-color: rgba(204, 204, 204, 1);
-													border-color: rgba(204, 204, 204, 1);
-												}
-
-												.style-jjqkf7pj[data-disabled="true"] .style-jjqkf7pjlabel,
-												.style-jjqkf7pj[data-preview~="disabled"] .style-jjqkf7pjlabel {
-													color: #FFFFFF;
-												}
-											</style>
-											<section style="margin-left: 0px; position: absolute; top: 719px; height: 371px; left: 0px; width: 100%;" class="strc1" id="SECTION_258">
+											<section style="margin-left: 0px; position: absolute; top: 992px; height: 345px; left: 0px; width: 100%;" class="strc1" id="SECTION_219">
 												<div style="position: absolute; top: 0px; width: 100%; height: 100%; overflow: hidden; pointer-events: auto; clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%); cursor: pointer;"
 												  data-page-id="ijdas" data-enable-video="" data-bg-effect-name="" data-media-type="" data-render-fixed-position="true"
-												  data-use-clip-path="true" data-needs-clipping="false" class="strc1balata" id="DIV_259">
-													<div style="width:100%;height:100%;background-color:transparent;position:absolute" class="bgColor" id="DIV_260">
-														<div data-background-image="" style="width:100%;height:100%;position:absolute" id="DIV_261" class="bgColoroverlay"></div>
+												  data-use-clip-path="true" data-needs-clipping="false" class="strc1balata" id="DIV_220">
+													<div style="width:100%;height:100%;background-color:transparent;position:absolute" class="bgColor" id="DIV_221">
+														<div data-background-image="" style="width:100%;height:100%;position:absolute" id="DIV_222" class="bgColoroverlay"></div>
 													</div>
 												</div>
-												<div id="DIV_262" class="strc1inlineContent">
-													<div style="position: absolute; left: 0px; width: 320px; top: 0px; height: 370px;" class="strc1" id="DIV_263">
+												<div id="DIV_223" class="strc1inlineContent">
+													<div style="position: absolute; left: 0px; width: 320px; top: 0px; height: 345px;" class="strc1" id="DIV_224">
 														<div style="position: absolute; top: 0px; width: 320px; height: 100%; overflow: hidden; pointer-events: auto; clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%); left: 0px; bottom: 0px; cursor: pointer;"
 														  data-page-id="ijdas" data-enable-video="" data-bg-effect-name="" data-media-type="" data-render-fixed-position="true"
-														  data-use-clip-path="true" data-needs-clipping="false" class="strc1balata" id="DIV_264">
-															<div style="width:100%;height:100%;background-color:rgba(12, 60, 96, 1);position:absolute" class="bgColor" id="DIV_265">
-																<div data-background-image="" style="width:100%;height:100%;position:absolute" id="DIV_266" class="bgColoroverlay"></div>
+														  data-use-clip-path="true" data-needs-clipping="false" class="strc1balata" id="DIV_225">
+															<div style="width:100%;height:100%;background-color:rgba(12, 60, 96, 1);position:absolute" class="bgColor" id="DIV_226">
+																<div data-background-image="" style="width:100%;height:100%;position:absolute" id="DIV_227" class="bgColoroverlay"></div>
 															</div>
 														</div>
-														<div style="width:320px;position:absolute;top:0;bottom:0" id="DIV_267" class="strc1inlineContent">
-															<div data-packed="false" style="left: 20px; width: 280px; position: absolute; top: 20px;" class="txtNew" id="DIV_268">
-																<h4 class="font_4" style="font-size:27px" id="H4_269">
-																	<span style="font-size:27px" id="SPAN_270">
-																		<span style="color:#FFFFFF;" id="SPAN_271">Stay Connected!</span>
+														<div style="width:320px;position:absolute;top:0;bottom:0" id="DIV_228" class="strc1inlineContent">
+															<div data-packed="false" style="left: 20px; width: 280px; position: absolute; top: 20px;" class="txtNew" id="DIV_229">
+																<h4 class="font_4" style="font-size:27px" id="H4_230">
+																	<span style="font-size:27px" id="SPAN_231">
+																		<span style="color:#FFFFFF;" id="SPAN_232">Stay Connected!</span>
 																	</span>
 																</h4>
 															</div>
-															<style type="text/css" data-styleid="txtNew" id="STYLE_272">
+															<style type="text/css" data-styleid="txtNew" id="STYLE_233">
 																.txtNew {
 																	word-wrap: break-word;
 																	text-align: start;
@@ -3466,49 +2711,55 @@
 																	color: inherit;
 																}
 															</style>
-															<div data-packed="false" style="left: 20px; width: 280px; position: absolute; top: 62px;" class="txtNew" id="DIV_273">
-																<p class="font_7" style="font-size:19px" id="P_274">
-																	<span style="font-size:19px" id="SPAN_275">
-																		<span style="font-family:raleway,sans-serif;" id="SPAN_276">
-																			<span style="color:#FFFFFF;" id="SPAN_277">
-																				<span style="font-weight:bold;" id="SPAN_278">Join the NHS Remind:</span>
+															<div data-packed="false" style="left: 20px; width: 280px; position: absolute; top: 62px;" class="txtNew" id="DIV_234">
+																<p class="font_7" style="font-size:19px" id="P_235">
+																	<span style="font-size:19px" id="SPAN_236">
+																		<span style="font-family:raleway,sans-serif;" id="SPAN_237">
+																			<span style="color:#FFFFFF;" id="SPAN_238">
+																				<span style="font-weight:bold;" id="SPAN_239">Join the NHS Canvas:</span>
 																			</span>
 																		</span>
 																	</span>
 																</p>
 
-																<p class="font_7" style="font-size:19px" id="P_279">&nbsp;</p>
+																<p class="font_7" style="font-size:19px" id="P_240">&nbsp;</p>
 
-																<p class="font_7" style="font-size:19px" id="P_280">
-																	<span style="font-size:19px" id="SPAN_281">
-																		<span style="font-family:raleway,sans-serif;" id="SPAN_282">
-																			<span style="color:#FFFFFF;" id="SPAN_283">Text the message "@hebronnhs" to 81010 or join via the Remind app and enter the class code "@hebronnhs"
+																<p class="font_7" style="font-size:19px" id="P_241">
+																	<span style="font-size:19px" id="SPAN_242">
+																		<span style="font-family:raleway,sans-serif;" id="SPAN_243">
+																			<span style="color:#FFFFFF;" id="SPAN_244">Add your name and email to
+																				<span id="SPAN_245">
+																					<a style="text-decoration:underline;" href="https://docs.google.com/forms/d/e/1FAIpQLScdn8Fw8Ah_SoZDNGxx84UPj3QopnMX8BVwhIXaY_XMqGlTiQ/viewform"
+																					  target="_blank" data-content="https://docs.google.com/forms/d/e/1FAIpQLScdn8Fw8Ah_SoZDNGxx84UPj3QopnMX8BVwhIXaY_XMqGlTiQ/viewform"
+																					  data-type="external" rel="nofollow" id="A_246">this form</a>
+																				</span> or contact Mrs. Bowen to be added to our course.</span>
+																		</span>
+																	</span>
+																</p>
 
+																<p class="font_7" style="font-size:19px" id="P_247">
+																	<span style="font-size:19px" id="SPAN_248">
+																		<span style="font-family:raleway,sans-serif;" id="SPAN_249">
+																			<span style="color:#FFFFFF;" id="SPAN_250">
+																				<span class="wixGuard" id="SPAN_251">​</span>
 																			</span>
 																		</span>
 																	</span>
 																</p>
 
-																<p class="font_7" style="font-size:19px" id="P_284">
-																	<span style="font-size:19px" id="SPAN_285">
-																		<span style="font-family:raleway,sans-serif;" id="SPAN_286">
-																			<span style="color:#FFFFFF;" id="SPAN_287">
-																				<span class="wixGuard" id="SPAN_288">​</span>
+																<p class="font_7" style="font-size:19px" id="P_252">
+																	<span style="font-size:19px" id="SPAN_253">
+																		<span style="font-family:raleway,sans-serif;" id="SPAN_254">
+																			<span style="color:#FFFFFF;" id="SPAN_255">
+																				<span style="font-weight:bold;" id="SPAN_256">Follow us on Twitter:</span>
+																				<a href="https://twitter.com/HebronNHS" target="_blank" data-content="https://twitter.com/HebronNHS" data-type="external"
+																				  rel="nofollow" id="A_257">@HebronNHS</a>
 																			</span>
-																		</span>
-																	</span>
-																</p>
-
-																<p class="font_7" style="font-size:19px" id="P_289">
-																	<span style="font-size:19px" id="SPAN_290">
-																		<span style="font-family:raleway,sans-serif;" id="SPAN_291">
-																			<span style="color:#FFFFFF;" id="SPAN_292">
-																				<span style="font-weight:bold;" id="SPAN_293">Follow us on Twitter:</span> <A href="https://twitter.com/HebronNHS">@HebronNHS</A></span>
 																		</span>
 																	</span>
 																</p>
 															</div>
-															<style type="text/css" data-styleid="txtNew" id="STYLE_294">
+															<style type="text/css" data-styleid="txtNew" id="STYLE_258">
 																.txtNew {
 																	word-wrap: break-word;
 																	text-align: start;
@@ -3639,32 +2890,32 @@
 																	color: inherit;
 																}
 															</style>
-															<div data-hide-prejs="true" style="width: 85px; left: 20px; position: absolute; top: 315px; height: 35px;" class="lb1" data-state="mobileView"
-															  id="DIV_295">
-																<ul aria-label="Social bar" id="UL_296" class="lb1itemsContainer">
-																	<li style="width:35px;height:35px;margin-bottom:0;margin-right:15px;display:inline-block" class="lb1imageItem" id="LI_297">
-																		<a href="https://www.remind.com/join/hebronnhs" target="_blank" data-content="https://www.remind.com/join/hebronnhs" data-type="external"
-																		  rel="nofollow" id="A_298" class="lb1imageItemlink">
-																			<div data-image-info="{&quot;imageData&quot;:{&quot;link&quot;:{&quot;type&quot;:&quot;ExternalLink&quot;,&quot;id&quot;:&quot;dataItem-jjq7jydu2&quot;,&quot;metaData&quot;:{&quot;isPreset&quot;:false,&quot;schemaVersion&quot;:&quot;1.0&quot;,&quot;isHidden&quot;:false},&quot;url&quot;:&quot;https://www.remind.com/join/hebronnhs&quot;,&quot;target&quot;:&quot;_blank&quot;},&quot;type&quot;:&quot;Image&quot;,&quot;id&quot;:&quot;dataItem-jjq7jydu1&quot;,&quot;metaData&quot;:{&quot;isPreset&quot;:false,&quot;schemaVersion&quot;:&quot;2.0&quot;,&quot;isHidden&quot;:false},&quot;title&quot;:&quot;remind&quot;,&quot;uri&quot;:&quot;e94362_27bcf186bdf94a41850eb793a09285fa~mv2.png&quot;,&quot;description&quot;:&quot;&quot;,&quot;width&quot;:600,&quot;height&quot;:600,&quot;alt&quot;:&quot;remind&quot;},&quot;displayMode&quot;:&quot;fill&quot;}"
+															<div data-hide-prejs="true" style="width: 85px; left: 20px; position: absolute; top: 290px; height: 35px;" class="lb1" data-state="mobileView"
+															  id="DIV_259">
+																<ul aria-label="Social bar" id="UL_260" class="lb1itemsContainer">
+																	<li style="width:35px;height:35px;margin-bottom:0;margin-right:15px;display:inline-block" class="lb1imageItem" id="LI_261">
+																		<a href="https://lisdtx.instructure.com" target="_blank" data-content="https://lisdtx.instructure.com" data-type="external"
+																		  rel="nofollow" id="A_262" class="lb1imageItemlink">
+																			<div data-image-info="{&quot;imageData&quot;:{&quot;link&quot;:{&quot;type&quot;:&quot;ExternalLink&quot;,&quot;id&quot;:&quot;dataItem-jjq7jydu2&quot;,&quot;metaData&quot;:{&quot;isPreset&quot;:false,&quot;schemaVersion&quot;:&quot;1.0&quot;,&quot;isHidden&quot;:false},&quot;url&quot;:&quot;https://lisdtx.instructure.com&quot;,&quot;target&quot;:&quot;_blank&quot;},&quot;type&quot;:&quot;Image&quot;,&quot;id&quot;:&quot;dataItem-jjq7jydu1&quot;,&quot;metaData&quot;:{&quot;isPreset&quot;:false,&quot;schemaVersion&quot;:&quot;2.0&quot;,&quot;isHidden&quot;:false},&quot;title&quot;:&quot;Canvas-Logo&quot;,&quot;uri&quot;:&quot;6efda7_fd482cf5985d407a90b0bed6177ac4e7~mv2.png&quot;,&quot;description&quot;:&quot;&quot;,&quot;width&quot;:198,&quot;height&quot;:200,&quot;alt&quot;:&quot;Canvas-Logo&quot;},&quot;displayMode&quot;:&quot;fill&quot;}"
 																			  style="width: 35px; height: 35px; position: absolute;" data-style="position:absolute;width:35;height:35"
-																			  class="lb1imageItemimage" id="DIV_299">
-																				<img id="IMG_300" alt="remind" data-type="image" style="width: 35px; height: 35px; object-fit: cover;" src="https://static.wixstatic.com/media/e94362_27bcf186bdf94a41850eb793a09285fa~mv2.png/v1/fill/w_70,h_70,al_c,usm_0.66_1.00_0.01/e94362_27bcf186bdf94a41850eb793a09285fa~mv2.png">
+																			  class="lb1imageItemimage" id="DIV_263">
+																				<img id="IMG_264" alt="Canvas-Logo" data-type="image" style="width: 35px; height: 35px; object-fit: cover;" src="../Hebron NHS_files/Canvas-Logo.png">
 																			</div>
 																		</a>
 																	</li>
-																	<li style="width:35px;height:35px;margin-bottom:0;margin-right:15px;display:inline-block" class="lb1imageItem" id="LI_301">
+																	<li style="width:35px;height:35px;margin-bottom:0;margin-right:15px;display:inline-block" class="lb1imageItem" id="LI_265">
 																		<a href="https://twitter.com/hebronnhs" target="_blank" data-content="https://twitter.com/hebronnhs" data-type="external"
-																		  rel="nofollow" id="A_302" class="lb1imageItemlink">
+																		  rel="nofollow" id="A_266" class="lb1imageItemlink">
 																			<div data-image-info="{&quot;imageData&quot;:{&quot;link&quot;:{&quot;type&quot;:&quot;ExternalLink&quot;,&quot;id&quot;:&quot;dataItem-jjq7jydu4&quot;,&quot;metaData&quot;:{&quot;isPreset&quot;:false,&quot;schemaVersion&quot;:&quot;1.0&quot;,&quot;isHidden&quot;:false},&quot;url&quot;:&quot;https://twitter.com/hebronnhs&quot;,&quot;target&quot;:&quot;_blank&quot;},&quot;type&quot;:&quot;Image&quot;,&quot;id&quot;:&quot;dataItem-jjq7jydu3&quot;,&quot;metaData&quot;:{&quot;isPreset&quot;:false,&quot;schemaVersion&quot;:&quot;2.0&quot;,&quot;isHidden&quot;:false},&quot;title&quot;:&quot;twitter_circle-512&quot;,&quot;uri&quot;:&quot;6efda7_6e83193eba324017a2d804c86352c8be~mv2.png&quot;,&quot;description&quot;:&quot;&quot;,&quot;width&quot;:512,&quot;height&quot;:512,&quot;alt&quot;:&quot;twitter_circle-512&quot;},&quot;displayMode&quot;:&quot;fill&quot;}"
 																			  style="width: 35px; height: 35px; position: absolute;" data-style="position:absolute;width:35;height:35"
-																			  class="lb1imageItemimage" id="DIV_303">
-																				<img id="IMG_304" alt="twitter_circle-512" data-type="image" style="width: 35px; height: 35px; object-fit: cover;" src="https://static.wixstatic.com/media/6efda7_6e83193eba324017a2d804c86352c8be~mv2.png/v1/fill/w_70,h_70,al_c,usm_0.66_1.00_0.01/6efda7_6e83193eba324017a2d804c86352c8be~mv2.png">
+																			  class="lb1imageItemimage" id="DIV_267">
+																				<img id="IMG_268" alt="twitter_circle-512" data-type="image" style="width: 35px; height: 35px; object-fit: cover;" src="../Hebron NHS_files/6efda7_6e83193eba324017a2d804c86352c8be_mv2.png">
 																			</div>
 																		</a>
 																	</li>
 																</ul>
 															</div>
-															<style type="text/css" data-styleid="lb1" id="STYLE_305">
+															<style type="text/css" data-styleid="lb1" id="STYLE_269">
 																.lb1itemsContainer {
 																	position: absolute;
 																	width: 100%;
@@ -3699,7 +2950,7 @@
 															</style>
 														</div>
 													</div>
-													<style type="text/css" data-styleid="strc1" id="STYLE_306">
+													<style type="text/css" data-styleid="strc1" id="STYLE_270">
 														.strc1:not([data-mobile-responsive])>.strc1inlineContent {
 															position: absolute;
 															top: 0;
@@ -3743,7 +2994,7 @@
 													</style>
 												</div>
 											</section>
-											<style type="text/css" data-styleid="strc1" id="STYLE_307">
+											<style type="text/css" data-styleid="strc1" id="STYLE_271">
 												.strc1:not([data-mobile-responsive])>.strc1inlineContent {
 													position: absolute;
 													top: 0;
@@ -3785,59 +3036,59 @@
 													margin: 0 auto;
 												}
 											</style>
-											<section style="margin-left: 0px; position: absolute; top: 1395px; height: 411px; left: 0px; width: 100%;" class="strc1"
-											  id="SECTION_308">
+											<section style="margin-left: 0px; position: absolute; top: 1642px; height: 411px; left: 0px; width: 100%;" class="strc1"
+											  id="SECTION_272">
 												<div style="position: absolute; top: 0px; width: 100%; height: 100%; overflow: hidden; pointer-events: auto; clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%); cursor: pointer;"
 												  data-page-id="ijdas" data-enable-video="" data-bg-effect-name="" data-media-type="" data-render-fixed-position="true"
-												  data-use-clip-path="true" data-needs-clipping="false" class="strc1balata" id="DIV_309">
-													<div style="width:100%;height:100%;background-color:transparent;position:absolute" class="bgColor" id="DIV_310">
-														<div data-background-image="" style="width:100%;height:100%;position:absolute" id="DIV_311" class="bgColoroverlay"></div>
+												  data-use-clip-path="true" data-needs-clipping="false" class="strc1balata" id="DIV_273">
+													<div style="width:100%;height:100%;background-color:transparent;position:absolute" class="bgColor" id="DIV_274">
+														<div data-background-image="" style="width:100%;height:100%;position:absolute" id="DIV_275" class="bgColoroverlay"></div>
 													</div>
 												</div>
-												<div id="DIV_312" class="strc1inlineContent">
-													<div style="position: absolute; left: 0px; width: 320px; top: 0px; height: 411px;" class="mc1" id="DIV_313">
-														<div id="DIV_314" class="mc1container">
+												<div id="DIV_276" class="strc1inlineContent">
+													<div style="position: absolute; left: 0px; width: 320px; top: 0px; height: 411px;" class="mc1" id="DIV_277">
+														<div id="DIV_278" class="mc1container">
 															<div style="position: absolute; top: 0px; width: 320px; height: 100%; overflow: hidden; pointer-events: auto; clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%); left: 0px; bottom: 0px; cursor: pointer;"
 															  data-page-id="ijdas" data-enable-video="" data-bg-effect-name="" data-media-type="" data-render-fixed-position="true"
-															  data-use-clip-path="true" data-needs-clipping="false" class="mc1balata" id="DIV_315">
-																<div style="width:100%;height:100%;background-color:rgba(250, 250, 250, 1);position:absolute" class="bgColor" id="DIV_316">
-																	<div data-background-image="" style="width:100%;height:100%;position:absolute" id="DIV_317" class="bgColoroverlay"></div>
+															  data-use-clip-path="true" data-needs-clipping="false" class="mc1balata" id="DIV_279">
+																<div style="width:100%;height:100%;background-color:rgba(250, 250, 250, 1);position:absolute" class="bgColor" id="DIV_280">
+																	<div data-background-image="" style="width:100%;height:100%;position:absolute" id="DIV_281" class="bgColoroverlay"></div>
 																</div>
 															</div>
-															<div style="position:absolute;overflow:hidden;width:320px;left:0;top:0;bottom:0" id="DIV_318" class="mc1inlineContentParent">
-																<div style="width:320px;position:absolute;top:0;bottom:0" id="DIV_319" class="mc1inlineContent">
-																	<section style="width: 320px; position: absolute; top: 20px; height: 371px; left: 0px;" class="strc1" id="SECTION_320">
+															<div style="position:absolute;overflow:hidden;width:320px;left:0;top:0;bottom:0" id="DIV_282" class="mc1inlineContentParent">
+																<div style="width:320px;position:absolute;top:0;bottom:0" id="DIV_283" class="mc1inlineContent">
+																	<section style="width: 320px; position: absolute; top: 20px; height: 371px; left: 0px;" class="strc1" id="SECTION_284">
 																		<div style="position: absolute; top: 0px; width: 100%; height: 100%; overflow: hidden; pointer-events: auto; clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%); cursor: pointer;"
 																		  data-page-id="ijdas" data-enable-video="" data-bg-effect-name="" data-media-type="" data-render-fixed-position="true"
-																		  data-use-clip-path="true" data-needs-clipping="false" class="strc1balata" id="DIV_321">
-																			<div style="width:100%;height:100%;background-color:transparent;position:absolute" class="bgColor" id="DIV_322">
-																				<div data-background-image="" style="width:100%;height:100%;position:absolute" id="DIV_323" class="bgColoroverlay"></div>
+																		  data-use-clip-path="true" data-needs-clipping="false" class="strc1balata" id="DIV_285">
+																			<div style="width:100%;height:100%;background-color:transparent;position:absolute" class="bgColor" id="DIV_286">
+																				<div data-background-image="" style="width:100%;height:100%;position:absolute" id="DIV_287" class="bgColoroverlay"></div>
 																			</div>
 																		</div>
-																		<div id="DIV_324" class="strc1inlineContent">
-																			<div style="position: absolute; left: 0px; width: 320px; top: 0px; height: 64px;" class="strc1" id="DIV_325">
+																		<div id="DIV_288" class="strc1inlineContent">
+																			<div style="position: absolute; left: 0px; width: 320px; top: 0px; height: 64px;" class="strc1" id="DIV_289">
 																				<div style="position: absolute; top: 0px; width: 320px; height: 100%; overflow: hidden; pointer-events: auto; clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%); left: 0px; bottom: 0px; cursor: pointer;"
 																				  data-page-id="ijdas" data-enable-video="" data-bg-effect-name="" data-media-type="" data-render-fixed-position="true"
-																				  data-use-clip-path="true" data-needs-clipping="false" class="strc1balata" id="DIV_326">
-																					<div style="width:100%;height:100%;background-color:rgba(12, 60, 96, 1);position:absolute" class="bgColor" id="DIV_327">
-																						<div data-background-image="" style="width:100%;height:100%;position:absolute" id="DIV_328" class="bgColoroverlay"></div>
+																				  data-use-clip-path="true" data-needs-clipping="false" class="strc1balata" id="DIV_290">
+																					<div style="width:100%;height:100%;background-color:rgba(12, 60, 96, 1);position:absolute" class="bgColor" id="DIV_291">
+																						<div data-background-image="" style="width:100%;height:100%;position:absolute" id="DIV_292" class="bgColoroverlay"></div>
 																					</div>
 																				</div>
-																				<div style="width:320px;position:absolute;top:0;bottom:0" id="DIV_329" class="strc1inlineContent">
-																					<div data-packed="false" style="left: 20px; width: 280px; position: absolute; top: 20px;" class="txtNew" id="DIV_330">
-																						<h5 class="font_5" style="line-height:1.2em; text-align:center;font-size:20px" id="H5_331">
-																							<span class="color_12" id="SPAN_332">
-																								<span id="SPAN_333">
-																									<span style="letter-spacing:0.05em;" id="SPAN_334">SCHOLARSHIP</span>
+																				<div style="width:320px;position:absolute;top:0;bottom:0" id="DIV_293" class="strc1inlineContent">
+																					<div data-packed="false" style="left: 20px; width: 280px; position: absolute; top: 20px;" class="txtNew" id="DIV_294">
+																						<h5 class="font_5" style="line-height:1.2em; text-align:center;font-size:20px" id="H5_295">
+																							<span class="color_12" id="SPAN_296">
+																								<span id="SPAN_297">
+																									<span style="letter-spacing:0.05em;" id="SPAN_298">SCHOLARSHIP</span>
 																								</span>
 																							</span>
 																						</h5>
 
-																						<p class="font_8" style="line-height:1.5em;font-size:13px" id="P_335">
-																							<span style="display:none;" id="SPAN_336">&nbsp;</span>
+																						<p class="font_8" style="line-height:1.5em;font-size:13px" id="P_299">
+																							<span style="display:none;" id="SPAN_300">&nbsp;</span>
 																						</p>
 																					</div>
-																					<style type="text/css" data-styleid="txtNew" id="STYLE_337">
+																					<style type="text/css" data-styleid="txtNew" id="STYLE_301">
 																						.txtNew {
 																							word-wrap: break-word;
 																							text-align: start;
@@ -3970,7 +3221,7 @@
 																					</style>
 																				</div>
 																			</div>
-																			<style type="text/css" data-styleid="strc1" id="STYLE_338">
+																			<style type="text/css" data-styleid="strc1" id="STYLE_302">
 																				.strc1:not([data-mobile-responsive])>.strc1inlineContent {
 																					position: absolute;
 																					top: 0;
@@ -4012,29 +3263,29 @@
 																					margin: 0 auto;
 																				}
 																			</style>
-																			<div style="position: absolute; left: 0px; width: 320px; top: 102px; height: 65px;" class="strc1" id="DIV_339">
+																			<div style="position: absolute; left: 0px; width: 320px; top: 102px; height: 65px;" class="strc1" id="DIV_303">
 																				<div style="position: absolute; top: 0px; width: 320px; height: 100%; overflow: hidden; pointer-events: auto; clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%); left: 0px; bottom: 0px; cursor: pointer;"
 																				  data-page-id="ijdas" data-enable-video="" data-bg-effect-name="" data-media-type="" data-render-fixed-position="true"
-																				  data-use-clip-path="true" data-needs-clipping="false" class="strc1balata" id="DIV_340">
-																					<div style="width:100%;height:100%;background-color:rgba(12, 60, 96, 1);position:absolute" class="bgColor" id="DIV_341">
-																						<div data-background-image="" style="width:100%;height:100%;position:absolute" id="DIV_342" class="bgColoroverlay"></div>
+																				  data-use-clip-path="true" data-needs-clipping="false" class="strc1balata" id="DIV_304">
+																					<div style="width:100%;height:100%;background-color:rgba(12, 60, 96, 1);position:absolute" class="bgColor" id="DIV_305">
+																						<div data-background-image="" style="width:100%;height:100%;position:absolute" id="DIV_306" class="bgColoroverlay"></div>
 																					</div>
 																				</div>
-																				<div style="width:320px;position:absolute;top:0;bottom:0" id="DIV_343" class="strc1inlineContent">
-																					<div data-packed="false" style="left: 20px; width: 280px; position: absolute; top: 20px;" class="txtNew" id="DIV_344">
-																						<h5 class="font_5" style="line-height:1.2em; text-align:center;font-size:21px" id="H5_345">
-																							<span class="color_12" id="SPAN_346">
-																								<span style="letter-spacing:0.05em;" id="SPAN_347">
-																									<span id="SPAN_348">SERVICE</span>
+																				<div style="width:320px;position:absolute;top:0;bottom:0" id="DIV_307" class="strc1inlineContent">
+																					<div data-packed="false" style="left: 20px; width: 280px; position: absolute; top: 20px;" class="txtNew" id="DIV_308">
+																						<h5 class="font_5" style="line-height:1.2em; text-align:center;font-size:21px" id="H5_309">
+																							<span class="color_12" id="SPAN_310">
+																								<span style="letter-spacing:0.05em;" id="SPAN_311">
+																									<span id="SPAN_312">SERVICE</span>
 																								</span>
 																							</span>
 																						</h5>
 
-																						<p class="font_8" style="line-height:1.5em;font-size:13px" id="P_349">
-																							<span style="display:none;" id="SPAN_350">&nbsp;</span>
+																						<p class="font_8" style="line-height:1.5em;font-size:13px" id="P_313">
+																							<span style="display:none;" id="SPAN_314">&nbsp;</span>
 																						</p>
 																					</div>
-																					<style type="text/css" data-styleid="txtNew" id="STYLE_351">
+																					<style type="text/css" data-styleid="txtNew" id="STYLE_315">
 																						.txtNew {
 																							word-wrap: break-word;
 																							text-align: start;
@@ -4167,7 +3418,7 @@
 																					</style>
 																				</div>
 																			</div>
-																			<style type="text/css" data-styleid="strc1" id="STYLE_352">
+																			<style type="text/css" data-styleid="strc1" id="STYLE_316">
 																				.strc1:not([data-mobile-responsive])>.strc1inlineContent {
 																					position: absolute;
 																					top: 0;
@@ -4209,25 +3460,25 @@
 																					margin: 0 auto;
 																				}
 																			</style>
-																			<div style="position: absolute; left: 0px; width: 320px; top: 205px; height: 64px;" class="strc1" id="DIV_353">
+																			<div style="position: absolute; left: 0px; width: 320px; top: 205px; height: 64px;" class="strc1" id="DIV_317">
 																				<div style="position: absolute; top: 0px; width: 320px; height: 100%; overflow: hidden; pointer-events: auto; clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%); left: 0px; bottom: 0px; cursor: pointer;"
 																				  data-page-id="ijdas" data-enable-video="" data-bg-effect-name="" data-media-type="" data-render-fixed-position="true"
-																				  data-use-clip-path="true" data-needs-clipping="false" class="strc1balata" id="DIV_354">
-																					<div style="width:100%;height:100%;background-color:rgba(12, 60, 96, 1);position:absolute" class="bgColor" id="DIV_355">
-																						<div data-background-image="" style="width:100%;height:100%;position:absolute" id="DIV_356" class="bgColoroverlay"></div>
+																				  data-use-clip-path="true" data-needs-clipping="false" class="strc1balata" id="DIV_318">
+																					<div style="width:100%;height:100%;background-color:rgba(12, 60, 96, 1);position:absolute" class="bgColor" id="DIV_319">
+																						<div data-background-image="" style="width:100%;height:100%;position:absolute" id="DIV_320" class="bgColoroverlay"></div>
 																					</div>
 																				</div>
-																				<div style="width:320px;position:absolute;top:0;bottom:0" id="DIV_357" class="strc1inlineContent">
-																					<div data-packed="false" style="left: 20px; width: 280px; position: absolute; top: 20px;" class="txtNew" id="DIV_358">
-																						<h5 class="font_5" style="line-height:1.2em; text-align:center;font-size:20px" id="H5_359">
-																							<span class="color_12" id="SPAN_360">
-																								<span style="letter-spacing:0.05em;" id="SPAN_361">
-																									<span id="SPAN_362">LEADERSHIP</span>
+																				<div style="width:320px;position:absolute;top:0;bottom:0" id="DIV_321" class="strc1inlineContent">
+																					<div data-packed="false" style="left: 20px; width: 280px; position: absolute; top: 20px;" class="txtNew" id="DIV_322">
+																						<h5 class="font_5" style="line-height:1.2em; text-align:center;font-size:20px" id="H5_323">
+																							<span class="color_12" id="SPAN_324">
+																								<span style="letter-spacing:0.05em;" id="SPAN_325">
+																									<span id="SPAN_326">LEADERSHIP</span>
 																								</span>
 																							</span>
 																						</h5>
 																					</div>
-																					<style type="text/css" data-styleid="txtNew" id="STYLE_363">
+																					<style type="text/css" data-styleid="txtNew" id="STYLE_327">
 																						.txtNew {
 																							word-wrap: break-word;
 																							text-align: start;
@@ -4360,7 +3611,7 @@
 																					</style>
 																				</div>
 																			</div>
-																			<style type="text/css" data-styleid="strc1" id="STYLE_364">
+																			<style type="text/css" data-styleid="strc1" id="STYLE_328">
 																				.strc1:not([data-mobile-responsive])>.strc1inlineContent {
 																					position: absolute;
 																					top: 0;
@@ -4402,25 +3653,25 @@
 																					margin: 0 auto;
 																				}
 																			</style>
-																			<div style="position: absolute; left: 0px; width: 320px; top: 307px; height: 64px;" class="strc1" id="DIV_365">
+																			<div style="position: absolute; left: 0px; width: 320px; top: 307px; height: 64px;" class="strc1" id="DIV_329">
 																				<div style="position: absolute; top: 0px; width: 320px; height: 100%; overflow: hidden; pointer-events: auto; clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%); left: 0px; bottom: 0px; cursor: pointer;"
 																				  data-page-id="ijdas" data-enable-video="" data-bg-effect-name="" data-media-type="" data-render-fixed-position="true"
-																				  data-use-clip-path="true" data-needs-clipping="false" class="strc1balata" id="DIV_366">
-																					<div style="width:100%;height:100%;background-color:rgba(12, 60, 96, 1);position:absolute" class="bgColor" id="DIV_367">
-																						<div data-background-image="" style="width:100%;height:100%;position:absolute" id="DIV_368" class="bgColoroverlay"></div>
+																				  data-use-clip-path="true" data-needs-clipping="false" class="strc1balata" id="DIV_330">
+																					<div style="width:100%;height:100%;background-color:rgba(12, 60, 96, 1);position:absolute" class="bgColor" id="DIV_331">
+																						<div data-background-image="" style="width:100%;height:100%;position:absolute" id="DIV_332" class="bgColoroverlay"></div>
 																					</div>
 																				</div>
-																				<div style="width:320px;position:absolute;top:0;bottom:0" id="DIV_369" class="strc1inlineContent">
-																					<div data-packed="false" style="left: 20px; width: 280px; position: absolute; top: 20px;" class="txtNew" id="DIV_370">
-																						<h5 class="font_5" style="line-height:1.2em; text-align:center;font-size:20px" id="H5_371">
-																							<span class="color_12" id="SPAN_372">
-																								<span style="letter-spacing:0.05em;" id="SPAN_373">
-																									<span id="SPAN_374">CHARACTER</span>
+																				<div style="width:320px;position:absolute;top:0;bottom:0" id="DIV_333" class="strc1inlineContent">
+																					<div data-packed="false" style="left: 20px; width: 280px; position: absolute; top: 20px;" class="txtNew" id="DIV_334">
+																						<h5 class="font_5" style="line-height:1.2em; text-align:center;font-size:20px" id="H5_335">
+																							<span class="color_12" id="SPAN_336">
+																								<span style="letter-spacing:0.05em;" id="SPAN_337">
+																									<span id="SPAN_338">CHARACTER</span>
 																								</span>
 																							</span>
 																						</h5>
 																					</div>
-																					<style type="text/css" data-styleid="txtNew" id="STYLE_375">
+																					<style type="text/css" data-styleid="txtNew" id="STYLE_339">
 																						.txtNew {
 																							word-wrap: break-word;
 																							text-align: start;
@@ -4553,7 +3804,7 @@
 																					</style>
 																				</div>
 																			</div>
-																			<style type="text/css" data-styleid="strc1" id="STYLE_376">
+																			<style type="text/css" data-styleid="strc1" id="STYLE_340">
 																				.strc1:not([data-mobile-responsive])>.strc1inlineContent {
 																					position: absolute;
 																					top: 0;
@@ -4597,7 +3848,7 @@
 																			</style>
 																		</div>
 																	</section>
-																	<style type="text/css" data-styleid="strc1" id="STYLE_377">
+																	<style type="text/css" data-styleid="strc1" id="STYLE_341">
 																		.strc1:not([data-mobile-responsive])>.strc1inlineContent {
 																			position: absolute;
 																			top: 0;
@@ -4643,7 +3894,7 @@
 															</div>
 														</div>
 													</div>
-													<style type="text/css" data-styleid="mc1" id="STYLE_378">
+													<style type="text/css" data-styleid="mc1" id="STYLE_342">
 														.mc1:not([data-mobile-responsive]) .mc1inlineContent,
 														.mc1:not([data-mobile-responsive]) .mc1container {
 															position: absolute;
@@ -4655,7 +3906,7 @@
 													</style>
 												</div>
 											</section>
-											<style type="text/css" data-styleid="strc1" id="STYLE_379">
+											<style type="text/css" data-styleid="strc1" id="STYLE_343">
 												.strc1:not([data-mobile-responsive])>.strc1inlineContent {
 													position: absolute;
 													top: 0;
@@ -4697,14 +3948,14 @@
 													margin: 0 auto;
 												}
 											</style>
-											<div style="overflow: scroll; left: 20px; width: 280px; position: absolute; top: 1174px; height: 220px;" class="htco1" data-state="hasContent"
-											  id="DIV_376">
-												<div id="DIV_377" class="htco1iFrameHolder">
+											<div style="overflow: scroll; left: 20px; width: 280px; position: absolute; top: 1421px; height: 220px;" class="htco1" data-state="hasContent"
+											  id="DIV_344">
+												<div id="DIV_345" class="htco1iFrameHolder">
 													<iframe width="100%" height="100%" scrolling="auto" src="https://hebronnhs-wixsite-com.filesusr.com/html/6efda7_bc3d7d31d98cda731cdde4e194016eaf.html"
-													  id="IFRAME_378"></iframe>
+													  id="IFRAME_346"></iframe>
 												</div>
 											</div>
-											<style type="text/css" data-styleid="htco1" id="STYLE_379">
+											<style type="text/css" data-styleid="htco1" id="STYLE_347">
 												.htco1iFrameHolder {
 													width: 100%;
 													height: 100%;
@@ -4718,20 +3969,20 @@
 													background-color: #A5A5A5;
 												}
 											</style>
-											<div data-packed="false" style="left: 20px; width: 280px; position: absolute; top: 1100px;" class="txtNew" id="DIV_380">
-												<h4 class="font_4" style="font-size:27px" id="H4_381">
-													<span class="color_15" id="SPAN_382">
-														<span style="font-style:italic;" id="SPAN_383">
-															<span style="font-size:22px" id="SPAN_384">The latest from</span>
+											<div data-packed="false" style="left: 20px; width: 280px; position: absolute; top: 1347px;" class="txtNew" id="DIV_348">
+												<h4 class="font_4" style="font-size:27px" id="H4_349">
+													<span class="color_15" id="SPAN_350">
+														<span style="font-style:italic;" id="SPAN_351">
+															<span style="font-size:22px" id="SPAN_352">The latest from</span>
 														</span>
-														<span style="font-size:27px" id="SPAN_385">
+														<span style="font-size:27px" id="SPAN_353">
 															<a href="https://twitter.com/HebronNHS" target="_blank" data-content="https://twitter.com/HebronNHS" data-type="external"
-															  rel="nofollow" id="A_386">@HebronNHS</a>
+															  rel="nofollow" id="A_354">@HebronNHS</a>
 														</span>
 													</span>
 												</h4>
 											</div>
-											<style type="text/css" data-styleid="txtNew" id="STYLE_387">
+											<style type="text/css" data-styleid="txtNew" id="STYLE_355">
 												.txtNew {
 													word-wrap: break-word;
 													text-align: start;
@@ -4862,9 +4113,1328 @@
 													color: inherit;
 												}
 											</style>
+											<div style="left: 38px; width: 256px; position: absolute; top: 455px; height: 527px;" class="s_BIwzIGroupSkin" id="DIV_356">
+												<div id="DIV_357" class="s_BIwzIGroupSkininlineContent">
+													<div data-packed="true" style="left: 13px; width: 218px; position: absolute; top: 0px;" class="txtNew" id="DIV_358">
+														<h4 class="font_4" style="font-size:27px" id="H4_359">
+															<span class="color_15" id="SPAN_360">
+																<span style="font-size:27px" id="SPAN_361">Checking Hours?</span>
+															</span>
+														</h4>
+													</div>
+													<style type="text/css" data-styleid="txtNew" id="STYLE_362">
+														.txtNew {
+															word-wrap: break-word;
+															text-align: start;
+															pointer-events: none;
+														}
+
+														.txtNew_override-left * {
+															text-align: left !important;
+														}
+
+														.txtNew_override-right * {
+															text-align: right !important;
+														}
+
+														.txtNew_override-center * {
+															text-align: center !important;
+														}
+
+														.txtNew_override-justify * {
+															text-align: justify !important;
+														}
+
+														.txtNew>* {
+															pointer-events: auto;
+														}
+
+														.txtNew li {
+															font-style: inherit;
+															font-weight: inherit;
+															line-height: inherit;
+															letter-spacing: normal;
+														}
+
+														.txtNew ol,
+														.txtNew ul {
+															padding-left: 1.3em;
+															padding-right: 0;
+															margin-left: 0.5em;
+															margin-right: 0;
+															line-height: normal;
+															letter-spacing: normal;
+														}
+
+														.txtNew ul {
+															list-style-type: disc;
+														}
+
+														.txtNew ol {
+															list-style-type: decimal;
+														}
+
+														.txtNew ul ul,
+														.txtNew ol ul {
+															list-style-type: circle;
+														}
+
+														.txtNew ul ul ul,
+														.txtNew ol ul ul {
+															list-style-type: square;
+														}
+
+														.txtNew ul ol ul,
+														.txtNew ol ol ul {
+															list-style-type: square;
+														}
+
+														.txtNew ul[dir="rtl"],
+														.txtNew ol[dir="rtl"] {
+															padding-left: 0;
+															padding-right: 1.3em;
+															margin-left: 0;
+															margin-right: 0.5em;
+														}
+
+														.txtNew ul[dir="rtl"] ul,
+														.txtNew ul[dir="rtl"] ol,
+														.txtNew ol[dir="rtl"] ul,
+														.txtNew ol[dir="rtl"] ol {
+															padding-left: 0;
+															padding-right: 1.3em;
+															margin-left: 0;
+															margin-right: 0.5em;
+														}
+
+														.txtNew p {
+															margin: 0;
+															line-height: normal;
+															letter-spacing: normal;
+														}
+
+														.txtNew h1 {
+															margin: 0;
+															line-height: normal;
+															letter-spacing: normal;
+														}
+
+														.txtNew h2 {
+															margin: 0;
+															line-height: normal;
+															letter-spacing: normal;
+														}
+
+														.txtNew h3 {
+															margin: 0;
+															line-height: normal;
+															letter-spacing: normal;
+														}
+
+														.txtNew h4 {
+															margin: 0;
+															line-height: normal;
+															letter-spacing: normal;
+														}
+
+														.txtNew h5 {
+															margin: 0;
+															line-height: normal;
+															letter-spacing: normal;
+														}
+
+														.txtNew h6 {
+															margin: 0;
+															line-height: normal;
+															letter-spacing: normal;
+														}
+
+														.txtNew a {
+															color: inherit;
+														}
+													</style>
+													<div data-packed="true" style="left: 5px; width: 233px; position: absolute; top: 46px;" class="txtNew" id="DIV_363">
+														<p class="font_7" style="font-size:19px" id="P_364">
+															<span class="color_15" id="SPAN_365">
+																<span style="font-size:19px" id="SPAN_366">
+																	<span style="font-family:raleway,sans-serif;" id="SPAN_367">You can easily check your hours by clicking on the following button.</span>
+																</span>
+															</span>
+														</p>
+													</div>
+													<style type="text/css" data-styleid="txtNew" id="STYLE_368">
+														.txtNew {
+															word-wrap: break-word;
+															text-align: start;
+															pointer-events: none;
+														}
+
+														.txtNew_override-left * {
+															text-align: left !important;
+														}
+
+														.txtNew_override-right * {
+															text-align: right !important;
+														}
+
+														.txtNew_override-center * {
+															text-align: center !important;
+														}
+
+														.txtNew_override-justify * {
+															text-align: justify !important;
+														}
+
+														.txtNew>* {
+															pointer-events: auto;
+														}
+
+														.txtNew li {
+															font-style: inherit;
+															font-weight: inherit;
+															line-height: inherit;
+															letter-spacing: normal;
+														}
+
+														.txtNew ol,
+														.txtNew ul {
+															padding-left: 1.3em;
+															padding-right: 0;
+															margin-left: 0.5em;
+															margin-right: 0;
+															line-height: normal;
+															letter-spacing: normal;
+														}
+
+														.txtNew ul {
+															list-style-type: disc;
+														}
+
+														.txtNew ol {
+															list-style-type: decimal;
+														}
+
+														.txtNew ul ul,
+														.txtNew ol ul {
+															list-style-type: circle;
+														}
+
+														.txtNew ul ul ul,
+														.txtNew ol ul ul {
+															list-style-type: square;
+														}
+
+														.txtNew ul ol ul,
+														.txtNew ol ol ul {
+															list-style-type: square;
+														}
+
+														.txtNew ul[dir="rtl"],
+														.txtNew ol[dir="rtl"] {
+															padding-left: 0;
+															padding-right: 1.3em;
+															margin-left: 0;
+															margin-right: 0.5em;
+														}
+
+														.txtNew ul[dir="rtl"] ul,
+														.txtNew ul[dir="rtl"] ol,
+														.txtNew ol[dir="rtl"] ul,
+														.txtNew ol[dir="rtl"] ol {
+															padding-left: 0;
+															padding-right: 1.3em;
+															margin-left: 0;
+															margin-right: 0.5em;
+														}
+
+														.txtNew p {
+															margin: 0;
+															line-height: normal;
+															letter-spacing: normal;
+														}
+
+														.txtNew h1 {
+															margin: 0;
+															line-height: normal;
+															letter-spacing: normal;
+														}
+
+														.txtNew h2 {
+															margin: 0;
+															line-height: normal;
+															letter-spacing: normal;
+														}
+
+														.txtNew h3 {
+															margin: 0;
+															line-height: normal;
+															letter-spacing: normal;
+														}
+
+														.txtNew h4 {
+															margin: 0;
+															line-height: normal;
+															letter-spacing: normal;
+														}
+
+														.txtNew h5 {
+															margin: 0;
+															line-height: normal;
+															letter-spacing: normal;
+														}
+
+														.txtNew h6 {
+															margin: 0;
+															line-height: normal;
+															letter-spacing: normal;
+														}
+
+														.txtNew a {
+															color: inherit;
+														}
+													</style>
+													<div id="DIV_369" data-align="center" data-disabled="false" data-margin="0" data-should-use-flex="true" data-width="240"
+													  data-height="42" style="left: 2px; position: absolute; top: 137px; height: 42px; min-height: 21px; width: 240px;"
+													  class="style-jkrovhy4" data-state="mobile shouldUseFlex center">
+														<a href="https://docs.google.com/spreadsheets/d/1nEIKEnzDoaZleRKt_sfXSyilwjEaa9kxUOCsXfxtX3g/edit#gid=0" target="_blank"
+														  data-content="https://docs.google.com/spreadsheets/d/1nEIKEnzDoaZleRKt_sfXSyilwjEaa9kxUOCsXfxtX3g/edit#gid=0"
+														  data-type="external" rel="nofollow" role="button" id="A_370" class="g-transparent-a style-jkrovhy4link">
+															<span style="font-size:15px" id="SPAN_371" class="style-jkrovhy4label">Check your hours here!</span>
+														</a>
+													</div>
+													<style type="text/css" data-styleid="style-jkrovhy4" id="STYLE_372">
+														.style-jkrovhy4 button.style-jkrovhy4link {
+															width: 100%;
+														}
+
+														.style-jkrovhy4[data-state~="shouldUseFlex"] .style-jkrovhy4link,
+														.style-jkrovhy4[data-state~="shouldUseFlex"] .style-jkrovhy4labelwrapper {
+															text-align: initial;
+															display: flex;
+															align-items: center;
+														}
+
+														.style-jkrovhy4[data-state~="shouldUseFlex"][data-state~="center"] .style-jkrovhy4link,
+														.style-jkrovhy4[data-state~="shouldUseFlex"][data-state~="center"] .style-jkrovhy4labelwrapper {
+															justify-content: center;
+														}
+
+														.style-jkrovhy4[data-state~="shouldUseFlex"][data-state~="left"] .style-jkrovhy4link,
+														.style-jkrovhy4[data-state~="shouldUseFlex"][data-state~="left"] .style-jkrovhy4labelwrapper {
+															justify-content: flex-start;
+														}
+
+														.style-jkrovhy4[data-state~="shouldUseFlex"][data-state~="right"] .style-jkrovhy4link,
+														.style-jkrovhy4[data-state~="shouldUseFlex"][data-state~="right"] .style-jkrovhy4labelwrapper {
+															justify-content: flex-end;
+														}
+
+														.style-jkrovhy4link {
+															border-radius: 5px;
+															position: absolute;
+															top: 0;
+															right: 0;
+															bottom: 0;
+															left: 0;
+															transition: border-color 0.4s ease 0s, background-color 0.4s ease 0s;
+														}
+
+														.style-jkrovhy4label {
+															font: normal normal 700 14px/1.4em raleway, sans-serif;
+															transition: color 0.4s ease 0s;
+															color: #FFFFFF;
+															display: inline-block;
+															margin: calc(-1 * 0px) 0px 0;
+															position: relative;
+															white-space: nowrap;
+														}
+
+														.style-jkrovhy4[data-state~="shouldUseFlex"] .style-jkrovhy4label {
+															margin: 0;
+														}
+
+														.style-jkrovhy4[data-disabled="false"] .style-jkrovhy4link {
+															background-color: rgba(12, 60, 96, 1);
+															border: solid rgba(12, 60, 96, 1) 0px;
+															cursor: pointer !important;
+														}
+
+														.style-jkrovhy4[data-disabled="false"]:active[data-state~="mobile"] .style-jkrovhy4link,
+														.style-jkrovhy4[data-disabled="false"]:hover[data-state~="desktop"] .style-jkrovhy4link,
+														.style-jkrovhy4[data-disabled="false"][data-preview~="hover"] .style-jkrovhy4link {
+															background-color: rgba(57, 114, 155, 1);
+															border-color: transparent;
+														}
+
+														.style-jkrovhy4[data-disabled="false"]:active[data-state~="mobile"] .style-jkrovhy4label,
+														.style-jkrovhy4[data-disabled="false"]:hover[data-state~="desktop"] .style-jkrovhy4label,
+														.style-jkrovhy4[data-disabled="false"][data-preview~="hover"] .style-jkrovhy4label {
+															color: #000000;
+														}
+
+														.style-jkrovhy4[data-disabled="true"] .style-jkrovhy4link,
+														.style-jkrovhy4[data-preview~="disabled"] .style-jkrovhy4link {
+															background-color: rgba(204, 204, 204, 1);
+															border-color: rgba(204, 204, 204, 1);
+														}
+
+														.style-jkrovhy4[data-disabled="true"] .style-jkrovhy4label,
+														.style-jkrovhy4[data-preview~="disabled"] .style-jkrovhy4label {
+															color: #FFFFFF;
+														}
+													</style>
+													<div data-packed="true" style="left: 5px; width: 250px; position: absolute; top: 207px;" class="txtNew" id="DIV_373">
+														<p class="font_7" style="font-size:19px" id="P_374">
+															<span class="color_15" id="SPAN_375">
+																<span style="font-size:19px" id="SPAN_376">
+																	<span style="font-family:raleway,sans-serif;" id="SPAN_377">For more information on NHS hour requirements, visit our FAQs page or click on the following button.
+																	</span>
+																</span>
+															</span>
+														</p>
+													</div>
+													<style type="text/css" data-styleid="txtNew" id="STYLE_378">
+														.txtNew {
+															word-wrap: break-word;
+															text-align: start;
+															pointer-events: none;
+														}
+
+														.txtNew_override-left * {
+															text-align: left !important;
+														}
+
+														.txtNew_override-right * {
+															text-align: right !important;
+														}
+
+														.txtNew_override-center * {
+															text-align: center !important;
+														}
+
+														.txtNew_override-justify * {
+															text-align: justify !important;
+														}
+
+														.txtNew>* {
+															pointer-events: auto;
+														}
+
+														.txtNew li {
+															font-style: inherit;
+															font-weight: inherit;
+															line-height: inherit;
+															letter-spacing: normal;
+														}
+
+														.txtNew ol,
+														.txtNew ul {
+															padding-left: 1.3em;
+															padding-right: 0;
+															margin-left: 0.5em;
+															margin-right: 0;
+															line-height: normal;
+															letter-spacing: normal;
+														}
+
+														.txtNew ul {
+															list-style-type: disc;
+														}
+
+														.txtNew ol {
+															list-style-type: decimal;
+														}
+
+														.txtNew ul ul,
+														.txtNew ol ul {
+															list-style-type: circle;
+														}
+
+														.txtNew ul ul ul,
+														.txtNew ol ul ul {
+															list-style-type: square;
+														}
+
+														.txtNew ul ol ul,
+														.txtNew ol ol ul {
+															list-style-type: square;
+														}
+
+														.txtNew ul[dir="rtl"],
+														.txtNew ol[dir="rtl"] {
+															padding-left: 0;
+															padding-right: 1.3em;
+															margin-left: 0;
+															margin-right: 0.5em;
+														}
+
+														.txtNew ul[dir="rtl"] ul,
+														.txtNew ul[dir="rtl"] ol,
+														.txtNew ol[dir="rtl"] ul,
+														.txtNew ol[dir="rtl"] ol {
+															padding-left: 0;
+															padding-right: 1.3em;
+															margin-left: 0;
+															margin-right: 0.5em;
+														}
+
+														.txtNew p {
+															margin: 0;
+															line-height: normal;
+															letter-spacing: normal;
+														}
+
+														.txtNew h1 {
+															margin: 0;
+															line-height: normal;
+															letter-spacing: normal;
+														}
+
+														.txtNew h2 {
+															margin: 0;
+															line-height: normal;
+															letter-spacing: normal;
+														}
+
+														.txtNew h3 {
+															margin: 0;
+															line-height: normal;
+															letter-spacing: normal;
+														}
+
+														.txtNew h4 {
+															margin: 0;
+															line-height: normal;
+															letter-spacing: normal;
+														}
+
+														.txtNew h5 {
+															margin: 0;
+															line-height: normal;
+															letter-spacing: normal;
+														}
+
+														.txtNew h6 {
+															margin: 0;
+															line-height: normal;
+															letter-spacing: normal;
+														}
+
+														.txtNew a {
+															color: inherit;
+														}
+													</style>
+													<div id="DIV_379" data-align="center" data-disabled="false" data-margin="0" data-should-use-flex="true" data-width="240"
+													  data-height="42" style="left: 2px; position: absolute; top: 329px; height: 42px; min-height: 21px; width: 240px;"
+													  class="style-jjqkeyzz" data-state="mobile shouldUseFlex center">
+														<a href="./resources.html" target="_self" role="button" id="A_380" class="g-transparent-a style-jjqkeyzzlink">
+															<span style="font-size:15px" id="SPAN_381" class="style-jjqkeyzzlabel">Hour Requirements</span>
+														</a>
+													</div>
+													<style type="text/css" data-styleid="style-jjqkeyzz" id="STYLE_382">
+														.style-jjqkeyzz button.style-jjqkeyzzlink {
+															width: 100%;
+														}
+
+														.style-jjqkeyzz[data-state~="shouldUseFlex"] .style-jjqkeyzzlink,
+														.style-jjqkeyzz[data-state~="shouldUseFlex"] .style-jjqkeyzzlabelwrapper {
+															text-align: initial;
+															display: flex;
+															align-items: center;
+														}
+
+														.style-jjqkeyzz[data-state~="shouldUseFlex"][data-state~="center"] .style-jjqkeyzzlink,
+														.style-jjqkeyzz[data-state~="shouldUseFlex"][data-state~="center"] .style-jjqkeyzzlabelwrapper {
+															justify-content: center;
+														}
+
+														.style-jjqkeyzz[data-state~="shouldUseFlex"][data-state~="left"] .style-jjqkeyzzlink,
+														.style-jjqkeyzz[data-state~="shouldUseFlex"][data-state~="left"] .style-jjqkeyzzlabelwrapper {
+															justify-content: flex-start;
+														}
+
+														.style-jjqkeyzz[data-state~="shouldUseFlex"][data-state~="right"] .style-jjqkeyzzlink,
+														.style-jjqkeyzz[data-state~="shouldUseFlex"][data-state~="right"] .style-jjqkeyzzlabelwrapper {
+															justify-content: flex-end;
+														}
+
+														.style-jjqkeyzzlink {
+															border-radius: 5px;
+															position: absolute;
+															top: 0;
+															right: 0;
+															bottom: 0;
+															left: 0;
+															transition: border-color 0.4s ease 0s, background-color 0.4s ease 0s;
+														}
+
+														.style-jjqkeyzzlabel {
+															font: normal normal 700 14px/1.4em raleway, sans-serif;
+															transition: color 0.4s ease 0s;
+															color: #FFFFFF;
+															display: inline-block;
+															margin: calc(-1 * 0px) 0px 0;
+															position: relative;
+															white-space: nowrap;
+														}
+
+														.style-jjqkeyzz[data-state~="shouldUseFlex"] .style-jjqkeyzzlabel {
+															margin: 0;
+														}
+
+														.style-jjqkeyzz[data-disabled="false"] .style-jjqkeyzzlink {
+															background-color: rgba(12, 60, 96, 1);
+															border: solid rgba(12, 60, 96, 1) 0px;
+															cursor: pointer !important;
+														}
+
+														.style-jjqkeyzz[data-disabled="false"]:active[data-state~="mobile"] .style-jjqkeyzzlink,
+														.style-jjqkeyzz[data-disabled="false"]:hover[data-state~="desktop"] .style-jjqkeyzzlink,
+														.style-jjqkeyzz[data-disabled="false"][data-preview~="hover"] .style-jjqkeyzzlink {
+															background-color: rgba(57, 114, 155, 1);
+															border-color: transparent;
+														}
+
+														.style-jjqkeyzz[data-disabled="false"]:active[data-state~="mobile"] .style-jjqkeyzzlabel,
+														.style-jjqkeyzz[data-disabled="false"]:hover[data-state~="desktop"] .style-jjqkeyzzlabel,
+														.style-jjqkeyzz[data-disabled="false"][data-preview~="hover"] .style-jjqkeyzzlabel {
+															color: #000000;
+														}
+
+														.style-jjqkeyzz[data-disabled="true"] .style-jjqkeyzzlink,
+														.style-jjqkeyzz[data-preview~="disabled"] .style-jjqkeyzzlink {
+															background-color: rgba(204, 204, 204, 1);
+															border-color: rgba(204, 204, 204, 1);
+														}
+
+														.style-jjqkeyzz[data-disabled="true"] .style-jjqkeyzzlabel,
+														.style-jjqkeyzz[data-preview~="disabled"] .style-jjqkeyzzlabel {
+															color: #FFFFFF;
+														}
+													</style>
+													<div data-packed="true" style="left: 2px; width: 237px; position: absolute; top: 386px;" class="txtNew" id="DIV_383">
+														<p class="font_7" style="font-size:19px" id="P_384">
+															<span class="color_15" id="SPAN_385">
+																<span style="font-size:19px" id="SPAN_386">
+																	<span style="font-family:raleway,sans-serif;" id="SPAN_387">To print out an hour sheet, click on the following button.</span>
+																</span>
+															</span>
+														</p>
+													</div>
+													<style type="text/css" data-styleid="txtNew" id="STYLE_388">
+														.txtNew {
+															word-wrap: break-word;
+															text-align: start;
+															pointer-events: none;
+														}
+
+														.txtNew_override-left * {
+															text-align: left !important;
+														}
+
+														.txtNew_override-right * {
+															text-align: right !important;
+														}
+
+														.txtNew_override-center * {
+															text-align: center !important;
+														}
+
+														.txtNew_override-justify * {
+															text-align: justify !important;
+														}
+
+														.txtNew>* {
+															pointer-events: auto;
+														}
+
+														.txtNew li {
+															font-style: inherit;
+															font-weight: inherit;
+															line-height: inherit;
+															letter-spacing: normal;
+														}
+
+														.txtNew ol,
+														.txtNew ul {
+															padding-left: 1.3em;
+															padding-right: 0;
+															margin-left: 0.5em;
+															margin-right: 0;
+															line-height: normal;
+															letter-spacing: normal;
+														}
+
+														.txtNew ul {
+															list-style-type: disc;
+														}
+
+														.txtNew ol {
+															list-style-type: decimal;
+														}
+
+														.txtNew ul ul,
+														.txtNew ol ul {
+															list-style-type: circle;
+														}
+
+														.txtNew ul ul ul,
+														.txtNew ol ul ul {
+															list-style-type: square;
+														}
+
+														.txtNew ul ol ul,
+														.txtNew ol ol ul {
+															list-style-type: square;
+														}
+
+														.txtNew ul[dir="rtl"],
+														.txtNew ol[dir="rtl"] {
+															padding-left: 0;
+															padding-right: 1.3em;
+															margin-left: 0;
+															margin-right: 0.5em;
+														}
+
+														.txtNew ul[dir="rtl"] ul,
+														.txtNew ul[dir="rtl"] ol,
+														.txtNew ol[dir="rtl"] ul,
+														.txtNew ol[dir="rtl"] ol {
+															padding-left: 0;
+															padding-right: 1.3em;
+															margin-left: 0;
+															margin-right: 0.5em;
+														}
+
+														.txtNew p {
+															margin: 0;
+															line-height: normal;
+															letter-spacing: normal;
+														}
+
+														.txtNew h1 {
+															margin: 0;
+															line-height: normal;
+															letter-spacing: normal;
+														}
+
+														.txtNew h2 {
+															margin: 0;
+															line-height: normal;
+															letter-spacing: normal;
+														}
+
+														.txtNew h3 {
+															margin: 0;
+															line-height: normal;
+															letter-spacing: normal;
+														}
+
+														.txtNew h4 {
+															margin: 0;
+															line-height: normal;
+															letter-spacing: normal;
+														}
+
+														.txtNew h5 {
+															margin: 0;
+															line-height: normal;
+															letter-spacing: normal;
+														}
+
+														.txtNew h6 {
+															margin: 0;
+															line-height: normal;
+															letter-spacing: normal;
+														}
+
+														.txtNew a {
+															color: inherit;
+														}
+													</style>
+													<div id="DIV_389" data-align="center" data-disabled="false" data-margin="0" data-should-use-flex="true" data-width="240"
+													  data-height="42" style="left: 0px; position: absolute; top: 485px; height: 42px; min-height: 21px; width: 240px;"
+													  class="style-jjqkf7pj" data-state="mobile shouldUseFlex center">
+														<a href="../hour-sheet.pdf" target="_blank" data-type="document" role="button" id="A_390" class="g-transparent-a style-jjqkf7pjlink">
+															<span style="font-size:15px" id="SPAN_391" class="style-jjqkf7pjlabel">Hour Sheet</span>
+														</a>
+													</div>
+													<style type="text/css" data-styleid="style-jjqkf7pj" id="STYLE_392">
+														.style-jjqkf7pj button.style-jjqkf7pjlink {
+															width: 100%;
+														}
+
+														.style-jjqkf7pj[data-state~="shouldUseFlex"] .style-jjqkf7pjlink,
+														.style-jjqkf7pj[data-state~="shouldUseFlex"] .style-jjqkf7pjlabelwrapper {
+															text-align: initial;
+															display: flex;
+															align-items: center;
+														}
+
+														.style-jjqkf7pj[data-state~="shouldUseFlex"][data-state~="center"] .style-jjqkf7pjlink,
+														.style-jjqkf7pj[data-state~="shouldUseFlex"][data-state~="center"] .style-jjqkf7pjlabelwrapper {
+															justify-content: center;
+														}
+
+														.style-jjqkf7pj[data-state~="shouldUseFlex"][data-state~="left"] .style-jjqkf7pjlink,
+														.style-jjqkf7pj[data-state~="shouldUseFlex"][data-state~="left"] .style-jjqkf7pjlabelwrapper {
+															justify-content: flex-start;
+														}
+
+														.style-jjqkf7pj[data-state~="shouldUseFlex"][data-state~="right"] .style-jjqkf7pjlink,
+														.style-jjqkf7pj[data-state~="shouldUseFlex"][data-state~="right"] .style-jjqkf7pjlabelwrapper {
+															justify-content: flex-end;
+														}
+
+														.style-jjqkf7pjlink {
+															border-radius: 5px;
+															position: absolute;
+															top: 0;
+															right: 0;
+															bottom: 0;
+															left: 0;
+															transition: border-color 0.4s ease 0s, background-color 0.4s ease 0s;
+														}
+
+														.style-jjqkf7pjlabel {
+															font: normal normal 700 14px/1.4em raleway, sans-serif;
+															transition: color 0.4s ease 0s;
+															color: #FFFFFF;
+															display: inline-block;
+															margin: calc(-1 * 0px) 0px 0;
+															position: relative;
+															white-space: nowrap;
+														}
+
+														.style-jjqkf7pj[data-state~="shouldUseFlex"] .style-jjqkf7pjlabel {
+															margin: 0;
+														}
+
+														.style-jjqkf7pj[data-disabled="false"] .style-jjqkf7pjlink {
+															background-color: rgba(12, 60, 96, 1);
+															border: solid rgba(12, 60, 96, 1) 0px;
+															cursor: pointer !important;
+														}
+
+														.style-jjqkf7pj[data-disabled="false"]:active[data-state~="mobile"] .style-jjqkf7pjlink,
+														.style-jjqkf7pj[data-disabled="false"]:hover[data-state~="desktop"] .style-jjqkf7pjlink,
+														.style-jjqkf7pj[data-disabled="false"][data-preview~="hover"] .style-jjqkf7pjlink {
+															background-color: rgba(57, 114, 155, 1);
+															border-color: transparent;
+														}
+
+														.style-jjqkf7pj[data-disabled="false"]:active[data-state~="mobile"] .style-jjqkf7pjlabel,
+														.style-jjqkf7pj[data-disabled="false"]:hover[data-state~="desktop"] .style-jjqkf7pjlabel,
+														.style-jjqkf7pj[data-disabled="false"][data-preview~="hover"] .style-jjqkf7pjlabel {
+															color: #000000;
+														}
+
+														.style-jjqkf7pj[data-disabled="true"] .style-jjqkf7pjlink,
+														.style-jjqkf7pj[data-preview~="disabled"] .style-jjqkf7pjlink {
+															background-color: rgba(204, 204, 204, 1);
+															border-color: rgba(204, 204, 204, 1);
+														}
+
+														.style-jjqkf7pj[data-disabled="true"] .style-jjqkf7pjlabel,
+														.style-jjqkf7pj[data-preview~="disabled"] .style-jjqkf7pjlabel {
+															color: #FFFFFF;
+														}
+													</style>
+												</div>
+											</div>
+											<style type="text/css" data-styleid="s_BIwzIGroupSkin" id="STYLE_393">
+												.s_BIwzIGroupSkin {
+													pointer-events: none;
+												}
+
+												.s_BIwzIGroupSkin_ie10 {
+													max-width: 0;
+													max-height: 0;
+												}
+
+												.s_BIwzIGroupSkininlineContent {
+													pointer-events: all;
+												}
+											</style>
+											<section style="margin-left: 0px; position: absolute; top: 166px; height: 279px; left: 0px; width: 100%;" class="strc1" id="SECTION_394">
+												<div style="position: absolute; top: 0px; width: 100%; height: 100%; overflow: hidden; pointer-events: auto; clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%); cursor: pointer;"
+												  data-page-id="ijdas" data-enable-video="" data-bg-effect-name="" data-media-type="" data-render-fixed-position="true"
+												  data-use-clip-path="true" data-needs-clipping="false" class="strc1balata" id="DIV_395">
+													<div style="width:100%;height:100%;background-color:transparent;position:absolute" class="bgColor" id="DIV_396">
+														<div data-background-image="" style="width:100%;height:100%;position:absolute" id="DIV_397" class="bgColoroverlay"></div>
+													</div>
+												</div>
+												<div id="DIV_398" class="strc1inlineContent">
+													<div style="position: absolute; left: 0px; width: 320px; top: 0px; height: 279px;" class="strc1" id="DIV_399">
+														<div style="position: absolute; top: 0px; width: 320px; height: 100%; overflow: hidden; pointer-events: auto; clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%); left: 0px; bottom: 0px; cursor: pointer;"
+														  data-page-id="ijdas" data-enable-video="" data-bg-effect-name="" data-media-type="" data-render-fixed-position="true"
+														  data-use-clip-path="true" data-needs-clipping="false" class="strc1balata" id="DIV_400">
+															<div style="width:100%;height:100%;background-color:rgba(12, 60, 96, 1);position:absolute" class="bgColor" id="DIV_401">
+																<div data-background-image="" style="width:100%;height:100%;position:absolute" id="DIV_402" class="bgColoroverlay"></div>
+															</div>
+														</div>
+														<div style="width:320px;position:absolute;top:0;bottom:0" id="DIV_403" class="strc1inlineContent">
+															<div data-packed="true" style="left: 20px; width: 280px; position: absolute; top: 20px;" class="txtNew" id="DIV_404">
+																<h4 class="font_4" style="font-size:27px" id="H4_405">
+																	<span style="font-size:27px" id="SPAN_406">
+																		<span style="color:#FFFFFF;" id="SPAN_407">We're on
+																			<a href="https://lisdtx.instructure.com" target="_blank" data-content="https://lisdtx.instructure.com" data-type="external"
+																			  rel="nofollow" id="A_408">Canvas</a>!</span>
+																	</span>
+																</h4>
+															</div>
+															<style type="text/css" data-styleid="txtNew" id="STYLE_409">
+																.txtNew {
+																	word-wrap: break-word;
+																	text-align: start;
+																	pointer-events: none;
+																}
+
+																.txtNew_override-left * {
+																	text-align: left !important;
+																}
+
+																.txtNew_override-right * {
+																	text-align: right !important;
+																}
+
+																.txtNew_override-center * {
+																	text-align: center !important;
+																}
+
+																.txtNew_override-justify * {
+																	text-align: justify !important;
+																}
+
+																.txtNew>* {
+																	pointer-events: auto;
+																}
+
+																.txtNew li {
+																	font-style: inherit;
+																	font-weight: inherit;
+																	line-height: inherit;
+																	letter-spacing: normal;
+																}
+
+																.txtNew ol,
+																.txtNew ul {
+																	padding-left: 1.3em;
+																	padding-right: 0;
+																	margin-left: 0.5em;
+																	margin-right: 0;
+																	line-height: normal;
+																	letter-spacing: normal;
+																}
+
+																.txtNew ul {
+																	list-style-type: disc;
+																}
+
+																.txtNew ol {
+																	list-style-type: decimal;
+																}
+
+																.txtNew ul ul,
+																.txtNew ol ul {
+																	list-style-type: circle;
+																}
+
+																.txtNew ul ul ul,
+																.txtNew ol ul ul {
+																	list-style-type: square;
+																}
+
+																.txtNew ul ol ul,
+																.txtNew ol ol ul {
+																	list-style-type: square;
+																}
+
+																.txtNew ul[dir="rtl"],
+																.txtNew ol[dir="rtl"] {
+																	padding-left: 0;
+																	padding-right: 1.3em;
+																	margin-left: 0;
+																	margin-right: 0.5em;
+																}
+
+																.txtNew ul[dir="rtl"] ul,
+																.txtNew ul[dir="rtl"] ol,
+																.txtNew ol[dir="rtl"] ul,
+																.txtNew ol[dir="rtl"] ol {
+																	padding-left: 0;
+																	padding-right: 1.3em;
+																	margin-left: 0;
+																	margin-right: 0.5em;
+																}
+
+																.txtNew p {
+																	margin: 0;
+																	line-height: normal;
+																	letter-spacing: normal;
+																}
+
+																.txtNew h1 {
+																	margin: 0;
+																	line-height: normal;
+																	letter-spacing: normal;
+																}
+
+																.txtNew h2 {
+																	margin: 0;
+																	line-height: normal;
+																	letter-spacing: normal;
+																}
+
+																.txtNew h3 {
+																	margin: 0;
+																	line-height: normal;
+																	letter-spacing: normal;
+																}
+
+																.txtNew h4 {
+																	margin: 0;
+																	line-height: normal;
+																	letter-spacing: normal;
+																}
+
+																.txtNew h5 {
+																	margin: 0;
+																	line-height: normal;
+																	letter-spacing: normal;
+																}
+
+																.txtNew h6 {
+																	margin: 0;
+																	line-height: normal;
+																	letter-spacing: normal;
+																}
+
+																.txtNew a {
+																	color: inherit;
+																}
+															</style>
+															<div data-packed="true" style="left: 20px; width: 280px; position: absolute; top: 61px;" class="txtNew" id="DIV_410">
+																<p class="font_7" style="font-size:19px" id="P_411">
+																	<span style="font-family:raleway,sans-serif;" id="SPAN_412">
+																		<span class="color_11" id="SPAN_413">Our course on
+																			<a href="https://lisdtx.instructure.com" target="_blank" data-content="https://lisdtx.instructure.com" data-type="external"
+																			  rel="nofollow" id="A_414">Canvas</a>&nbsp;is used to send out private messages and inform members of service opportunities. Log
+																			in with your LISD network account.</span>
+																	</span>
+																</p>
+															</div>
+															<style type="text/css" data-styleid="txtNew" id="STYLE_415">
+																.txtNew {
+																	word-wrap: break-word;
+																	text-align: start;
+																	pointer-events: none;
+																}
+
+																.txtNew_override-left * {
+																	text-align: left !important;
+																}
+
+																.txtNew_override-right * {
+																	text-align: right !important;
+																}
+
+																.txtNew_override-center * {
+																	text-align: center !important;
+																}
+
+																.txtNew_override-justify * {
+																	text-align: justify !important;
+																}
+
+																.txtNew>* {
+																	pointer-events: auto;
+																}
+
+																.txtNew li {
+																	font-style: inherit;
+																	font-weight: inherit;
+																	line-height: inherit;
+																	letter-spacing: normal;
+																}
+
+																.txtNew ol,
+																.txtNew ul {
+																	padding-left: 1.3em;
+																	padding-right: 0;
+																	margin-left: 0.5em;
+																	margin-right: 0;
+																	line-height: normal;
+																	letter-spacing: normal;
+																}
+
+																.txtNew ul {
+																	list-style-type: disc;
+																}
+
+																.txtNew ol {
+																	list-style-type: decimal;
+																}
+
+																.txtNew ul ul,
+																.txtNew ol ul {
+																	list-style-type: circle;
+																}
+
+																.txtNew ul ul ul,
+																.txtNew ol ul ul {
+																	list-style-type: square;
+																}
+
+																.txtNew ul ol ul,
+																.txtNew ol ol ul {
+																	list-style-type: square;
+																}
+
+																.txtNew ul[dir="rtl"],
+																.txtNew ol[dir="rtl"] {
+																	padding-left: 0;
+																	padding-right: 1.3em;
+																	margin-left: 0;
+																	margin-right: 0.5em;
+																}
+
+																.txtNew ul[dir="rtl"] ul,
+																.txtNew ul[dir="rtl"] ol,
+																.txtNew ol[dir="rtl"] ul,
+																.txtNew ol[dir="rtl"] ol {
+																	padding-left: 0;
+																	padding-right: 1.3em;
+																	margin-left: 0;
+																	margin-right: 0.5em;
+																}
+
+																.txtNew p {
+																	margin: 0;
+																	line-height: normal;
+																	letter-spacing: normal;
+																}
+
+																.txtNew h1 {
+																	margin: 0;
+																	line-height: normal;
+																	letter-spacing: normal;
+																}
+
+																.txtNew h2 {
+																	margin: 0;
+																	line-height: normal;
+																	letter-spacing: normal;
+																}
+
+																.txtNew h3 {
+																	margin: 0;
+																	line-height: normal;
+																	letter-spacing: normal;
+																}
+
+																.txtNew h4 {
+																	margin: 0;
+																	line-height: normal;
+																	letter-spacing: normal;
+																}
+
+																.txtNew h5 {
+																	margin: 0;
+																	line-height: normal;
+																	letter-spacing: normal;
+																}
+
+																.txtNew h6 {
+																	margin: 0;
+																	line-height: normal;
+																	letter-spacing: normal;
+																}
+
+																.txtNew a {
+																	color: inherit;
+																}
+															</style>
+															<div id="DIV_416" data-align="center" data-disabled="false" data-margin="0" data-should-use-flex="true" data-width="160"
+															  data-height="48" style="left: 20px; position: absolute; top: 211px; height: 48px; min-height: 23px; width: 160px;"
+															  class="style-jl482o74" data-state="mobile shouldUseFlex center">
+																<a href="https://lisdtx.instructure.com" target="_blank" data-content="https://lisdtx.instructure.com" data-type="external"
+																  rel="nofollow" role="button" id="A_417" class="g-transparent-a style-jl482o74link">
+																	<span style="font-size:17px" id="SPAN_418" class="style-jl482o74label">Visit Canvas</span>
+																</a>
+															</div>
+															<style type="text/css" data-styleid="style-jl482o74" id="STYLE_419">
+																.style-jl482o74 button.style-jl482o74link {
+																	width: 100%;
+																}
+
+																.style-jl482o74[data-state~="shouldUseFlex"] .style-jl482o74link,
+																.style-jl482o74[data-state~="shouldUseFlex"] .style-jl482o74labelwrapper {
+																	text-align: initial;
+																	display: flex;
+																	align-items: center;
+																}
+
+																.style-jl482o74[data-state~="shouldUseFlex"][data-state~="center"] .style-jl482o74link,
+																.style-jl482o74[data-state~="shouldUseFlex"][data-state~="center"] .style-jl482o74labelwrapper {
+																	justify-content: center;
+																}
+
+																.style-jl482o74[data-state~="shouldUseFlex"][data-state~="left"] .style-jl482o74link,
+																.style-jl482o74[data-state~="shouldUseFlex"][data-state~="left"] .style-jl482o74labelwrapper {
+																	justify-content: flex-start;
+																}
+
+																.style-jl482o74[data-state~="shouldUseFlex"][data-state~="right"] .style-jl482o74link,
+																.style-jl482o74[data-state~="shouldUseFlex"][data-state~="right"] .style-jl482o74labelwrapper {
+																	justify-content: flex-end;
+																}
+
+																.style-jl482o74link {
+																	border-radius: 5px;
+																	position: absolute;
+																	top: 0;
+																	right: 0;
+																	bottom: 0;
+																	left: 0;
+																	transition: border-color 0.4s ease 0s, background-color 0.4s ease 0s;
+																}
+
+																.style-jl482o74label {
+																	font: normal normal 700 17px/1.4em raleway, sans-serif;
+																	transition: color 0.4s ease 0s;
+																	color: #0C3C60;
+																	display: inline-block;
+																	margin: calc(-1 * 0px) 0px 0;
+																	position: relative;
+																	white-space: nowrap;
+																}
+
+																.style-jl482o74[data-state~="shouldUseFlex"] .style-jl482o74label {
+																	margin: 0;
+																}
+
+																.style-jl482o74[data-disabled="false"] .style-jl482o74link {
+																	background-color: rgba(255, 255, 255, 1);
+																	border: solid rgba(12, 60, 96, 1) 0px;
+																	cursor: pointer !important;
+																}
+
+																.style-jl482o74[data-disabled="false"]:active[data-state~="mobile"] .style-jl482o74link,
+																.style-jl482o74[data-disabled="false"]:hover[data-state~="desktop"] .style-jl482o74link,
+																.style-jl482o74[data-disabled="false"][data-preview~="hover"] .style-jl482o74link {
+																	background-color: rgba(57, 114, 155, 1);
+																	border-color: transparent;
+																}
+
+																.style-jl482o74[data-disabled="false"]:active[data-state~="mobile"] .style-jl482o74label,
+																.style-jl482o74[data-disabled="false"]:hover[data-state~="desktop"] .style-jl482o74label,
+																.style-jl482o74[data-disabled="false"][data-preview~="hover"] .style-jl482o74label {
+																	color: #000000;
+																}
+
+																.style-jl482o74[data-disabled="true"] .style-jl482o74link,
+																.style-jl482o74[data-preview~="disabled"] .style-jl482o74link {
+																	background-color: rgba(204, 204, 204, 1);
+																	border-color: rgba(204, 204, 204, 1);
+																}
+
+																.style-jl482o74[data-disabled="true"] .style-jl482o74label,
+																.style-jl482o74[data-preview~="disabled"] .style-jl482o74label {
+																	color: #FFFFFF;
+																}
+															</style>
+														</div>
+													</div>
+													<style type="text/css" data-styleid="strc1" id="STYLE_420">
+														.strc1:not([data-mobile-responsive])>.strc1inlineContent {
+															position: absolute;
+															top: 0;
+															right: 0;
+															bottom: 0;
+															left: 0;
+														}
+
+														.strc1[data-mobile-responsive]>.strc1inlineContent {
+															position: relative;
+														}
+
+														.strc1[data-responsive] {
+															display: -ms-grid;
+															display: grid;
+															-webkit-box-pack: center;
+															-webkit-justify-content: center;
+															justify-content: center;
+															grid-template-columns: 100%;
+															grid-template-rows: 1fr;
+															-ms-grid-columns: 100%;
+															-ms-grid-rows: 1fr;
+														}
+
+														.strc1[data-responsive]>.strc1inlineContent {
+															display: -webkit-box;
+															display: -webkit-flex;
+															display: flex;
+														}
+
+														.strc1[data-responsive]>* {
+															position: relative;
+															grid-row-start: 1;
+															grid-column-start: 1;
+															grid-row-end: 2;
+															grid-column-end: 2;
+															-ms-grid-row-span: 1;
+															-ms-grid-column-span: 1;
+															margin: 0 auto;
+														}
+													</style>
+												</div>
+											</section>
+											<style type="text/css" data-styleid="strc1" id="STYLE_421">
+												.strc1:not([data-mobile-responsive])>.strc1inlineContent {
+													position: absolute;
+													top: 0;
+													right: 0;
+													bottom: 0;
+													left: 0;
+												}
+
+												.strc1[data-mobile-responsive]>.strc1inlineContent {
+													position: relative;
+												}
+
+												.strc1[data-responsive] {
+													display: -ms-grid;
+													display: grid;
+													-webkit-box-pack: center;
+													-webkit-justify-content: center;
+													justify-content: center;
+													grid-template-columns: 100%;
+													grid-template-rows: 1fr;
+													-ms-grid-columns: 100%;
+													-ms-grid-rows: 1fr;
+												}
+
+												.strc1[data-responsive]>.strc1inlineContent {
+													display: -webkit-box;
+													display: -webkit-flex;
+													display: flex;
+												}
+
+												.strc1[data-responsive]>* {
+													position: relative;
+													grid-row-start: 1;
+													grid-column-start: 1;
+													grid-row-end: 2;
+													grid-column-end: 2;
+													-ms-grid-row-span: 1;
+													-ms-grid-column-span: 1;
+													margin: 0 auto;
+												}
+											</style>
 										</div>
 									</div>
-									<style type="text/css" data-styleid="style-igqaaw2w" id="STYLE_380">
+									<style type="text/css" data-styleid="style-igqaaw2w" id="STYLE_422">
 										.style-igqaaw2wbg {
 											position: absolute;
 											top: 0;
@@ -4890,7 +5460,7 @@
 							</div>
 						</div>
 					</div>
-					<style type="text/css" data-styleid="pc1" id="STYLE_381">
+					<style type="text/css" data-styleid="pc1" id="STYLE_423">
 						.pc1screenWidthBackground {
 							position: absolute;
 							top: 0;
@@ -4934,30 +5504,30 @@
 							left: 0;
 						}
 					</style>
-					<footer style="bottom: auto; left: 0px; margin-left: 0px; width: 320px; position: absolute; top: 1947px; height: 55px;" class="style-jkroipnq_footer style-jkroipnq"
-					  data-site-width="320" data-fixedposition="false" data-isrunninginmobile="true" data-state="mobileView " id="FOOTER_382">
-						<div style="left: 0px; width: 320px;" id="DIV_383" class="style-jkroipnqscreenWidthBackground">
-							<div class="style-jkroipnq_bg" id="DIV_384"></div>
+					<footer style="bottom: auto; left: 0px; margin-left: 0px; width: 320px; position: absolute; top: 2194px; height: 55px;" class="style-jkroipnq_footer style-jkroipnq"
+					  data-site-width="320" data-fixedposition="false" data-isrunninginmobile="true" data-state="mobileView " id="FOOTER_424">
+						<div style="left: 0px; width: 320px;" id="DIV_425" class="style-jkroipnqscreenWidthBackground">
+							<div class="style-jkroipnq_bg" id="DIV_426"></div>
 						</div>
-						<div style="width:100%" id="DIV_385" class="style-jkroipnqcenteredContent">
-							<div id="DIV_386" class="style-jkroipnqbg">
-								<div class="style-jkroipnq_bg-center" id="DIV_387"></div>
+						<div style="width:100%" id="DIV_427" class="style-jkroipnqcenteredContent">
+							<div id="DIV_428" class="style-jkroipnqbg">
+								<div class="style-jkroipnq_bg-center" id="DIV_429"></div>
 							</div>
-							<div id="DIV_388" class="style-jkroipnqinlineContent">
-								<div data-packed="false" style="left: 10px; width: 300px; position: absolute; top: 20px;" class="txtNew_override-center txtNew"
-								  id="DIV_389">
-									<p class="font_9" style="text-align:center;font-size:11px" id="P_390">
-										<span style="font-family:'Roboto',roboto,sans-serif; font-weight:700;" id="SPAN_391">
-											<span style="color:#FAFAFA;" id="SPAN_392">Maintained and hosted with &hearts; by
-												<span style="text-decoration:underline;" id="SPAN_393">
+							<div id="DIV_430" class="style-jkroipnqinlineContent">
+								<div data-packed="true" style="left: 10px; width: 300px; position: absolute; top: 20px;" class="txtNew_override-center txtNew"
+								  id="DIV_431">
+									<p class="font_9" style="text-align:center;font-size:11px" id="P_432">
+										<span style="font-family:'Roboto',roboto,sans-serif; font-weight: 700;" id="SPAN_433">
+											<span style="color:#FAFAFA;" id="SPAN_434">Maintained and hosted with &hearts; by
+												<span style="text-decoration:underline;" id="SPAN_435">
 													<a href="http://github.hebrontsa.org" target="_blank" data-content="http://github.hebrontsa.org" data-type="external" rel="nofollow"
-													  id="A_394">The Hebron TSA</a>
+													  id="A_436">The Hebron TSA</a>
 												</span>
 											</span>
 										</span>
 									</p>
 								</div>
-								<style type="text/css" data-styleid="txtNew" id="STYLE_395">
+								<style type="text/css" data-styleid="txtNew" id="STYLE_437">
 									.txtNew {
 										word-wrap: break-word;
 										text-align: start;
@@ -5091,7 +5661,7 @@
 							</div>
 						</div>
 					</footer>
-					<style type="text/css" data-styleid="style-jkroipnq" id="STYLE_396">
+					<style type="text/css" data-styleid="style-jkroipnq" id="STYLE_438">
 						.style-jkroipnqscreenWidthBackground {
 							position: absolute;
 							top: 0;
@@ -5162,19 +5732,19 @@
 						}
 					</style>
 					<div style="position: fixed; z-index: 1001;" class="style-jimwccct_closed style-jimwccct_align-right style-jimwccct_action-count-0 style-jimwccct_view-mode-preview style-jimwccct"
-					  id="DIV_397">
-						<div style="width:320px;left:calc(50% - 160px);cursor:pointer" id="DIV_398" class="style-jimwccctoverlay"></div>
-						<div style="cursor:pointer" id="DIV_399" class="style-jimwccctcontrolButton">
-							<div data-quick-action="notifications" style="display:none" id="DIV_400" class="style-jimwccctnotifications"></div>
-							<ul class="style-jimwccct_dots" id="UL_401">
-								<li id="LI_402" class="style-jimwccctfirstDot"></li>
-								<li id="LI_403" class="style-jimwccctsecondDot"></li>
-								<li id="LI_404" class="style-jimwccctthirdDot"></li>
+					  id="DIV_439">
+						<div style="width:320px;left:calc(50% - 160px);cursor:pointer" id="DIV_440" class="style-jimwccctoverlay"></div>
+						<div style="cursor:pointer" id="DIV_441" class="style-jimwccctcontrolButton">
+							<div data-quick-action="notifications" style="display:none" id="DIV_442" class="style-jimwccctnotifications"></div>
+							<ul class="style-jimwccct_dots" id="UL_443">
+								<li id="LI_444" class="style-jimwccctfirstDot"></li>
+								<li id="LI_445" class="style-jimwccctsecondDot"></li>
+								<li id="LI_446" class="style-jimwccctthirdDot"></li>
 							</ul>
 						</div>
-						<div id="DIV_405" class="style-jimwccctactionsContainer"></div>
+						<div id="DIV_447" class="style-jimwccctactionsContainer"></div>
 					</div>
-					<style type="text/css" data-styleid="style-jimwccct" id="STYLE_406">
+					<style type="text/css" data-styleid="style-jimwccct" id="STYLE_448">
 						.style-jimwccct {
 							content: brand inv;
 							-webkit-transition: opacity .3s ease-in;
@@ -5492,28 +6062,9 @@
 					</style>
 				</div>
 			</div>
-			<div class="siteAspectsContainer" style="width:320px" id="DIV_407">
-				<div id="DIV_408"></div>
-				<div id="DIV_409"></div>
-				<div id="DIV_410"></div>
-				<div id="DIV_411"></div>
-			</div>
-			<div id="DIV_412">
-				<style type="text/css" id="STYLE_413">
-					.testStyles {
-						position: absolute;
-						display: none;
-						z-index: 1
-					}
-				</style>
-				<div class="testStyles" id="DIV_414"></div>
-			</div>
+
 		</div>
 	</div>
-
-	<div id="DIV_417"></div>
-	<a id="A_418"></a>
-
 	<!-- The overlay -->
 	<div id="myNav" class="overlay">
 
