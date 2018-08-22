@@ -9,6 +9,10 @@ a:hover {
   text-decoration: none;
 }
 
+.carousel-container img, .carousel-container video{
+  max-height: 950px;
+}
+
 .style-jjq7ezmhrepeaterButtonlabel {
   transition: color 0.25s ease-in-out;
 }
